@@ -54,6 +54,8 @@ export default function LearnPage() {
       setLastChapter(course.id, chapter.id);
     }
     setLoading(false);
+    // Scroll to top when opening the learn page (e.g. from Preview button) so we don't land mid-content
+    window.scrollTo({ top: 0, behavior: 'auto' });
   }, [slug, userHasAccess, navigate, course]);
 
   const handleChapterSelect = (chapterId) => {
