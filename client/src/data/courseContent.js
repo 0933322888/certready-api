@@ -1,5 +1,6 @@
 import { hairstylistCourse as courseEn } from './hairstylistCourse';
 import { hairstylistCourseFr } from './hairstylistCourse.fr';
+import hairstylistCourseRU from './hairstylistCourse.ru';
 import plumberCourseData from './plumberCourse';
 import plumberCourseDataFR from './plumberCourse.fr';
 import plumberCourseDataRU from './plumberCourse.ru';
@@ -14,7 +15,7 @@ const coursesByLang = {
     'plumber-306a': plumberCourseDataFR,
   },
   ru: {
-    'hairstylist-332a': courseEn,
+    'hairstylist-332a': hairstylistCourseRU,
     'plumber-306a': plumberCourseDataRU,
   },
 };
