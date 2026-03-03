@@ -22,6 +22,9 @@ export default function CoursePage() {
   const { t, i18n } = useTranslation();
   const { user, hasPurchasedBySlug, loading: authLoading } = useAuth();
   const [purchasing, setPurchasing] = useState(false);
+  const [promoCode, setPromoCode] = useState('');
+  const [appliedPromo, setAppliedPromo] = useState(null);
+  const [applyingPromo, setApplyingPromo] = useState(false);
   const { pricing, loading: pricingLoading } = useCoursePricingBySlug(slug);
 
   const course = getCourse(slug, i18n.language);
@@ -29,10 +32,36 @@ export default function CoursePage() {
   const hasPurchased = hasPurchasedBySlug(slug);
 
   const currentPrice = pricing?.currentPrice ?? course?.price;
-  const currency = pricing?.currency ?? course?.currency ?? 'CAD';
-  const discountedSpotsLeft = pricing?.discountedSpotsLeft ?? 0;
   const fullPrice = pricing?.fullPrice ?? course?.price;
-  const isDiscounted = discountedSpotsLeft > 0;
+  const currency = pricing?.currency ?? course?.currency ?? 'CAD';
+  // When no promo applied, show full price from static course data so we never show a discount until Apply
+  const displayPrice = appliedPromo ? appliedPromo.amountCents : (course?.price ?? fullPrice);
+  const displayCurrency = appliedPromo ? appliedPromo.currency : currency;
+
+  const handleApplyPromo = async () => {
+    const code = promoCode.trim();
+    if (!code || !user) return;
+    setApplyingPromo(true);
+    try {
+      const res = await api.post('/payments/validate-promo', { promoCode: code, courseSlug: slug });
+      if (res.data?.valid) {
+        setAppliedPromo({ code, amountCents: res.data.amountCents, currency: res.data.currency });
+        toast.success(res.data.amountCents === 0 ? t('course.promoAppliedFree') : t('course.promoApplied'));
+      } else {
+        setAppliedPromo(null);
+        toast.error(res.data?.message || t('course.invalidPromoCode'));
+      }
+    } catch (err) {
+      setAppliedPromo(null);
+      toast.error(err.response?.data?.message || t('course.invalidPromoCode'));
+    }
+    setApplyingPromo(false);
+  };
+
+  const handlePromoInputChange = (value) => {
+    setPromoCode(value);
+    setAppliedPromo(null);
+  };
 
   const handlePurchase = async () => {
     if (!user) {
@@ -49,9 +78,13 @@ export default function CoursePage() {
     try {
       const res = await api.post('/payments/create-checkout-session', {
         courseSlug: slug,
+        promoCode: appliedPromo?.code || undefined,
       });
       // Redirect to Stripe Checkout
-      window.location.href = res.data.url;
+      if (res.data?.url) {
+        window.location.href = res.data.url;
+        return;
+      }
     } catch (err) {
       toast.error(err.response?.data?.message || t('course.checkoutFailed'));
       setPurchasing(false);
@@ -180,34 +213,47 @@ export default function CoursePage() {
         {/* Sidebar - Pricing Card */}
         <div className="lg:col-span-1">
           <Card className="sticky top-24">
-            {isDiscounted && (
-              <Badge variant="warm" className="mb-4">
-                {t('course.launchPrice')}
-              </Badge>
-            )}
             <div className="text-center mb-6">
-              {isDiscounted && fullPrice !== currentPrice && (
-                <p className="text-lg text-text-muted line-through mb-1">
-                  {formatPrice(fullPrice, currency)}
-                </p>
-              )}
               <div className="text-4xl font-display font-bold text-accent mb-2">
-                {formatPrice(currentPrice, currency)}
+                {formatPrice(displayPrice, displayCurrency)}
               </div>
-              {isDiscounted && fullPrice - currentPrice > 0 && (
-                <p className="text-accent-warm font-semibold mb-2">
-                  {t('course.saveAmount', { amount: formatPrice(fullPrice - currentPrice, currency) })}
+              {appliedPromo && (
+                <p className="text-sm text-accent-warm font-medium mb-2">
+                  {appliedPromo.amountCents === 0 ? t('course.promoAppliedFree') : t('course.promoApplied')}
                 </p>
               )}
               <p className="text-text-muted">{t('course.oneTime')}</p>
-              {!pricingLoading && (
-                <p className="text-sm mt-2 text-accent-warm font-medium">
-                  {isDiscounted
-                    ? t('course.discountedSpotsLeft', { count: discountedSpotsLeft })
-                    : t('course.discountedSpotsLeftNone')}
-                </p>
-              )}
+              <p className="text-sm mt-2 text-accent-warm font-medium">
+                {t('course.promoCodeHint')}
+              </p>
             </div>
+
+            {!hasPurchased && user && (
+              <div className="mb-4">
+                <label htmlFor="promo-code" className="block text-sm font-medium text-text-primary mb-1">
+                  {t('course.promoCodeLabel')}
+                </label>
+                <div className="flex gap-2">
+                  <input
+                    id="promo-code"
+                    type="text"
+                    value={promoCode}
+                    onChange={(e) => handlePromoInputChange(e.target.value)}
+                    placeholder={t('course.promoCodePlaceholder')}
+                    className="flex-1 min-w-0 px-3 py-2 rounded-lg border border-border bg-surface text-text-primary placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-accent"
+                    aria-label={t('course.promoCodeLabel')}
+                  />
+                  <Button
+                    type="button"
+                    variant="outline"
+                    onClick={handleApplyPromo}
+                    disabled={applyingPromo || !promoCode.trim()}
+                  >
+                    {applyingPromo ? t('course.processing') : t('course.promoCodeApply')}
+                  </Button>
+                </div>
+              </div>
+            )}
 
             {hasPurchased ? (
               <Link to={`/learn/${slug}`} className="block">
@@ -222,7 +268,7 @@ export default function CoursePage() {
                 onClick={handlePurchase}
                 disabled={purchasing}
               >
-                {purchasing ? t('course.processing') : t('course.purchase', { price: formatPrice(currentPrice, currency) })}
+                {purchasing ? t('course.processing') : t('course.purchase', { price: formatPrice(displayPrice, displayCurrency) })}
               </Button>
             ) : (
               <Link to="/login" state={{ from: `/courses/${slug}` }}>

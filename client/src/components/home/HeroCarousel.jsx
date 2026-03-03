@@ -97,7 +97,10 @@ export default function HeroCarousel() {
                 {t('hero.slideDiscountPriceNow')} {formatPrice(2999, 'CAD')}
               </span>
             </div>
-            <p className="text-sm text-text-primary mb-8">
+            <p className="text-sm text-text-primary mb-4 font-mono font-semibold text-accent-warm">
+              {t('hero.slideDiscountCode')}: FIRST100
+            </p>
+            <p className="text-sm text-text-muted mb-8">
               {t('hero.slideDiscountSpots')}
             </p>
             <Link to="/courses">

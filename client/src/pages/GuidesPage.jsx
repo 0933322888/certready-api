@@ -11,6 +11,7 @@ export default function GuidesPage() {
       <SEO
         title={t('guidesPage.title')}
         description={t('guidesPage.seoDescription')}
+        keywords={t('guidesPage.seoKeywords')}
         canonical="/guides"
       />
       <main className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

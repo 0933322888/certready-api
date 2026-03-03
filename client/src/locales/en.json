@@ -44,11 +44,12 @@
     "carouselPrev": "Previous slide",
     "slideDiscountBadge": "Spring Special Offer",
     "slideDiscountTitle": "First 100 customers get 40% off",
-    "slideDiscountSubtitle": "Pay just $29.99 per course instead of the regular price. Limited spots — once they're gone, full price applies.",
+    "slideDiscountSubtitle": "Use code FIRST100 at checkout to pay just $29.99 per course instead of the regular price.",
     "slideDiscountPriceWas": "Was",
     "slideDiscountPriceNow": "Now",
     "slideDiscountCta": "Claim your discounted spot →",
-    "slideDiscountSpots": "Discounted spots are limited per course"
+    "slideDiscountCode": "Promo code",
+    "slideDiscountSpots": "Use this code at checkout when you purchase any course."
   },
   "stats": {
     "chapters": "Chapters",
@@ -78,7 +79,14 @@
     "discountedSpotsLeft": "{{count}} discounted spots left",
     "discountedSpotsLeftNone": "Full price",
     "saveAmount": "Save {{amount}}",
-    "launchPrice": "Launch price"
+    "launchPrice": "Launch price",
+    "promoCodeLabel": "Promo code",
+    "promoCodePlaceholder": "Enter code",
+    "promoCodeHint": "Use code FIRST100 for $29.99",
+    "promoCodeApply": "Apply",
+    "invalidPromoCode": "Invalid promo code",
+    "promoApplied": "Promo applied",
+    "promoAppliedFree": "Free — promo applied"
   },
   "auth": {
     "welcomeBack": "Welcome Back",
@@ -341,6 +349,7 @@
     "title": "Red Seal Exam Study Guides",
     "subtitle": "Free guides for each trade: exam overview, topic weightings, study tips, and frequently asked questions.",
     "seoDescription": "Free study guides for Red Seal trades exams. Exam structure, weightings, study tips, and FAQs for Hairstylist, Plumber, and more.",
+    "seoKeywords": "Red Seal, study guides, exam prep, Sceau rouge, Canadian trades, Hairstylist, Plumber, exam weighting, certification",
     "readGuide": "Read guide →"
   },
   "tradeGuidePage": {

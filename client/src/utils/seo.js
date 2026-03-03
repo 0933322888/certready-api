@@ -13,6 +13,7 @@ export function getCoursePageSEO(course) {
   return {
     title: `${tradeName} Red Seal Exam Prep — ${tradeCode} Study Guide`,
     description: `Prepare for your ${tradeName} Red Seal certification exam with confidence. ${totalChapters} chapters, ${totalQuestions}+ practice questions, and a full mock exam. Based on the official ${tradeCode} standard. Study at your own pace — one-time purchase, lifetime access.`,
+    keywords: `${tradeName}, Red Seal, ${tradeCode}, exam prep, study guide, practice questions, certification, Canadian trades`,
     canonical: `/courses/${course.slug}`,
     ogType: 'product',
     ogImage: `/og-courses/${course.slug}.png`,
@@ -28,6 +29,7 @@ export function getLearnPageSEO(course, currentChapter) {
   return {
     title: `${currentChapter.title} — ${tradeName} Exam Prep`,
     description: `Study ${currentChapter.title} for your ${tradeName} Red Seal exam. ${estimatedMinutes} min read with practice questions and explanations.`,
+    keywords: `${currentChapter.title}, ${tradeName}, Red Seal, exam prep, study guide`,
     canonical: `/learn/${course.slug}`,
     noIndex: true,
   };
@@ -37,6 +39,7 @@ export function getHomePageSEO() {
   return {
     title: 'Red Seal Exam Prep for Canadian Trades — Study Guides & Practice Questions',
     description: 'CertReady offers comprehensive Red Seal exam preparation courses for Canadian trades certification candidates. Practice questions, study guides, mock exams. Pass first try.',
+    keywords: 'Red Seal, Canadian trades, exam prep, certification, practice questions, study guide, mock exam, CertReady, Sceau rouge',
     canonical: '/',
   };
 }
@@ -49,6 +52,7 @@ export function getTradeGuideSEO(guide) {
   return {
     title: `${tradeName} Red Seal Exam — Complete Study Guide`,
     description: `Everything you need to know about the ${tradeName} Red Seal interprovincial exam. Exam weighting, what to study, pass rates, and free practice questions.`,
+    keywords: `${tradeName}, Red Seal, study guide, interprovincial exam, exam weighting, Canadian trades, certification`,
     canonical: `/guides/${guide.slug}`,
   };
 }
@@ -139,6 +143,7 @@ export function getAllCoursesPageSEO() {
   return {
     title: 'Red Seal Exam Prep Courses — All Trades',
     description: "Browse CertReady's Red Seal exam preparation courses for Canadian trades. Hairstylist (332A), Plumber (306A), and more. One-time purchase, lifetime access, free first 2 chapters.",
+    keywords: 'Red Seal courses, exam prep, Canadian trades, Hairstylist, Plumber, 332A, 306A, certification, study guide',
     canonical: '/courses',
   };
 }
@@ -148,6 +153,7 @@ export function getPracticePageSEO({ tradeName, tradeCode, tradeSlug, questionCo
   return {
     title: `Free ${tradeName} Red Seal Practice Questions`,
     description: `Try ${questionCount} free ${tradeName} Red Seal exam practice questions with full explanations. No account required. Based on the official ${tradeCode} standard.`,
+    keywords: `${tradeName}, Red Seal, practice questions, free, ${tradeCode}, exam prep, Canadian trades`,
     canonical: `/practice/${tradeSlug}`,
   };
 }

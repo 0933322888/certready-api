@@ -5,6 +5,7 @@ import Course from '../models/Course.js';
 import Purchase from '../models/Purchase.js';
 import User from '../models/User.js';
 import { getCoursePricing } from '../utils/coursePricing.js';
+import { getValidPromo } from '../utils/promoService.js';
 
 const router = express.Router();
 
@@ -40,19 +41,43 @@ const getStripe = () => {
   }
 };
 
+// @route   POST /api/payments/validate-promo
+// @desc    Validate promo code and return effective price for a course (no charge)
+// @access  Private
+router.post('/validate-promo', protect, async (req, res) => {
+  try {
+    const { promoCode: rawPromoCode, courseSlug } = req.body;
+    if (!rawPromoCode || !courseSlug) {
+      return res.status(400).json({ valid: false, message: 'Promo code and course are required' });
+    }
+    const course = await Course.findOne({ slug: courseSlug, isPublished: true });
+    if (!course) {
+      return res.status(404).json({ valid: false, message: 'Course not found' });
+    }
+    const { promo, message } = await getValidPromo(rawPromoCode, course._id);
+    if (!promo) {
+      return res.json({ valid: false, message: message || 'Invalid promo code' });
+    }
+    let amountCents = course.price;
+    if (promo.type === 'fixed_price') {
+      amountCents = promo.amountCents;
+    } else if (promo.type === 'free') {
+      amountCents = 0;
+    }
+    const currency = (course.currency || 'CAD').toUpperCase();
+    return res.json({ valid: true, amountCents, currency });
+  } catch (error) {
+    console.error('Validate promo error:', error);
+    res.status(500).json({ valid: false, message: error.message });
+  }
+});
+
 // @route   POST /api/payments/create-checkout-session
-// @desc    Create Stripe Checkout Session
+// @desc    Create Stripe Checkout Session (or grant free course if promo is free)
 // @access  Private
 router.post('/create-checkout-session', protect, async (req, res) => {
   try {
-    const stripe = getStripe();
-    if (!stripe) {
-      return res.status(500).json({ 
-        message: 'Stripe is not configured. Please set STRIPE_SECRET_KEY in your environment variables.' 
-      });
-    }
-
-    const { courseSlug } = req.body;
+    const { courseSlug, promoCode: rawPromoCode } = req.body;
 
     if (!courseSlug) {
       return res.status(400).json({ message: 'Course slug is required' });
@@ -63,12 +88,56 @@ router.post('/create-checkout-session', protect, async (req, res) => {
       return res.status(404).json({ message: 'Course not found' });
     }
 
-    const { currentPrice } = await getCoursePricing(course);
+    const { currentPrice: basePrice } = await getCoursePricing(course);
+    let chargeAmountCents = basePrice;
+    let promo = null;
+    if (rawPromoCode) {
+      const result = await getValidPromo(rawPromoCode, course._id);
+      promo = result.promo;
+      if (!promo) {
+        return res.status(400).json({ message: result.message || 'Invalid promo code' });
+      }
+    }
+
+    if (promo) {
+      if (promo.type === 'fixed_price') {
+        chargeAmountCents = promo.amountCents;
+      } else if (promo.type === 'free') {
+        chargeAmountCents = 0;
+      }
+    }
 
     // Check if user already owns the course
     const user = await User.findById(req.user._id);
     if (user.purchases.includes(course._id)) {
       return res.status(400).json({ message: 'You already own this course' });
+    }
+
+    // Free promo: grant access without Stripe
+    if (chargeAmountCents === 0) {
+      const freeSessionId = `free_${promo?.code ?? 'promo'}_${req.user._id}_${course._id}`;
+      await Purchase.create({
+        user: req.user._id,
+        course: course._id,
+        stripeSessionId: freeSessionId,
+        amount: 0,
+        currency: course.currency || 'cad',
+        promoCode: promo?.code,
+        status: 'completed',
+        completedAt: new Date(),
+      });
+      user.purchases.push(course._id);
+      await user.save();
+
+      const successUrl = `${process.env.CLIENT_URL}/checkout/success?session_id=${encodeURIComponent(freeSessionId)}`;
+      return res.json({ sessionId: freeSessionId, url: successUrl });
+    }
+
+    const stripe = getStripe();
+    if (!stripe) {
+      return res.status(500).json({
+        message: 'Stripe is not configured. Please set STRIPE_SECRET_KEY in your environment variables.',
+      });
     }
 
     // Create Stripe Checkout Session
@@ -78,8 +147,8 @@ router.post('/create-checkout-session', protect, async (req, res) => {
       customer_email: req.user.email,
       line_items: [{
         price_data: {
-          currency: course.currency || 'cad',
-          unit_amount: currentPrice,
+          currency: (course.currency || 'cad').toLowerCase(),
+          unit_amount: chargeAmountCents,
           product_data: {
             name: course.title,
             description: course.subtitle || course.description,
@@ -100,8 +169,9 @@ router.post('/create-checkout-session', protect, async (req, res) => {
       user: req.user._id,
       course: course._id,
       stripeSessionId: session.id,
-      amount: currentPrice,
+      amount: chargeAmountCents,
       currency: course.currency || 'cad',
+      promoCode: promo?.code,
       status: 'pending',
     });
 

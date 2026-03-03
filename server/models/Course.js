@@ -8,8 +8,6 @@ const courseSchema = new mongoose.Schema({
   trade: { type: String },
   tradeCode: { type: String },
   price: { type: Number, required: true },
-  discountPrice: { type: Number },
-  discountCap: { type: Number },
   currency: { type: String, default: 'cad' },
   stripePriceId: { type: String },
   coverImage: { type: String },

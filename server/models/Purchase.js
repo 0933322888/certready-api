@@ -7,6 +7,7 @@ const purchaseSchema = new mongoose.Schema({
   stripePaymentIntent: { type: String },
   amount: { type: Number },
   currency: { type: String },
+  promoCode: { type: String }, // code used at checkout, if any
   status: { type: String, enum: ['pending', 'completed', 'refunded'], default: 'pending' },
   completedAt: { type: Date },
 }, { timestamps: true });

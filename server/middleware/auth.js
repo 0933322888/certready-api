@@ -22,4 +22,17 @@ const protect = async (req, res, next) => {
   }
 };
 
-export { protect };
+/** Requires protect first. Checks req.user.email is in ADMIN_EMAILS (comma-separated). */
+const requireAdmin = (req, res, next) => {
+  const emails = (process.env.ADMIN_EMAILS || '').split(',').map((e) => e.trim().toLowerCase()).filter(Boolean);
+  if (emails.length === 0) {
+    return res.status(403).json({ message: 'Admin access not configured' });
+  }
+  const email = (req.user?.email || '').toLowerCase();
+  if (!email || !emails.includes(email)) {
+    return res.status(403).json({ message: 'Admin access required' });
+  }
+  next();
+};
+
+export { protect, requireAdmin };

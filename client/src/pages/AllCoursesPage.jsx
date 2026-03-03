@@ -36,11 +36,7 @@ export default function AllCoursesPage() {
           const hasPurchased = hasPurchasedBySlug(course.slug);
           const pricing = pricingBySlug[course.slug];
           const currentPrice = pricing?.currentPrice ?? course.price;
-          const fullPrice = pricing?.fullPrice ?? course.price;
           const currency = pricing?.currency ?? course.currency ?? 'CAD';
-          const discountedSpotsLeft = pricing?.discountedSpotsLeft ?? 0;
-          const isDiscounted = discountedSpotsLeft > 0;
-          const saveCents = isDiscounted ? fullPrice - currentPrice : 0;
           const guideSlug = getGuideSlugFromCourseSlug(course.slug);
 
           return (
@@ -49,26 +45,14 @@ export default function AllCoursesPage() {
                 <div className="flex items-center justify-between mb-4">
                   <Badge variant="accent">{course.tradeCode}</Badge>
                   <div className="text-right">
-                    {isDiscounted && (
-                      <p className="text-sm text-text-muted line-through mb-0.5">
-                        {formatPrice(fullPrice, currency)}
-                      </p>
-                    )}
                     <span className="text-2xl font-bold text-accent">
                       {formatPrice(currentPrice, currency)}
                     </span>
-                    {isDiscounted && saveCents > 0 && (
-                      <p className="text-sm text-accent-warm font-medium mt-1">
-                        {t('course.saveAmount', { amount: formatPrice(saveCents, currency) })}
-                      </p>
-                    )}
+                    <p className="text-sm text-accent-warm font-medium mt-1">
+                      {t('course.promoCodeHint')}
+                    </p>
                   </div>
                 </div>
-                {isDiscounted && (
-                  <p className="text-sm text-accent-warm font-medium mb-2">
-                    {t('course.discountedSpotsLeft', { count: discountedSpotsLeft })}
-                  </p>
-                )}
                 <h2 className="text-2xl font-display font-bold text-text-primary mb-2">
                   {course.trade} {t('coursesPage.courseTitleSuffix')}
                 </h2>

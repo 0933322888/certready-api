@@ -25,6 +25,9 @@ export default function LearnPage() {
   const { pricing } = useCoursePricingBySlug(slug);
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [purchasing, setPurchasing] = useState(false);
+  const [promoCode, setPromoCode] = useState('');
+  const [appliedPromo, setAppliedPromo] = useState(null);
+  const [applyingPromo, setApplyingPromo] = useState(false);
   const [currentChapterId, setCurrentChapterId] = useState(null);
   const [currentChapter, setCurrentChapter] = useState(null);
   const [hasAccess, setHasAccess] = useState(false);
@@ -89,6 +92,37 @@ export default function LearnPage() {
     }
   };
 
+  const fullPrice = pricing?.fullPrice ?? pricing?.currentPrice ?? course?.price;
+  const fullCurrency = pricing?.currency ?? course?.currency ?? 'CAD';
+  // When no promo applied, show full price from static course data
+  const displayPrice = appliedPromo ? appliedPromo.amountCents : (course?.price ?? fullPrice);
+  const displayCurrency = appliedPromo ? appliedPromo.currency : fullCurrency;
+
+  const handleApplyPromo = async () => {
+    const code = promoCode.trim();
+    if (!code || !user) return;
+    setApplyingPromo(true);
+    try {
+      const res = await api.post('/payments/validate-promo', { promoCode: code, courseSlug: slug });
+      if (res.data?.valid) {
+        setAppliedPromo({ code, amountCents: res.data.amountCents, currency: res.data.currency });
+        toast.success(res.data.amountCents === 0 ? t('course.promoAppliedFree') : t('course.promoApplied'));
+      } else {
+        setAppliedPromo(null);
+        toast.error(res.data?.message || t('course.invalidPromoCode'));
+      }
+    } catch (err) {
+      setAppliedPromo(null);
+      toast.error(err.response?.data?.message || t('course.invalidPromoCode'));
+    }
+    setApplyingPromo(false);
+  };
+
+  const handlePromoInputChange = (value) => {
+    setPromoCode(value);
+    setAppliedPromo(null);
+  };
+
   const handlePurchase = async () => {
     if (!user) {
       navigate('/login', { state: { from: { pathname: `/learn/${slug}` } } });
@@ -96,7 +130,10 @@ export default function LearnPage() {
     }
     setPurchasing(true);
     try {
-      const res = await api.post('/payments/create-checkout-session', { courseSlug: slug });
+      const res = await api.post('/payments/create-checkout-session', {
+        courseSlug: slug,
+        promoCode: appliedPromo?.code || undefined,
+      });
       if (res.data?.url) {
         window.location.href = res.data.url;
         return;
@@ -165,20 +202,44 @@ export default function LearnPage() {
             <p className="text-sm text-text-muted">{currentChapter.title}</p>
             {/* Purchase CTA when previewing without access */}
             {!hasAccess && (
-              <div className="mt-3 pt-3 border-t border-border flex flex-wrap items-center justify-between gap-3">
-                <span className="text-sm text-text-muted">
-                  {t('lockOverlay.title')}
-                </span>
-                <Button
-                  onClick={handlePurchase}
-                  disabled={purchasing}
-                  size="sm"
-                  className="flex-shrink-0"
-                >
-                  {user
-                    ? (purchasing ? t('course.processing') : `${t('lockOverlay.getAccess')} — ${formatPrice(pricing?.currentPrice ?? course.price, pricing?.currency ?? course.currency)}`)
-                    : t('course.signInToPurchase')}
-                </Button>
+              <div className="mt-3 pt-3 border-t border-border space-y-2">
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <span className="text-sm text-text-muted">
+                    {t('lockOverlay.title')}
+                  </span>
+                  <span className="text-sm font-semibold text-accent">
+                    {formatPrice(displayPrice, displayCurrency)}
+                  </span>
+                </div>
+                <div className="flex flex-col sm:flex-row gap-2 w-full sm:items-center">
+                  <input
+                    type="text"
+                    value={promoCode}
+                    onChange={(e) => handlePromoInputChange(e.target.value)}
+                    placeholder={t('course.promoCodePlaceholder')}
+                    className="flex-1 min-w-0 px-3 py-2 rounded-lg border border-border bg-surface text-text-primary text-sm placeholder:text-text-muted focus:outline-none focus:ring-2 focus:ring-accent"
+                    aria-label={t('course.promoCodeLabel')}
+                  />
+                  <Button
+                    type="button"
+                    variant="outline"
+                    size="sm"
+                    onClick={handleApplyPromo}
+                    disabled={applyingPromo || !promoCode.trim() || !user}
+                  >
+                    {applyingPromo ? t('course.processing') : t('course.promoCodeApply')}
+                  </Button>
+                  <Button
+                    onClick={handlePurchase}
+                    disabled={purchasing}
+                    size="sm"
+                    className="flex-shrink-0"
+                  >
+                    {user
+                      ? (purchasing ? t('course.processing') : `${t('lockOverlay.getAccess')} — ${formatPrice(displayPrice, displayCurrency)}`)
+                      : t('course.signInToPurchase')}
+                  </Button>
+                </div>
               </div>
             )}
           </div>

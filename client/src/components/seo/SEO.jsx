@@ -7,6 +7,7 @@ const DEFAULT_IMAGE = '/og-default.png';
 export default function SEO({
   title,
   description,
+  keywords,
   canonical,
   ogType = 'website',
   ogImage = DEFAULT_IMAGE,
@@ -21,6 +22,7 @@ export default function SEO({
       {/* Core */}
       <title>{fullTitle}</title>
       <meta name="description" content={description} />
+      {keywords && <meta name="keywords" content={keywords} />}
       {noIndex && <meta name="robots" content="noindex, nofollow" />}
       {fullCanonical && <link rel="canonical" href={fullCanonical} />}
 

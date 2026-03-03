@@ -22,6 +22,7 @@ import errorHandler from './middleware/errorHandler.js';
 import authRoutes from './routes/auth.js';
 import courseRoutes from './routes/courses.js';
 import paymentRoutes from './routes/payments.js';
+import promosRoutes from './routes/promos.js';
 import userRoutes from './routes/users.js';
 import answerRoutes from './routes/answers.js';
 
@@ -38,6 +39,7 @@ app.use(cors({ origin: process.env.CLIENT_URL, credentials: true }));
 app.use('/api/auth', authRoutes);
 app.use('/api/courses', courseRoutes);
 app.use('/api/payments', paymentRoutes);
+app.use('/api/promos', promosRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/answers', answerRoutes);
 
