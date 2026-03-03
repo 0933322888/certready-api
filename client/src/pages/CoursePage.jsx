@@ -68,8 +68,8 @@ export default function CoursePage() {
 
   const seo = getCoursePageSEO(course);
   const breadcrumbs = getBreadcrumbStructuredData([
-    { name: 'Home', url: '/' },
-    { name: 'Courses', url: '/courses' },
+    { name: t('nav.home'), url: '/' },
+    { name: t('nav.courses'), url: '/courses' },
     { name: course.trade, url: `/courses/${course.slug}` },
   ]);
 
@@ -85,21 +85,21 @@ export default function CoursePage() {
       <div className="mb-12">
         <div className="flex items-center space-x-3 mb-4">
           <Badge variant="accent">{course.tradeCode}</Badge>
-          <span className="text-text-muted">Skilled Trades Ontario</span>
+          <span className="text-text-muted">{t('course.skilledTradesOntario')}</span>
         </div>
         <h1 className="text-4xl md:text-5xl font-display font-bold text-text-primary mb-4">
-          {course.trade} Red Seal Exam Prep — Complete Study Guide ({course.tradeCode})
+          {t('course.coursePageTitle', { trade: course.trade, code: course.tradeCode })}
         </h1>
         <p className="text-xl text-text-muted mb-6">{course.subtitle}</p>
         <p className="text-lg text-text-primary max-w-3xl leading-relaxed">
-          {course.description || 'Pass your Skilled Trades Ontario Hairstylist (332A) certification exam with confidence. 15 chapters, 75+ practice questions, full mock exam — all based on the official STO curriculum standard.'}
+          {course.description || t('course.descriptionFallback')}
         </p>
         {(() => {
           const guideSlug = getGuideSlugFromCourseSlug(course.slug);
           return guideSlug ? (
             <p className="mt-4">
               <Link to={`/guides/${guideSlug}`} className="text-accent hover:text-accent/80 font-medium">
-                Learn more about the {course.trade} Red Seal exam →
+                {t('course.learnMoreLink', { trade: course.trade })}
               </Link>
             </p>
           ) : null;

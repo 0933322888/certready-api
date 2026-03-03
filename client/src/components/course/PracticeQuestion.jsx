@@ -1,4 +1,5 @@
 import { useState, useRef, useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import Button from '../ui/Button';
 import Badge from '../ui/Badge';
 import api from '../../utils/api';
@@ -16,9 +17,12 @@ export default function PracticeQuestion({
   chapterId,
   savedAnswer,
   onAnswerSave,
-  explanationLabel = 'Explanation',
-  nextQuestionLabel = 'Next Question'
+  explanationLabel,
+  nextQuestionLabel,
 }) {
+  const { t } = useTranslation();
+  const explanationText = explanationLabel ?? t('learn.explanation');
+  const nextText = nextQuestionLabel ?? t('learn.nextQuestion');
   const [selectedIndex, setSelectedIndex] = useState(savedAnswer?.selectedIndex ?? null);
   const [showExplanation, setShowExplanation] = useState(savedAnswer ? true : false);
   const [isCorrect, setIsCorrect] = useState(savedAnswer?.isCorrect ?? null);
@@ -120,10 +124,10 @@ export default function PracticeQuestion({
                     {String.fromCharCode(65 + index)}. {option}
                   </span>
                   {showCorrect && (
-                    <Badge variant="success">Correct</Badge>
+                    <Badge variant="success">{t('learn.correct')}</Badge>
                   )}
                   {showIncorrect && (
-                    <Badge variant="danger">Incorrect</Badge>
+                    <Badge variant="danger">{t('learn.incorrect')}</Badge>
                   )}
                 </div>
               </button>
@@ -135,13 +139,13 @@ export default function PracticeQuestion({
       {showExplanation && (
         <div className="mt-4 p-4 bg-surface-2 rounded-lg border border-border">
           <p className="text-sm text-text-primary leading-relaxed">
-            <span className="font-semibold text-accent">{explanationLabel}: </span>
+            <span className="font-semibold text-accent">{explanationText}: </span>
             {explanation}
           </p>
           {onNext && (
             <div className="mt-4">
               <Button onClick={handleNext} size="sm">
-                {nextQuestionLabel} →
+                {nextText} →
               </Button>
             </div>
           )}

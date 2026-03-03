@@ -9,5 +9,4 @@ dist/
 *.swo
 *~
 .cursor/
-.github/
-.cursor/
+github/

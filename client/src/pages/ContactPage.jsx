@@ -89,7 +89,7 @@ export default function ContactPage() {
                 value={formData.email}
                 onChange={handleChange}
                 className="w-full px-4 py-2.5 bg-surface-2 border border-border rounded-lg text-text-primary focus:outline-none focus:ring-2 focus:ring-accent"
-                placeholder="you@example.com"
+                placeholder={t('auth.emailPlaceholder')}
               />
             </div>
             <div>

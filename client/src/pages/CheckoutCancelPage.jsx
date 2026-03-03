@@ -8,7 +8,7 @@ export default function CheckoutCancelPage() {
   const { t } = useTranslation();
   return (
     <div className="min-h-screen flex items-center justify-center px-4 py-12">
-      <SEO noIndex title="Payment Cancelled" description="Your payment was cancelled. No charges were made." />
+      <SEO noIndex title={t('checkout.seoCancelledTitle')} description={t('checkout.seoCancelledDescription')} />
       <Card className="w-full max-w-md text-center">
         <div className="mb-6">
           <div className="w-20 h-20 rounded-full bg-accent-warm/20 flex items-center justify-center mx-auto mb-4">

@@ -91,7 +91,7 @@ export default function ProfilePage() {
 
   return (
     <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <SEO noIndex title="Profile" description="Manage your CertReady account and view purchase history." />
+      <SEO noIndex title={t('profile.seoTitle')} description={t('profile.seoDescription')} />
       <div className="mb-8">
         <h1 className="text-4xl font-display font-bold text-text-primary mb-2">
           {t('profile.title')}

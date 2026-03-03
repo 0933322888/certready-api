@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { useTranslation } from 'react-i18next';
 import Button from './Button';
 
 export default function Modal({ 
@@ -8,6 +9,7 @@ export default function Modal({
   children,
   size = 'md' 
 }) {
+  const { t } = useTranslation();
   useEffect(() => {
     if (isOpen) {
       document.body.style.overflow = 'hidden';
@@ -40,7 +42,7 @@ export default function Modal({
           <button
             onClick={onClose}
             className="text-text-muted hover:text-text-primary transition-colors"
-            aria-label="Close"
+            aria-label={t('common.ariaLabelClose')}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />

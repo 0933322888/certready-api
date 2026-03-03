@@ -47,7 +47,7 @@ export default function ResetPasswordPage() {
   if (success) {
     return (
       <div className="min-h-screen flex items-center justify-center px-4 py-12">
-        <SEO noIndex title="Password Reset" description="Your CertReady password has been reset." />
+        <SEO noIndex title={t('auth.seoResetSuccessTitle')} description={t('auth.seoResetSuccessDescription')} />
         <Card className="w-full max-w-md text-center">
           <div className="mb-6">
             <div className="w-16 h-16 rounded-full bg-success/20 flex items-center justify-center mx-auto mb-4">
@@ -73,7 +73,7 @@ export default function ResetPasswordPage() {
   if (!token) {
     return (
       <div className="min-h-screen flex items-center justify-center px-4 py-12">
-        <SEO noIndex title="Invalid Reset Link" description="This password reset link is invalid or has expired." />
+        <SEO noIndex title={t('auth.seoInvalidLinkTitle')} description={t('auth.seoInvalidLinkDescription')} />
         <Card className="w-full max-w-md text-center">
           <h1 className="text-xl font-display font-bold text-text-primary mb-4">
             {t('auth.invalidResetLink')}
@@ -96,7 +96,7 @@ export default function ResetPasswordPage() {
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4 py-12">
-      <SEO noIndex title="Reset Password" description="Set a new password for your CertReady account." />
+      <SEO noIndex title={t('auth.seoResetTitle')} description={t('auth.seoResetDescription')} />
       <Card className="w-full max-w-md">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-display font-bold text-text-primary mb-2">
@@ -120,7 +120,7 @@ export default function ResetPasswordPage() {
                 minLength: { value: 6, message: t('auth.passwordMinLength') },
               })}
               className="w-full px-4 py-2.5 bg-surface-2 border border-border rounded-lg text-text-primary placeholder-text-dim focus:outline-none focus:ring-2 focus:ring-accent"
-              placeholder="••••••••"
+              placeholder={t('auth.passwordPlaceholder')}
             />
             {errors.password && (
               <p className="mt-1 text-sm text-danger">{errors.password.message}</p>
@@ -139,7 +139,7 @@ export default function ResetPasswordPage() {
                 validate: (value) => value === password || t('auth.passwordsNoMatch'),
               })}
               className="w-full px-4 py-2.5 bg-surface-2 border border-border rounded-lg text-text-primary placeholder-text-dim focus:outline-none focus:ring-2 focus:ring-accent"
-              placeholder="••••••••"
+              placeholder={t('auth.passwordPlaceholder')}
             />
             {errors.confirmPassword && (
               <p className="mt-1 text-sm text-danger">{errors.confirmPassword.message}</p>

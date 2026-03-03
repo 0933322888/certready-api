@@ -34,7 +34,7 @@ export default function LoginPage() {
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4 py-12">
-      <SEO noIndex title="Log In" description="Log in to your CertReady account." />
+      <SEO noIndex title={t('auth.seoLoginTitle')} description={t('auth.seoLoginDescription')} />
       <Card className="w-full max-w-md">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-display font-bold text-text-primary mb-2">
@@ -52,14 +52,14 @@ export default function LoginPage() {
               id="email"
               type="email"
               {...register('email', {
-                required: 'Email is required',
+                required: t('auth.emailRequired'),
                 pattern: {
                   value: /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i,
-                  message: 'Invalid email address',
+                  message: t('auth.invalidEmail'),
                 },
               })}
               className="w-full px-4 py-2.5 bg-surface-2 border border-border rounded-lg text-text-primary placeholder-text-dim focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
-              placeholder="you@example.com"
+              placeholder={t('auth.emailPlaceholder')}
             />
             {errors.email && (
               <p className="mt-1 text-sm text-danger">{errors.email.message}</p>
@@ -74,14 +74,14 @@ export default function LoginPage() {
               id="password"
               type="password"
               {...register('password', {
-                required: 'Password is required',
+                required: t('auth.passwordRequired'),
                 minLength: {
                   value: 6,
-                  message: 'Password must be at least 6 characters',
+                  message: t('auth.passwordMinLength'),
                 },
               })}
               className="w-full px-4 py-2.5 bg-surface-2 border border-border rounded-lg text-text-primary placeholder-text-dim focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
-              placeholder="••••••••"
+              placeholder={t('auth.passwordPlaceholder')}
             />
             {errors.password && (
               <p className="mt-1 text-sm text-danger">{errors.password.message}</p>

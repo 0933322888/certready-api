@@ -135,7 +135,7 @@ export default function LearnPage() {
       <button
         onClick={() => setSidebarOpen(!sidebarOpen)}
         className="fixed top-20 left-4 z-30 md:hidden bg-surface border border-border rounded-lg p-2 shadow-lg"
-        aria-label="Toggle menu"
+        aria-label={t('common.ariaLabelToggleMenu')}
       >
         <svg className="w-6 h-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           {sidebarOpen ? (

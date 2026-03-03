@@ -1,6 +1,7 @@
 import { hairstylistCourse as courseEn } from './hairstylistCourse';
 import { hairstylistCourseFr } from './hairstylistCourse.fr';
 import plumberCourseData from './plumberCourse';
+import plumberCourseDataFR from './plumberCourse.fr';
 
 const coursesByLang = {
   en: {
@@ -9,7 +10,7 @@ const coursesByLang = {
   },
   fr: {
     'hairstylist-332a': hairstylistCourseFr,
-    'plumber-306a': plumberCourseData, // TODO: add plumberCourse.fr.js for French
+    'plumber-306a': plumberCourseDataFR,
   },
 };
 

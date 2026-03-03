@@ -24,11 +24,10 @@ export default function AllCoursesPage() {
 
       <div className="mb-12 text-center">
         <h1 className="text-4xl md:text-5xl font-display font-bold text-text-primary mb-4">
-          Red Seal Exam Prep Courses — Canadian Trades Certification
+          {t('coursesPage.title')}
         </h1>
         <p className="text-lg text-text-muted max-w-2xl mx-auto">
-          Browse CertReady&apos;s Red Seal exam preparation courses. One-time purchase, lifetime access,
-          and a free preview of the first 2 chapters for every trade. Based on the official Red Seal Occupational Standard.
+          {t('coursesPage.subtitle')}
         </p>
       </div>
 
@@ -71,7 +70,7 @@ export default function AllCoursesPage() {
                   </p>
                 )}
                 <h2 className="text-2xl font-display font-bold text-text-primary mb-2">
-                  {course.trade} Red Seal Exam Prep
+                  {course.trade} {t('coursesPage.courseTitleSuffix')}
                 </h2>
                 <p className="text-text-muted mb-4">{course.subtitle}</p>
                 <ul className="space-y-2 mb-6">
@@ -88,7 +87,7 @@ export default function AllCoursesPage() {
               <div className="flex flex-col gap-2">
                 {guideSlug && (
                   <Link to={`/guides/${guideSlug}`} className="text-sm text-accent hover:text-accent/80">
-                    Learn more about the {course.trade} Red Seal exam →
+                    {t('coursesPage.learnMoreAbout', { trade: course.trade })}
                   </Link>
                 )}
                 <div className="flex gap-2 items-stretch">
@@ -117,9 +116,9 @@ export default function AllCoursesPage() {
           <div className="flex-1">
             <Badge variant="warm" className="mb-4">{t('home.comingSoon')}</Badge>
             <h2 className="text-2xl font-display font-bold text-text-primary mb-2">
-              Electrician Exam Prep
+              {t('coursesPage.comingSoonTitle')}
             </h2>
-            <p className="text-text-muted mb-4">Comprehensive preparation for electrician certification</p>
+            <p className="text-text-muted mb-4">{t('coursesPage.comingSoonDesc')}</p>
           </div>
           <Button disabled className="w-full">{t('home.comingSoon')}</Button>
         </Card>

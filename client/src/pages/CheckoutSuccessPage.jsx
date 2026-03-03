@@ -99,7 +99,7 @@ export default function CheckoutSuccessPage() {
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4 py-12">
-      <SEO noIndex title="Payment Successful" description="Your CertReady purchase was successful. You now have full access to your course." />
+      <SEO noIndex title={t('checkout.seoSuccessTitle')} description={t('checkout.seoSuccessDescription')} />
       <Card className="w-full max-w-md text-center">
         <div className="mb-6">
           <div className="w-20 h-20 rounded-full bg-success/20 flex items-center justify-center mx-auto mb-4">

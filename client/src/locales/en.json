@@ -1,4 +1,13 @@
 {
+  "common": {
+    "ariaLabelClose": "Close",
+    "ariaLabelToggleMenu": "Toggle menu",
+    "ariaLabelBreadcrumb": "Breadcrumb",
+    "ariaLabelSelectLanguage": "Select language",
+    "ariaLabelCertReadyLogo": "CertReady — Red Seal Exam Prep Canada",
+    "ariaLabelCertReadyShort": "CertReady",
+    "progress": "Progress"
+  },
   "nav": {
     "home": "Home",
     "courses": "Courses",
@@ -62,6 +71,10 @@
     "processing": "Processing...",
     "purchase": "Purchase — {{price}}",
     "checkoutFailed": "Failed to start checkout. Please try again.",
+    "skilledTradesOntario": "Skilled Trades Ontario",
+    "descriptionFallback": "Pass your Skilled Trades Ontario Hairstylist (332A) certification exam with confidence. 15 chapters, 75+ practice questions, full mock exam — all based on the official STO curriculum standard.",
+    "learnMoreLink": "Learn more about the {{trade}} Red Seal exam →",
+    "coursePageTitle": "{{trade}} Red Seal Exam Prep — Complete Study Guide ({{code}})",
     "discountedSpotsLeft": "{{count}} discounted spots left",
     "discountedSpotsLeftNone": "Full price",
     "saveAmount": "Save {{amount}}",
@@ -113,7 +126,26 @@
     "requestNewLink": "Request new link",
     "passwordRequired": "Password is required",
     "confirmPasswordRequired": "Please confirm your password",
-    "passwordMinLength": "Password must be at least 6 characters"
+    "passwordMinLength": "Password must be at least 6 characters",
+    "namePlaceholder": "John Doe",
+    "emailPlaceholder": "you@example.com",
+    "passwordPlaceholder": "••••••••",
+    "nameRequired": "Name is required",
+    "emailRequired": "Email is required",
+    "invalidEmail": "Invalid email address",
+    "nameMinLength": "Name must be at least 2 characters",
+    "seoLoginTitle": "Log In",
+    "seoLoginDescription": "Log in to your CertReady account.",
+    "seoRegisterTitle": "Create Account",
+    "seoRegisterDescription": "Create your CertReady account to purchase courses and track progress.",
+    "seoForgotTitle": "Forgot Password",
+    "seoForgotDescription": "Reset your CertReady account password.",
+    "seoResetTitle": "Reset Password",
+    "seoResetDescription": "Set a new password for your CertReady account.",
+    "seoResetSuccessTitle": "Password Reset",
+    "seoResetSuccessDescription": "Your CertReady password has been reset.",
+    "seoInvalidLinkTitle": "Invalid Reset Link",
+    "seoInvalidLinkDescription": "This password reset link is invalid or has expired."
   },
   "dashboard": {
     "welcome": "Welcome back, {{name}}!",
@@ -125,7 +157,9 @@
     "overallProgress": "Overall Progress",
     "practiceQuestions": "Practice Questions",
     "noCourses": "You haven't purchased any courses yet.",
-    "browseCourses": "Browse courses"
+    "browseCourses": "Browse courses",
+    "seoTitle": "Dashboard",
+    "seoDescription": "Your CertReady learning dashboard and course progress."
   },
   "profile": {
     "title": "Account & Profile",
@@ -151,7 +185,9 @@
     "purchaseHistory": "Purchase history",
     "purchaseHistoryEmpty": "No purchases yet.",
     "purchasedOn": "Purchased on",
-    "viewCourse": "View course"
+    "viewCourse": "View course",
+    "seoTitle": "Profile",
+    "seoDescription": "Manage your CertReady account and view purchase history."
   },
   "checkout": {
     "successTitle": "Payment Successful!",
@@ -161,7 +197,11 @@
     "cancelledTitle": "Payment Cancelled",
     "cancelledMessage": "Your payment was cancelled. No charges were made.",
     "returnToCourse": "Return to Course",
-    "backToHome": "Back to Home"
+    "backToHome": "Back to Home",
+    "seoSuccessTitle": "Payment Successful",
+    "seoSuccessDescription": "Your CertReady purchase was successful. You now have full access to your course.",
+    "seoCancelledTitle": "Payment Cancelled",
+    "seoCancelledDescription": "Your payment was cancelled. No charges were made."
   },
   "learn": {
     "progress": "Course Progress",
@@ -171,7 +211,9 @@
     "nextQuestion": "Next Question",
     "chapterNotFound": "Chapter not found",
     "chapterRequiresAccess": "This chapter requires full course access",
-    "progressSaved": "Great job! Chapter progress saved."
+    "progressSaved": "Great job! Chapter progress saved.",
+    "correct": "Correct",
+    "incorrect": "Incorrect"
   },
   "notFound": {
     "title": "Page Not Found",
@@ -286,5 +328,52 @@
       { "question": "What payment methods are accepted?", "answer": "We accept all major credit cards through our secure Stripe payment processor. Payment is processed securely and you'll receive immediate access upon purchase." },
       { "question": "Can I get a refund?", "answer": "Due to the digital nature of our courses, we do not offer refunds. However, you can preview the first 2 chapters for free before purchasing to ensure the course meets your needs." }
     ]
+  },
+  "coursesPage": {
+    "title": "Red Seal Exam Prep Courses — Canadian Trades Certification",
+    "subtitle": "Browse CertReady's Red Seal exam preparation courses. One-time purchase, lifetime access, and a free preview of the first 2 chapters for every trade. Based on the official Red Seal Occupational Standard.",
+    "courseTitleSuffix": "Red Seal Exam Prep",
+    "learnMoreAbout": "Learn more about the {{trade}} Red Seal exam →",
+    "comingSoonTitle": "Electrician Exam Prep",
+    "comingSoonDesc": "Comprehensive preparation for electrician certification"
+  },
+  "guidesPage": {
+    "title": "Red Seal Exam Study Guides",
+    "subtitle": "Free guides for each trade: exam overview, topic weightings, study tips, and frequently asked questions.",
+    "seoDescription": "Free study guides for Red Seal trades exams. Exam structure, weightings, study tips, and FAQs for Hairstylist, Plumber, and more.",
+    "readGuide": "Read guide →"
+  },
+  "tradeGuidePage": {
+    "home": "Home",
+    "studyGuides": "Study Guides",
+    "guideTitle": "{{tradeName}} Red Seal Exam — Complete Study Guide ({{tradeCode}})",
+    "introParagraph": "The {{tradeName}} Red Seal interprovincial exam is a {{count}}-question multiple-choice examination that tests knowledge across every aspect of the trade. Passing requires a minimum score of {{passMark}}%. This guide covers everything you need to know: exam structure, topic weightings, what to focus on, and how to prepare effectively.",
+    "overviewHeading": "{{tradeName}} Red Seal Exam — Overview",
+    "detail": "Detail",
+    "value": "Value",
+    "totalQuestions": "Total questions",
+    "passMark": "Pass mark",
+    "apprenticeshipHours": "Apprenticeship hours",
+    "apprenticeshipLevels": "Apprenticeship levels",
+    "examWeightingHeading": "What Is on the {{tradeName}} Red Seal Exam?",
+    "examWeightingSubtitle": "Exam weighting by topic area (official Red Seal distribution):",
+    "studyTipsHeading": "How to Study for the {{tradeName}} Red Seal Exam",
+    "faqHeading": "Frequently Asked Questions",
+    "ctaHeading": "Ready to Prepare? Try a Free Chapter",
+    "ctaSubtitle": "CertReady offers a comprehensive {{tradeName}} exam prep course — {{count}}+ practice questions, chapter-by-chapter content, and a full mock exam. The first 2 chapters are completely free.",
+    "viewCourseLink": "View the {{tradeName}} Course →",
+    "tryPracticeLink": "Try free practice questions →"
+  },
+  "practicePage": {
+    "home": "Home",
+    "studyGuides": "Study Guides",
+    "guide": "{{tradeName}} Guide",
+    "freePracticeQuestions": "Free Practice Questions",
+    "title": "Free {{tradeName}} Red Seal Practice Questions",
+    "subtitle": "Try {{count}} free practice questions with full explanations. No account required. Based on the official {{code}} Red Seal standard.",
+    "noFreeQuestions": "No free practice questions are available for this trade yet. Check out the full course for practice questions.",
+    "viewCourseBtn": "View {{tradeName}} Course",
+    "wantMorePractice": "Want more practice? The full {{tradeName}} course includes {{count}}+ questions and a full mock exam.",
+    "viewFullCourseBtn": "View Full {{tradeName}} Course"
   }
 }

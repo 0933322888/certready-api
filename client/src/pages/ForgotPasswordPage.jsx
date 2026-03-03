@@ -60,7 +60,7 @@ export default function ForgotPasswordPage() {
 
   return (
     <div className="min-h-screen flex items-center justify-center px-4 py-12">
-      <SEO noIndex title="Forgot Password" description="Reset your CertReady account password." />
+      <SEO noIndex title={t('auth.seoForgotTitle')} description={t('auth.seoForgotDescription')} />
       <Card className="w-full max-w-md">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-display font-bold text-text-primary mb-2">
@@ -83,7 +83,7 @@ export default function ForgotPasswordPage() {
               value={email}
               onChange={(e) => setEmail(e.target.value)}
               className="w-full px-4 py-2.5 bg-surface-2 border border-border rounded-lg text-text-primary placeholder-text-dim focus:outline-none focus:ring-2 focus:ring-accent"
-              placeholder="you@example.com"
+              placeholder={t('auth.emailPlaceholder')}
             />
           </div>
 

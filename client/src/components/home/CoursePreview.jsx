@@ -103,9 +103,9 @@ export default function CoursePreview() {
             <div className="flex-1">
               <Badge variant="warm" className="mb-4">{t('home.comingSoon')}</Badge>
               <h3 className="text-2xl font-display font-bold text-text-primary mb-2">
-                Electrician Exam Prep
+                {t('coursesPage.comingSoonTitle')}
               </h3>
-              <p className="text-text-muted mb-4">Comprehensive preparation for electrician certification</p>
+              <p className="text-text-muted mb-4">{t('coursesPage.comingSoonDesc')}</p>
             </div>
             <Button disabled className="w-full">{t('home.comingSoon')}</Button>
           </Card>

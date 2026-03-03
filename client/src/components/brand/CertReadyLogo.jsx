@@ -4,8 +4,11 @@
  * All use dark theme to match app background (#0B1120 / #111827).
  */
 
+import { useTranslation } from 'react-i18next';
+
 /** Full logo with tagline — for hero / marketing (280×60) */
 export function CertReadyLogoFull({ className = '', width = 280, height = 60 }) {
+  const { t } = useTranslation();
   return (
     <svg
       width={width}
@@ -14,7 +17,7 @@ export function CertReadyLogoFull({ className = '', width = 280, height = 60 }) 
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
-      aria-label="CertReady — Red Seal Exam Prep Canada"
+      aria-label={t('common.ariaLabelCertReadyLogo')}
     >
       <path
         d="M30 4 L52 12 L52 30 C52 42 42 51 30 55 C18 51 8 42 8 30 L8 12 Z"
@@ -89,6 +92,7 @@ export function CertReadyLogoFull({ className = '', width = 280, height = 60 }) 
 
 /** Compact logo (wordmark only) — for navbar & footer (200×42) */
 export function CertReadyLogoCompact({ className = '', width = 200, height = 42 }) {
+  const { t } = useTranslation();
   return (
     <svg
       width={width}
@@ -97,7 +101,7 @@ export function CertReadyLogoCompact({ className = '', width = 200, height = 42 
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
-      aria-label="CertReady"
+      aria-label={t('common.ariaLabelCertReadyShort')}
     >
       <path
         d="M21 3 L37 9 L37 21 C37 30 30 36.5 21 39.5 C12 36.5 5 30 5 21 L5 9 Z"
@@ -149,6 +153,7 @@ export function CertReadyLogoCompact({ className = '', width = 200, height = 42 
 
 /** Icon mark only — for favicon / small uses (32×32) */
 export function CertReadyLogoIcon({ className = '', size = 32 }) {
+  const { t } = useTranslation();
   return (
     <svg
       width={size}
@@ -157,7 +162,7 @@ export function CertReadyLogoIcon({ className = '', size = 32 }) {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
       className={className}
-      aria-label="CertReady"
+      aria-label={t('common.ariaLabelCertReadyShort')}
     >
       <rect width="32" height="32" rx="8" fill="#111827" />
       <path

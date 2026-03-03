@@ -1,16 +1,19 @@
+import { useTranslation } from 'react-i18next';
+
 export default function ProgressBar({ 
   value, 
   max = 100, 
   className = '',
   showLabel = true 
 }) {
+  const { t } = useTranslation();
   const percentage = Math.min(Math.max((value / max) * 100, 0), 100);
 
   return (
     <div className={`w-full ${className}`}>
       {showLabel && (
         <div className="flex justify-between items-center mb-2">
-          <span className="text-sm text-text-muted">Progress</span>
+          <span className="text-sm text-text-muted">{t('common.progress')}</span>
           <span className="text-sm font-medium text-accent">{Math.round(percentage)}%</span>
         </div>
       )}

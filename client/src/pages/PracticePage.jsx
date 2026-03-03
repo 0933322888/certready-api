@@ -43,29 +43,28 @@ export default function PracticePage() {
     <>
       <SEO {...seo} />
       <main className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <nav className="text-sm text-text-muted mb-8" aria-label="Breadcrumb">
-          <Link to="/" className="hover:text-accent">Home</Link>
+        <nav className="text-sm text-text-muted mb-8" aria-label={t('common.ariaLabelBreadcrumb')}>
+          <Link to="/" className="hover:text-accent">{t('practicePage.home')}</Link>
           <span className="mx-2">/</span>
-          <Link to={`/guides/${guide.slug}`} className="hover:text-accent">{guide.tradeName} Guide</Link>
+          <Link to={`/guides/${guide.slug}`} className="hover:text-accent">{t('practicePage.guide', { tradeName: guide.tradeName })}</Link>
           <span className="mx-2">/</span>
-          <span className="text-text-primary">Free Practice Questions</span>
+          <span className="text-text-primary">{t('practicePage.freePracticeQuestions')}</span>
         </nav>
 
         <h1 className="text-4xl font-display font-bold text-text-primary mb-4">
-          Free {guide.tradeName} Red Seal Practice Questions
+          {t('practicePage.title', { tradeName: guide.tradeName })}
         </h1>
         <p className="text-lg text-text-muted mb-8">
-          Try {freeQuestions.length} free practice questions with full explanations. No account required.
-          Based on the official {guide.tradeCode} Red Seal standard.
+          {t('practicePage.subtitle', { count: freeQuestions.length, code: guide.tradeCode })}
         </p>
 
         {freeQuestions.length === 0 ? (
           <Card>
             <p className="text-text-muted mb-4">
-              No free practice questions are available for this trade yet. Check out the full course for practice questions.
+              {t('practicePage.noFreeQuestions')}
             </p>
             <Link to={`/courses/${guide.courseSlug}`}>
-              <Button>View {guide.tradeName} Course</Button>
+              <Button>{t('practicePage.viewCourseBtn', { tradeName: guide.tradeName })}</Button>
             </Link>
           </Card>
         ) : (
@@ -96,10 +95,10 @@ export default function PracticePage() {
 
         <section className="mt-12 pt-8 border-t border-border">
           <p className="text-text-muted mb-4">
-            Want more practice? The full {guide.tradeName} course includes {course.totalQuestions}+ questions and a full mock exam.
+            {t('practicePage.wantMorePractice', { tradeName: guide.tradeName, count: course.totalQuestions })}
           </p>
           <Link to={`/courses/${guide.courseSlug}`}>
-            <Button>View Full {guide.tradeName} Course</Button>
+            <Button>{t('practicePage.viewFullCourseBtn', { tradeName: guide.tradeName })}</Button>
           </Link>
         </section>
       </main>

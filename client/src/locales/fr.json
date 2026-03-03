@@ -1,4 +1,13 @@
 {
+  "common": {
+    "ariaLabelClose": "Fermer",
+    "ariaLabelToggleMenu": "Ouvrir le menu",
+    "ariaLabelBreadcrumb": "Fil d'Ariane",
+    "ariaLabelSelectLanguage": "Choisir la langue",
+    "ariaLabelCertReadyLogo": "CertReady — Préparation aux examens Sceau rouge Canada",
+    "ariaLabelCertReadyShort": "CertReady",
+    "progress": "Progrès"
+  },
   "nav": {
     "home": "Accueil",
     "courses": "Cours",
@@ -13,6 +22,7 @@
     "tagline": "Préparation aux examens pour les candidats à la certification des métiers spécialisés de l'Ontario.",
     "courses": "Cours",
     "allCourses": "Tous les cours",
+    "studyGuides": "Guides d'étude",
     "hairstylist332a": "Coiffure 332A",
     "plumber306a": "Plombier 306A",
     "support": "Support",
@@ -45,10 +55,13 @@
     "step1Title": "Parcourir les cours",
     "step1Desc": "Explorez les cours de préparation aux examens pour votre métier",
     "step2Title": "Aperçu gratuit",
-    "step2Desc": "Essayez le chapitre 1 gratuitement pour voir si ça vous convient",
+    "step2Desc": "Essayez les deux premiers chapitres gratuitement pour voir si ça vous convient",
     "step3Title": "Acheter et étudier",
     "step3Desc": "Obtenez l'accès complet et étudiez à votre rythme",
     "availableCourses": "Cours disponibles",
+    "examPrepCoursesHeading": "Cours de préparation aux examens pour les métiers canadiens",
+    "whatsIncludedHeading": "Contenu de chaque cours",
+    "trustedByHeading": "Apprécié par les apprentis partout au Canada",
     "startJourney": "Commencez votre parcours de certification aujourd'hui",
     "whatsInside": "Contenu du cours",
     "whatsInsideDesc": "Tout ce dont vous avez besoin pour réussir votre certification des métiers spécialisés de l'Ontario",
@@ -68,7 +81,7 @@
       "Accès à vie à tout le matériel du cours",
       "Sans abonnement — étudiez à votre rythme",
       "Basé sur les normes officielles du curriculum des métiers spécialisés de l'Ontario",
-      "Aperçu gratuit du chapitre 1 avant l'achat"
+      "Aperçu gratuit des deux premiers chapitres avant l'achat"
     ],
     "viewCourses": "Voir les cours",
     "oneTime": "Paiement unique",
@@ -85,7 +98,7 @@
       { "question": "Et si je rate l'examen ?", "answer": "Nous ne pouvons pas garantir que vous réussirez, mais nos cours sont conçus pour vous donner la meilleure préparation possible. Vous aurez un accès à vie pour revoir le matériel et repasser l'examen si nécessaire." },
       { "question": "Est-ce du matériel officiel STO ?", "answer": "Nos cours sont basés sur les normes officielles du curriculum des métiers spécialisés de l'Ontario et sont conçus pour vous aider à vous préparer à l'examen de certification. Nous ne sommes toutefois pas affiliés à STO." },
       { "question": "Quels modes de paiement sont acceptés ?", "answer": "Nous acceptons toutes les cartes de crédit principales via notre processeur de paiement sécurisé Stripe. Le paiement est traité de manière sécurisée et vous recevrez un accès immédiat après l'achat." },
-      { "question": "Puis-je obtenir un remboursement ?", "answer": "En raison de la nature numérique de nos cours, nous n'offrons pas de remboursement. Vous pouvez toutefois prévisualiser le chapitre 1 gratuitement avant d'acheter pour vous assurer que le cours répond à vos besoins." }
+      { "question": "Puis-je obtenir un remboursement ?", "answer": "En raison de la nature numérique de nos cours, nous n'offrons pas de remboursement. Vous pouvez toutefois prévisualiser les deux premiers chapitres gratuitement avant d'acheter pour vous assurer que le cours répond à vos besoins." }
     ]
   },
   "stats": {
@@ -96,6 +109,7 @@
   },
   "course": {
     "chapters": "Chapitres du cours",
+    "whatsCovered": "Contenu de ce cours",
     "freePreview": "Aperçu gratuit",
     "view": "Voir",
     "whatsIncluded": "Contenu inclus",
@@ -107,11 +121,15 @@
     "oneTime": "Paiement unique",
     "processing": "Traitement en cours...",
     "purchase": "Acheter — {{price}}",
-    "checkoutFailed": "Échec du paiement. Veuillez réessayer.",
+    "checkoutFailed": "Échec du démarrage du paiement. Veuillez réessayer.",
     "discountedSpotsLeft": "{{count}} places à prix réduit restantes",
     "discountedSpotsLeftNone": "Prix régulier",
     "saveAmount": "Économisez {{amount}}",
-    "launchPrice": "Prix de lancement"
+    "launchPrice": "Prix de lancement",
+    "skilledTradesOntario": "Métiers spécialisés de l'Ontario",
+    "descriptionFallback": "Réussissez votre examen de certification en coiffure (332A) des métiers spécialisés de l'Ontario. 15 chapitres, plus de 75 questions pratiques, examen blanc complet — basé sur la norme officielle STO.",
+    "learnMoreLink": "En savoir plus sur l'examen Sceau rouge {{trade}} →",
+    "coursePageTitle": "{{trade}} Préparation à l'examen Sceau rouge — Guide complet ({{code}})"
   },
   "auth": {
     "welcomeBack": "Bon retour",
@@ -159,7 +177,26 @@
     "requestNewLink": "Demander un nouveau lien",
     "passwordRequired": "Le mot de passe est requis",
     "confirmPasswordRequired": "Veuillez confirmer votre mot de passe",
-    "passwordMinLength": "Le mot de passe doit contenir au moins 6 caractères"
+    "passwordMinLength": "Le mot de passe doit contenir au moins 6 caractères",
+    "namePlaceholder": "Jean Dupont",
+    "emailPlaceholder": "vous@exemple.com",
+    "passwordPlaceholder": "••••••••",
+    "nameRequired": "Le nom est requis",
+    "emailRequired": "Le courriel est requis",
+    "invalidEmail": "Adresse courriel invalide",
+    "nameMinLength": "Le nom doit contenir au moins 2 caractères",
+    "seoLoginTitle": "Connexion",
+    "seoLoginDescription": "Connectez-vous à votre compte CertReady.",
+    "seoRegisterTitle": "Créer un compte",
+    "seoRegisterDescription": "Créez votre compte CertReady pour acheter des cours et suivre votre progression.",
+    "seoForgotTitle": "Mot de passe oublié",
+    "seoForgotDescription": "Réinitialisez le mot de passe de votre compte CertReady.",
+    "seoResetTitle": "Réinitialiser le mot de passe",
+    "seoResetDescription": "Définissez un nouveau mot de passe pour votre compte CertReady.",
+    "seoResetSuccessTitle": "Mot de passe réinitialisé",
+    "seoResetSuccessDescription": "Votre mot de passe CertReady a été réinitialisé.",
+    "seoInvalidLinkTitle": "Lien invalide ou expiré",
+    "seoInvalidLinkDescription": "Ce lien de réinitialisation est invalide ou a expiré."
   },
   "dashboard": {
     "welcome": "Bon retour, {{name}} !",
@@ -171,7 +208,9 @@
     "overallProgress": "Progrès global",
     "practiceQuestions": "Questions pratiques",
     "noCourses": "Vous n'avez pas encore acheté de cours.",
-    "browseCourses": "Voir les cours"
+    "browseCourses": "Voir les cours",
+    "seoTitle": "Tableau de bord",
+    "seoDescription": "Votre tableau de bord CertReady et la progression de vos cours."
   },
   "profile": {
     "title": "Compte et profil",
@@ -197,7 +236,9 @@
     "purchaseHistory": "Historique d'achats",
     "purchaseHistoryEmpty": "Aucun achat pour le moment.",
     "purchasedOn": "Acheté le",
-    "viewCourse": "Voir le cours"
+    "viewCourse": "Voir le cours",
+    "seoTitle": "Profil",
+    "seoDescription": "Gérez votre compte CertReady et consultez l'historique d'achats."
   },
   "checkout": {
     "successTitle": "Paiement réussi !",
@@ -207,7 +248,11 @@
     "cancelledTitle": "Paiement annulé",
     "cancelledMessage": "Votre paiement a été annulé. Aucun prélèvement n'a été effectué.",
     "returnToCourse": "Retour au cours",
-    "backToHome": "Retour à l'accueil"
+    "backToHome": "Retour à l'accueil",
+    "seoSuccessTitle": "Paiement réussi",
+    "seoSuccessDescription": "Votre achat CertReady a été effectué. Vous avez maintenant accès à votre cours.",
+    "seoCancelledTitle": "Paiement annulé",
+    "seoCancelledDescription": "Votre paiement a été annulé. Aucun prélèvement n'a été effectué."
   },
   "learn": {
     "progress": "Progrès du cours",
@@ -217,7 +262,9 @@
     "nextQuestion": "Question suivante",
     "chapterNotFound": "Chapitre introuvable",
     "chapterRequiresAccess": "Ce chapitre nécessite l'accès au cours complet",
-    "progressSaved": "Bravo ! Progrès du chapitre enregistré."
+    "progressSaved": "Bravo ! Progrès du chapitre enregistré.",
+    "correct": "Correct",
+    "incorrect": "Incorrect"
   },
   "notFound": {
     "title": "Page non trouvée",
@@ -281,5 +328,52 @@
     "title": "Ce chapitre fait partie du cours complet",
     "description": "Obtenez l'accès à tous les 15 chapitres, plus de 75 questions pratiques et le guide d'étude complet.",
     "getAccess": "Obtenir l'accès complet"
+  },
+  "guidesPage": {
+    "title": "Guides d'étude — Examens Sceau rouge",
+    "subtitle": "Guides gratuits par métier : aperçu de l'examen, pondération des sujets, conseils d'étude et questions fréquentes.",
+    "seoDescription": "Guides d'étude gratuits pour les examens Sceau rouge. Structure, pondération, conseils et FAQ pour Coiffure, Plomberie et plus.",
+    "readGuide": "Lire le guide →"
+  },
+  "tradeGuidePage": {
+    "home": "Accueil",
+    "studyGuides": "Guides d'étude",
+    "guideTitle": "{{tradeName}} Examen Sceau rouge — Guide complet ({{tradeCode}})",
+    "introParagraph": "L'examen interprovincial Sceau rouge {{tradeName}} comporte {{count}} questions à choix multiples couvrant tous les aspects du métier. La note de passage est de {{passMark}} %. Ce guide présente la structure de l'examen, les pondérations, les sujets à réviser et comment bien vous préparer.",
+    "overviewHeading": "{{tradeName}} Examen Sceau rouge — Aperçu",
+    "detail": "Détail",
+    "value": "Valeur",
+    "totalQuestions": "Nombre de questions",
+    "passMark": "Note de passage",
+    "apprenticeshipHours": "Heures d'apprentissage",
+    "apprenticeshipLevels": "Niveaux d'apprentissage",
+    "examWeightingHeading": "Contenu de l'examen Sceau rouge {{tradeName}}",
+    "examWeightingSubtitle": "Pondération par domaine (répartition officielle Sceau rouge) :",
+    "studyTipsHeading": "Comment étudier pour l'examen Sceau rouge {{tradeName}}",
+    "faqHeading": "Questions fréquentes",
+    "ctaHeading": "Prêt à vous préparer ? Essayez un chapitre gratuit",
+    "ctaSubtitle": "CertReady propose un cours de préparation {{tradeName}} — plus de {{count}} questions pratiques, contenu par chapitre et examen blanc. Les 2 premiers chapitres sont gratuits.",
+    "viewCourseLink": "Voir le cours {{tradeName}} →",
+    "tryPracticeLink": "Essayez les questions pratiques gratuites →"
+  },
+  "practicePage": {
+    "home": "Accueil",
+    "studyGuides": "Guides d'étude",
+    "guide": "Guide {{tradeName}}",
+    "freePracticeQuestions": "Questions pratiques gratuites",
+    "title": "Questions pratiques Sceau rouge {{tradeName}} — Gratuit",
+    "subtitle": "Essayez {{count}} questions pratiques gratuites avec explications. Compte non requis. Basé sur la norme officielle Sceau rouge {{code}}.",
+    "noFreeQuestions": "Aucune question pratique gratuite pour ce métier pour le moment. Consultez le cours complet pour les questions pratiques.",
+    "viewCourseBtn": "Voir le cours {{tradeName}}",
+    "wantMorePractice": "Envie de plus de pratique ? Le cours complet {{tradeName}} comprend plus de {{count}} questions et un examen blanc.",
+    "viewFullCourseBtn": "Voir le cours complet {{tradeName}}"
+  },
+  "coursesPage": {
+    "title": "Cours de préparation aux examens Sceau rouge — Certification des métiers au Canada",
+    "subtitle": "Parcourez les cours de préparation à l'examen Sceau rouge de CertReady. Paiement unique, accès à vie et aperçu gratuit des deux premiers chapitres pour chaque métier. Basé sur la norme professionnelle officielle du Sceau rouge.",
+    "courseTitleSuffix": "Préparation à l'examen Sceau rouge",
+    "learnMoreAbout": "En savoir plus sur l'examen Sceau rouge {{trade}} →",
+    "comingSoonTitle": "Préparation à l'examen d'électricien",
+    "comingSoonDesc": "Préparation complète pour la certification en électricité"
   }
 }

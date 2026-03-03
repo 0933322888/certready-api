@@ -60,7 +60,7 @@ export default function Navbar() {
               <button
                 onClick={() => setLangMenuOpen(!langMenuOpen)}
                 className="flex items-center space-x-1 px-3 py-2 rounded-lg text-text-muted hover:text-text-primary hover:bg-surface-2 transition-colors text-sm"
-                aria-label="Select language"
+                aria-label={t('common.ariaLabelSelectLanguage')}
               >
                 <span className="uppercase font-medium">{i18n.language}</span>
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -138,7 +138,7 @@ export default function Navbar() {
           <button
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
             className="md:hidden text-text-primary p-2"
-            aria-label="Toggle menu"
+            aria-label={t('common.ariaLabelToggleMenu')}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               {mobileMenuOpen ? (

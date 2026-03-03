@@ -44,7 +44,7 @@ export default function DashboardPage() {
 
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <SEO noIndex title="Dashboard" description="Your CertReady learning dashboard and course progress." />
+      <SEO noIndex title={t('dashboard.seoTitle')} description={t('dashboard.seoDescription')} />
       <div className="mb-8">
         <h1 className="text-4xl font-display font-bold text-text-primary mb-2">
           {t('dashboard.welcome', { name: user?.name })}
