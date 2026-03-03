@@ -135,6 +135,8 @@
     "passwordsNoMatch": "Les mots de passe ne correspondent pas",
     "accountCreated": "Compte créé avec succès !",
     "registrationFailed": "Échec de l'inscription. Veuillez réessayer.",
+    "orContinueWith": "Ou continuer avec",
+    "googleSignInFailed": "Échec de la connexion Google. Veuillez réessayer.",
     "forgotPassword": "Mot de passe oublié ?",
     "forgotPasswordDesc": "Entrez votre courriel et nous vous enverrons un lien pour réinitialiser votre mot de passe.",
     "sendResetLink": "Envoyer le lien",

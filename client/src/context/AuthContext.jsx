@@ -63,6 +63,12 @@ export function AuthProvider({ children }) {
     return res.data;
   };
 
+  const loginWithGoogle = async (credential) => {
+    const res = await api.post('/auth/google', { credential });
+    dispatch({ type: 'LOGIN_SUCCESS', payload: res.data });
+    return res.data;
+  };
+
   const logout = () => dispatch({ type: 'LOGOUT' });
 
   // Helper: check if user owns a course
@@ -86,6 +92,7 @@ export function AuthProvider({ children }) {
       ...state, 
       login, 
       register, 
+      loginWithGoogle, 
       logout, 
       hasPurchased,
       hasPurchasedBySlug,

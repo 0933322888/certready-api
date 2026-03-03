@@ -1,11 +1,15 @@
 import express from 'express';
 import jwt from 'jsonwebtoken';
 import crypto from 'crypto';
+import { OAuth2Client } from 'google-auth-library';
 import User from '../models/User.js';
 import { protect } from '../middleware/auth.js';
 import { getResetExpiry, sendPasswordResetEmail } from '../utils/sendEmail.js';
 
 const router = express.Router();
+const googleClient = process.env.GOOGLE_CLIENT_ID
+  ? new OAuth2Client(process.env.GOOGLE_CLIENT_ID)
+  : null;
 
 const generateToken = (id) =>
   jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: '30d' });
@@ -82,6 +86,84 @@ router.post('/login', async (req, res) => {
     });
   } catch (error) {
     res.status(500).json({ message: error.message });
+  }
+});
+
+// @route   POST /api/auth/google
+// @desc    Sign in or sign up with Google (ID token from frontend)
+// @access  Public
+router.post('/google', async (req, res) => {
+  try {
+    const { credential } = req.body;
+    if (!credential) {
+      return res.status(400).json({ message: 'Google credential is required' });
+    }
+    if (!googleClient) {
+      return res.status(503).json({ message: 'Google sign-in is not configured' });
+    }
+
+    const ticket = await googleClient.verifyIdToken({
+      idToken: credential,
+      audience: process.env.GOOGLE_CLIENT_ID,
+    });
+    const payload = ticket.getPayload();
+    const { sub: googleId, email, name } = payload;
+    const emailLower = (email || '').toLowerCase();
+    if (!emailLower) {
+      return res.status(400).json({ message: 'Google account must have an email' });
+    }
+
+    let user = await User.findOne({ googleId });
+    if (user) {
+      res.json({
+        token: generateToken(user._id),
+        user: {
+          id: user._id,
+          name: user.name,
+          email: user.email,
+          purchases: user.purchases,
+        },
+      });
+      return;
+    }
+
+    user = await User.findOne({ email: emailLower });
+    if (user) {
+      user.googleId = googleId;
+      await user.save({ validateBeforeSave: false });
+      res.json({
+        token: generateToken(user._id),
+        user: {
+          id: user._id,
+          name: user.name,
+          email: user.email,
+          purchases: user.purchases,
+        },
+      });
+      return;
+    }
+
+    user = await User.create({
+      name: name || emailLower.split('@')[0],
+      email: emailLower,
+      googleId,
+    });
+
+    res.status(201).json({
+      token: generateToken(user._id),
+      user: {
+        id: user._id,
+        name: user.name,
+        email: user.email,
+        purchases: user.purchases || [],
+      },
+    });
+  } catch (error) {
+    console.error('Google auth error:', error.message);
+    if (error.message?.includes('Token used too late') || error.message?.includes('expired')) {
+      return res.status(401).json({ message: 'Google sign-in expired. Please try again.' });
+    }
+    res.status(500).json({ message: error.message || 'Google sign-in failed' });
   }
 });
 
