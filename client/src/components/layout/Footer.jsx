@@ -64,6 +64,11 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
+                <Link to="/about" className="text-text-muted hover:text-accent transition-colors">
+                  {t('footer.about')}
+                </Link>
+              </li>
+              <li>
                 <Link to="/contact" className="text-text-muted hover:text-accent transition-colors">
                   {t('footer.contact')}
                 </Link>

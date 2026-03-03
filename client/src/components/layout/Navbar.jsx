@@ -42,6 +42,9 @@ export default function Navbar() {
             <Link to="/courses" className="text-text-muted hover:text-text-primary transition-colors">
               {t('nav.courses')}
             </Link>
+            <Link to="/about" className="text-text-muted hover:text-text-primary transition-colors">
+              {t('nav.about')}
+            </Link>
             {user && (
               <>
                 <Link to="/dashboard" className="text-text-muted hover:text-text-primary transition-colors">
@@ -168,6 +171,13 @@ export default function Navbar() {
               className="block text-text-primary hover:text-accent transition-colors"
             >
               {t('nav.courses')}
+            </Link>
+            <Link
+              to="/about"
+              onClick={() => setMobileMenuOpen(false)}
+              className="block text-text-primary hover:text-accent transition-colors"
+            >
+              {t('nav.about')}
             </Link>
             <div className="flex items-center gap-2 py-2 border-t border-border mt-2">
               <span className="text-text-muted text-sm">{t('nav.language')}:</span>

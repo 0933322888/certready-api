@@ -2269,7 +2269,7 @@ export const plumberCourseData = {
   subtitle: 'Complete study guide — Red Seal Interprovincial Exam, 125 questions',
   trade: 'Plumber',
   tradeCode: '306A',
-  price: 5999, // $59.99 CAD in cents
+  price: 4999, // $49.99 CAD in cents
   currency: 'CAD',
   totalChapters: _totalChapters,
   totalQuestions: _totalQuestions,

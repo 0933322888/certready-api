@@ -11,6 +11,7 @@
   "nav": {
     "home": "Home",
     "courses": "Courses",
+    "about": "About Us",
     "dashboard": "Dashboard",
     "profile": "Profile",
     "language": "Language",
@@ -28,6 +29,7 @@
     "support": "Support",
     "faq": "FAQ",
     "contact": "Contact",
+    "about": "About Us",
     "legal": "Legal",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
@@ -280,6 +282,18 @@
     "send": "Open email",
     "defaultSubject": "CertReady – Contact",
     "emailBody": "Name: {{name}}\nEmail: {{email}}\n\nMessage:\n{{message}}"
+  },
+  "about": {
+    "title": "About Us",
+    "seoTitle": "About CertReady — Red Seal Exam Prep",
+    "seoDescription": "CertReady started with the Hairstylist course. Learn about our team and how trade professionals help shape our courses.",
+    "intro": "CertReady helps Canadian tradespeople prepare for Red Seal and Skilled Trades Ontario certification exams. Our courses are built on official curriculum standards and designed with input from experienced professionals.",
+    "hairstylistHeading": "Starting with the Hairstylist course",
+    "hairstylistPara": "The platform began with our Hairstylist (332A) exam prep course. To ensure the content is accurate and relevant, we worked with a practising professional from the trade.",
+    "marynaBio": "Maryna V. was involved in the composition of the Hairstylist course. She is a professional with over 15 years of experience in the trade and helped align the material with real-world practice and exam expectations.",
+    "cooperateHeading": "Work with us to improve a course",
+    "cooperatePara": "If you are a professional in another trade with feedback or ideas on how to improve any of our courses, we would be glad to cooperate. Get in touch — we value input from practising tradespeople and educators.",
+    "contactUs": "Contact us"
   },
   "lockOverlay": {
     "title": "This chapter is part of the full course",

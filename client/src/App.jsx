@@ -27,6 +27,7 @@ const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
 const TermsPage = lazy(() => import('./pages/TermsPage'));
 const PrivacyPage = lazy(() => import('./pages/PrivacyPage'));
 const ContactPage = lazy(() => import('./pages/ContactPage'));
+const AboutPage = lazy(() => import('./pages/AboutPage'));
 const ForgotPasswordPage = lazy(() => import('./pages/ForgotPasswordPage'));
 const ResetPasswordPage = lazy(() => import('./pages/ResetPasswordPage'));
 
@@ -69,6 +70,7 @@ export default function App() {
             <Route path="/terms" element={<TermsPage />} />
             <Route path="/privacy" element={<PrivacyPage />} />
             <Route path="/contact" element={<ContactPage />} />
+            <Route path="/about" element={<AboutPage />} />
             <Route path="/forgot-password" element={<ForgotPasswordPage />} />
             <Route path="/reset-password" element={<ResetPasswordPage />} />
             <Route path="/dashboard" element={

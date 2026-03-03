@@ -11,6 +11,7 @@
   "nav": {
     "home": "Accueil",
     "courses": "Cours",
+    "about": "À propos",
     "dashboard": "Tableau de bord",
     "profile": "Profil",
     "language": "Langue",
@@ -28,6 +29,7 @@
     "support": "Support",
     "faq": "FAQ",
     "contact": "Contact",
+    "about": "À propos",
     "legal": "Mentions légales",
     "privacy": "Politique de confidentialité",
     "terms": "Conditions d'utilisation",
@@ -331,6 +333,18 @@
     "send": "Ouvrir l'e-mail",
     "defaultSubject": "CertReady – Contact",
     "emailBody": "Nom : {{name}}\nCourriel : {{email}}\n\nMessage :\n{{message}}"
+  },
+  "about": {
+    "title": "À propos de nous",
+    "seoTitle": "À propos de CertReady — Préparation aux examens Sceau rouge",
+    "seoDescription": "CertReady a commencé avec le cours de coiffure. Découvrez notre équipe et comment les professionnels des métiers contribuent à nos cours.",
+    "intro": "CertReady aide les travailleurs des métiers canadiens à se préparer aux examens de certification Sceau rouge et des métiers spécialisés de l'Ontario. Nos cours sont basés sur les normes officielles du curriculum et conçus avec l'apport de professionnels expérimentés.",
+    "hairstylistHeading": "En commençant par le cours de coiffure",
+    "hairstylistPara": "La plateforme a débuté avec notre cours de préparation à l'examen Coiffure (332A). Pour garantir l'exactitude et la pertinence du contenu, nous avons collaboré avec une professionnelle en exercice.",
+    "marynaBio": "Maryna V. a participé à l'élaboration du cours de coiffure. Elle est une professionnelle avec plus de 15 ans d'expérience dans le métier et a contribué à aligner le contenu sur la pratique et les attentes de l'examen.",
+    "cooperateHeading": "Collaborer pour améliorer un cours",
+    "cooperatePara": "Si vous êtes un professionnel d'un autre métier avec des commentaires ou des idées pour améliorer l'un de nos cours, nous serons ravis de coopérer. Contactez-nous — nous valorisons l'apport des travailleurs et formateurs en exercice.",
+    "contactUs": "Nous contacter"
   },
   "lockOverlay": {
     "title": "Ce chapitre fait partie du cours complet",

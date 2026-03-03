@@ -2,6 +2,7 @@ import { hairstylistCourse as courseEn } from './hairstylistCourse';
 import { hairstylistCourseFr } from './hairstylistCourse.fr';
 import plumberCourseData from './plumberCourse';
 import plumberCourseDataFR from './plumberCourse.fr';
+import plumberCourseDataRU from './plumberCourse.ru';
 
 const coursesByLang = {
   en: {
@@ -11,6 +12,10 @@ const coursesByLang = {
   fr: {
     'hairstylist-332a': hairstylistCourseFr,
     'plumber-306a': plumberCourseDataFR,
+  },
+  ru: {
+    'hairstylist-332a': courseEn,
+    'plumber-306a': plumberCourseDataRU,
   },
 };
 
@@ -30,4 +35,5 @@ export function getCourse(slug, lang = 'en') {
 export const SUPPORTED_LANGUAGES = [
   { code: 'en', label: 'English' },
   { code: 'fr', label: 'Français' },
+  { code: 'ru', label: 'Русский' },
 ];
