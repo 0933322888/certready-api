@@ -2112,4 +2112,5 @@ export const getAdjacentChapters = (chapterId, course = hairstylistCourse) => {
 export const getTotalQuestions = (course = hairstylistCourse) =>
   getAllChapters(course).reduce((sum, ch) => sum + (ch.practiceQuestions?.length || 0), 0);
 
-export default hairstylistCourseFR;
+export { hairstylistCourse as hairstylistCourseFr };
+export default hairstylistCourse;
