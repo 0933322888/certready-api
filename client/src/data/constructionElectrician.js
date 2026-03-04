@@ -2392,7 +2392,7 @@ const electricianCourse = {
     subtitle: 'Complete study guide — Red Seal Interprovincial Exam, 100 questions',
     trade: 'Construction Electrician',
     tradeCode: '309A',
-    price: 5999, // $59.99 CAD in cents
+    price: 4999, // $49.99 CAD in cents
     currency: 'CAD',
     totalChapters: _elecTotalChapters,
     totalQuestions: _elecTotalQuestions,

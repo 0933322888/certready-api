@@ -2232,7 +2232,7 @@ const plumberCourseFR = {
     subtitle: 'Guide d\'étude complet — Examen interprovincial Sceau rouge, 125 questions',
     trade: 'Plombier',
     tradeCode: '306A',
-    price: 5999,
+    price: 4999,
     currency: 'CAD',
     totalChapters: _totalChapters,
     totalQuestions: _totalQuestions,
