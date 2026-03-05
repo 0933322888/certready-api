@@ -26,6 +26,7 @@ import promosRoutes from './routes/promos.js';
 import userRoutes from './routes/users.js';
 import answerRoutes from './routes/answers.js';
 import contactRoutes from './routes/contact.js';
+import practiceRoutes from './routes/practice.js';
 
 connectDB();
 
@@ -44,6 +45,7 @@ app.use('/api/promos', promosRoutes);
 app.use('/api/users', userRoutes);
 app.use('/api/answers', answerRoutes);
 app.use('/api/contact', contactRoutes);
+app.use('/api/practice', practiceRoutes);
 
 app.get('/api/health', (_, res) => res.json({ status: 'ok' }));
 

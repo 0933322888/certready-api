@@ -1,0 +1,134 @@
+import express from 'express';
+import PracticeQuestion from '../models/PracticeQuestion.js';
+import Course from '../models/Course.js';
+import { optionalProtect } from '../middleware/auth.js';
+
+const router = express.Router();
+
+/** tradeSlug (URL) → course slug for purchase check */
+const TRADE_SLUG_TO_COURSE_SLUG = {
+  'construction-electrician': 'construction-electrician-309a',
+  plumber: 'plumber-306a',
+  hairstylist: 'hairstylist-332a',
+};
+
+/**
+ * GET /api/practice/:tradeSlug/questions
+ * - Free users (not logged in or no course purchase): first 20 questions by order/_id (same every time).
+ * - Paid users (logged in + purchased course for this trade): random set, limit 1–200.
+ * Query: limit (default 20), topics (optional comma-separated topicIds to filter)
+ */
+router.get('/:tradeSlug/questions', optionalProtect, async (req, res) => {
+  try {
+    const { tradeSlug } = req.params;
+    const limit = Math.min(Math.max(1, parseInt(req.query.limit, 10) || 20), 200);
+    const topicsParam = req.query.topics;
+    const topicIds = topicsParam
+      ? topicsParam.split(',').map((t) => t.trim()).filter(Boolean)
+      : null;
+
+    const match = { tradeSlug };
+    if (topicIds && topicIds.length > 0) {
+      match.topicId = { $in: topicIds };
+    }
+
+    const courseSlug = TRADE_SLUG_TO_COURSE_SLUG[tradeSlug];
+    let hasFullAccess = false;
+    if (req.user && courseSlug) {
+      const course = await Course.findOne({ slug: courseSlug, isPublished: true }).select('_id');
+      if (course && req.user.purchases) {
+        const purchaseIds = req.user.purchases.map((id) => id.toString());
+        hasFullAccess = purchaseIds.includes(course._id.toString());
+      }
+    }
+
+    let questions;
+    if (hasFullAccess) {
+      questions = await PracticeQuestion.aggregate([
+        { $match: match },
+        { $sample: { size: limit } },
+        {
+          $project: {
+            _id: 1,
+            tradeSlug: 1,
+            topicId: 1,
+            topicLabel: 1,
+            question: 1,
+            options: 1,
+            correctIndex: 1,
+            explanation: 1,
+          },
+        },
+      ]);
+    } else {
+      const freeLimit = Math.min(limit, 20);
+      questions = await PracticeQuestion.aggregate([
+        { $match: match },
+        { $sort: { order: 1, _id: 1 } },
+        { $limit: freeLimit },
+        {
+          $project: {
+            _id: 1,
+            tradeSlug: 1,
+            topicId: 1,
+            topicLabel: 1,
+            question: 1,
+            options: 1,
+            correctIndex: 1,
+            explanation: 1,
+          },
+        },
+      ]);
+    }
+
+    const normalized = questions.map((q) => ({
+      id: q._id.toString(),
+      tradeSlug: q.tradeSlug,
+      topicId: q.topicId,
+      topicLabel: q.topicLabel,
+      question: q.question,
+      options: q.options,
+      correctIndex: q.correctIndex,
+      explanation: q.explanation || '',
+    }));
+
+    res.json({ questions: normalized });
+  } catch (error) {
+    res.status(500).json({ message: error.message || 'Failed to load questions' });
+  }
+});
+
+/**
+ * GET /api/practice/:tradeSlug/topics
+ * Returns list of topics (topicId, topicLabel) for a trade for filtering/display.
+ */
+router.get('/:tradeSlug/topics', async (req, res) => {
+  try {
+    const { tradeSlug } = req.params;
+    const topics = await PracticeQuestion.aggregate([
+      { $match: { tradeSlug } },
+      { $group: { _id: '$topicId', topicLabel: { $first: '$topicLabel' } } },
+      { $sort: { _id: 1 } },
+      { $project: { topicId: '$_id', topicLabel: 1, _id: 0 } },
+    ]);
+    res.json({ topics });
+  } catch (error) {
+    res.status(500).json({ message: error.message || 'Failed to load topics' });
+  }
+});
+
+/**
+ * GET /api/practice/:tradeSlug/count
+ * Returns total question count for a trade (for display on practice list page).
+ */
+router.get('/:tradeSlug/count', async (req, res) => {
+  try {
+    const { tradeSlug } = req.params;
+    const count = await PracticeQuestion.countDocuments({ tradeSlug });
+    res.json({ count });
+  } catch (error) {
+    res.status(500).json({ message: error.message || 'Failed to get count' });
+  }
+});
+
+export default router;

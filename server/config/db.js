@@ -1,8 +1,13 @@
 import mongoose from 'mongoose';
 
 const connectDB = async () => {
+  const uri = process.env.MONGO_URI;
+  if (!uri || typeof uri !== 'string') {
+    console.error('MONGO_URI must be a non-empty string. Set it in server/.env');
+    process.exit(1);
+  }
   try {
-    const conn = await mongoose.connect(process.env.MONGO_URI);
+    const conn = await mongoose.connect(uri);
     console.log(`MongoDB Connected: ${conn.connection.host}`);
   } catch (err) {
     console.error(err.message);

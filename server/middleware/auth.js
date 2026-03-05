@@ -22,6 +22,25 @@ const protect = async (req, res, next) => {
   }
 };
 
+/** Same as protect but does not reject: if no/invalid token, sets req.user = null and continues. */
+const optionalProtect = async (req, res, next) => {
+  let token;
+  if (req.headers.authorization?.startsWith('Bearer ')) {
+    token = req.headers.authorization.split(' ')[1];
+  }
+  if (!token) {
+    req.user = null;
+    return next();
+  }
+  try {
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
+    req.user = await User.findById(decoded.id).select('-password');
+  } catch {
+    req.user = null;
+  }
+  next();
+};
+
 /** Requires protect first. Checks req.user.email is in ADMIN_EMAILS (comma-separated). */
 const requireAdmin = (req, res, next) => {
   const emails = (process.env.ADMIN_EMAILS || '').split(',').map((e) => e.trim().toLowerCase()).filter(Boolean);
@@ -35,4 +54,4 @@ const requireAdmin = (req, res, next) => {
   next();
 };
 
-export { protect, requireAdmin };
+export { protect, optionalProtect, requireAdmin };
