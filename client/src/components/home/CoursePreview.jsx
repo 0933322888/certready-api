@@ -50,7 +50,7 @@ export default function CoursePreview() {
                     </div>
                   </div>
                   <h3 className="text-2xl font-display font-bold text-text-primary mb-2">
-                    <Link to={tradeSlug ? paths.trade(tradeSlug) : `/courses/${course.slug}`} className="hover:text-accent transition-colors">
+                    <Link to={tradeSlug ? paths.trade(tradeSlug) : paths.trades} className="hover:text-accent transition-colors">
                       {course.trade} Exam Prep Course
                     </Link>
                   </h3>
@@ -76,7 +76,7 @@ export default function CoursePreview() {
                       <Link to={`/learn/${course.slug}`} className="flex-1 flex">
                         <Button variant="outline" className="w-full flex items-center justify-center">{t('home.previewFreeBtn')}</Button>
                       </Link>
-                      <Link to={tradeSlug ? paths.trade(tradeSlug) : `/courses/${course.slug}`} className="flex-1 flex">
+                      <Link to={tradeSlug ? paths.trade(tradeSlug) : paths.trades} className="flex-1 flex">
                         <Button className="w-full flex items-center justify-center">{t('home.getFullAccess')}</Button>
                       </Link>
                     </>

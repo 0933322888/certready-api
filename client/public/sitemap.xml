@@ -58,11 +58,6 @@
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://www.certready.ca/tools/red-seal-readiness-test</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.85</priority>
-  </url>
-  <url>
     <loc>https://www.certready.ca/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.85</priority>

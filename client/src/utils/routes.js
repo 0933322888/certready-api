@@ -23,11 +23,7 @@ export const paths = {
   },
   blog: '/blog',
   blogPost: (path) => `/${path}`,
-  // Legacy (for redirects and learn flow)
-  courses: '/courses',
-  course: (slug) => `/courses/${slug}`,
   learn: (slug) => `/learn/${slug}`,
-  practice: (slug) => `/practice/${slug}`,
   login: '/login',
   register: '/register',
   about: '/about',

@@ -1,5 +1,5 @@
 import { lazy, Suspense } from 'react';
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import { AuthProvider } from './context/AuthContext';
 import { Toaster } from 'react-hot-toast';
@@ -7,11 +7,8 @@ import Navbar from './components/layout/Navbar';
 import Footer from './components/layout/Footer';
 import PageWrapper from './components/layout/PageWrapper';
 import ScrollToTop from './components/layout/ScrollToTop';
-import ProtectedRoute from './components/ui/ProtectedRoute';
 import Spinner from './components/ui/Spinner';
-import { CourseToTradeRedirect } from './components/routing/CourseToTradeRedirect';
-import { PracticeToPracticeTestsRedirect } from './components/routing/PracticeToPracticeTestsRedirect';
-
+import ProtectedRoute from './components/ui/ProtectedRoute';
 import HomePage from './pages/HomePage';
 
 const RedSealExamPage = lazy(() => import('./pages/RedSealExamPage'));
@@ -85,16 +82,11 @@ export default function App() {
             <Route path="/hairstylist-red-seal-practice-questions" element={<FreePracticeQuestionsLandingPage />} />
             <Route path="/guides" element={<GuidesPage />} />
             <Route path="/guides/:slug" element={<GuidesSlugPage />} />
-            <Route path="/tools/red-seal-readiness-test" element={<Navigate to="/red-seal-readiness-test" replace />} />
             <Route path="/blog" element={<BlogPage />} />
             <Route path="/how-to-pass-red-seal-exam" element={<BlogPostPage path="how-to-pass-red-seal-exam" />} />
             <Route path="/how-hard-is-red-seal-exam" element={<BlogPostPage path="how-hard-is-red-seal-exam" />} />
             <Route path="/red-seal-exam-format" element={<BlogPostPage path="red-seal-exam-format" />} />
             <Route path="/red-seal-exam-cost" element={<BlogPostPage path="red-seal-exam-cost" />} />
-            {/* Legacy redirects for SEO */}
-            <Route path="/courses" element={<Navigate to="/trades" replace />} />
-            <Route path="/courses/:slug" element={<CourseToTradeRedirect />} />
-            <Route path="/practice/:tradeSlug" element={<PracticeToPracticeTestsRedirect />} />
             <Route path="/learn/:slug" element={<LearnPage />} />
             <Route path="/login" element={<LoginPage />} />
             <Route path="/register" element={<RegisterPage />} />

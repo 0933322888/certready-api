@@ -34,7 +34,7 @@ export default function Footer() {
                 return course ? (
                   <li key={slug}>
                     <Link
-                      to={tradeSlug ? paths.trade(tradeSlug) : paths.course(slug)}
+                      to={tradeSlug ? paths.trade(tradeSlug) : paths.trades}
                       className="text-text-muted hover:text-accent transition-colors"
                     >
                       {course.trade} ({course.tradeCode})

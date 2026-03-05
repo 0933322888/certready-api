@@ -127,8 +127,8 @@ export const TRADE_DATA = {
       { icon: "⏲", tip: "Practice timed mock exams", body: "Take at least two full 100-question timed runs before exam day. Flag-and-return is better than getting stuck — a guess scores; a blank never does." },
     ],
     courseSlug: "construction-electrician-309a",
-    courseUrl: "/courses/construction-electrician-309a",
-    practiceUrl: "/practice/construction-electrician",
+    courseUrl: "/trades/construction-electrician",
+    practiceUrl: "/practice-tests/construction-electrician",
   },
 
   plumber: {
@@ -172,8 +172,8 @@ export const TRADE_DATA = {
       { icon: "⏲", tip: "Build stamina for 125 questions", body: "Run at least two full timed practice exams. At 108 seconds per question, fatigue is a real factor." },
     ],
     courseSlug: "plumber-306a",
-    courseUrl: "/courses/plumber-306a",
-    practiceUrl: "/practice/plumber",
+    courseUrl: "/trades/plumber",
+    practiceUrl: "/practice-tests/plumber",
   },
   hairstylist: {
     slug: "hairstylist",
@@ -323,8 +323,8 @@ export const TRADE_DATA = {
       { icon: "📋", tip: "Don't skip Salon Operations", body: "MWA H (Salon Operations, 6%) is often under-studied. Questions on WHMIS, sanitation levels (sterilization, disinfection, sanitization), provincial regulations, and basic business math appear regularly." },
     ],
     courseSlug: "hairstylist-332a",
-    courseUrl: "/courses/hairstylist-332a",
-    practiceUrl: "/practice/hairstylist",
+    courseUrl: "/trades/hairstylist",
+    practiceUrl: "/practice-tests/hairstylist",
   },
 };
 

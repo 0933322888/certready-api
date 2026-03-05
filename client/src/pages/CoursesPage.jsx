@@ -1,7 +1,9 @@
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { getCourse, COURSE_SLUGS } from '../data/courseContent';
+import { getGuideSlugFromCourseSlug } from '../data/tradeGuides';
 import { useCoursePricing } from '../hooks/useCoursePricing';
+import { paths } from '../utils/routes';
 import Card from '../components/ui/Card';
 import Button from '../components/ui/Button';
 import Badge from '../components/ui/Badge';
@@ -28,6 +30,7 @@ export default function CoursesPage() {
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         {courses.map((course) => {
           const hasPurchased = hasPurchasedBySlug(course.slug);
+          const guideSlug = getGuideSlugFromCourseSlug(course.slug);
           const pricing = pricingBySlug[course.slug];
           const currentPrice = pricing?.currentPrice ?? course.price;
           const currency = pricing?.currency ?? course.currency ?? 'CAD';
@@ -70,7 +73,7 @@ export default function CoursesPage() {
                     <Link to={`/learn/${course.slug}`} className="flex-1 flex">
                       <Button variant="outline" className="w-full flex items-center justify-center">{t('home.previewFreeBtn')}</Button>
                     </Link>
-                    <Link to={`/courses/${course.slug}`} className="flex-1 flex">
+                    <Link to={guideSlug ? paths.trade(guideSlug) : paths.trades} className="flex-1 flex">
                       <Button className="w-full flex items-center justify-center">{t('home.getFullAccess')}</Button>
                     </Link>
                   </>

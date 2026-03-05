@@ -5,6 +5,7 @@ import { getAllCoursesPageSEO } from '../utils/seo';
 import { getCourse, COURSE_SLUGS } from '../data/courseContent';
 import { getGuideSlugFromCourseSlug } from '../data/tradeGuides';
 import { useCoursePricing } from '../hooks/useCoursePricing';
+import { paths } from '../utils/routes';
 import Card from '../components/ui/Card';
 import Button from '../components/ui/Button';
 import Badge from '../components/ui/Badge';
@@ -84,7 +85,7 @@ export default function AllCoursesPage() {
                       <Link to={`/learn/${course.slug}`} className="flex-1 flex">
                         <Button variant="outline" className="w-full flex items-center justify-center">{t('home.previewFreeBtn')}</Button>
                       </Link>
-                      <Link to={`/courses/${course.slug}`} className="flex-1 flex">
+                      <Link to={guideSlug ? paths.trade(guideSlug) : paths.trades} className="flex-1 flex">
                         <Button className="w-full flex items-center justify-center">{t('home.getFullAccess')}</Button>
                       </Link>
                     </>

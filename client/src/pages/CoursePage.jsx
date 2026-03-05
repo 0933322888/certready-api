@@ -65,7 +65,7 @@ export default function CoursePage() {
 
   const handlePurchase = async () => {
     if (!user) {
-      navigate('/login', { state: { from: `/courses/${slug}` } });
+      navigate('/login', { state: { from: `/trades/${getGuideSlugFromCourseSlug(slug) || slug}` } });
       return;
     }
 
@@ -99,11 +99,12 @@ export default function CoursePage() {
     );
   }
 
-  const seo = getCoursePageSEO(course);
+  const tradeSlug = getGuideSlugFromCourseSlug(slug);
+  const seo = getCoursePageSEO(course, tradeSlug);
   const breadcrumbs = getBreadcrumbStructuredData([
     { name: t('nav.home'), url: '/' },
-    { name: t('nav.courses'), url: '/courses' },
-    { name: course.trade, url: `/courses/${course.slug}` },
+    { name: t('nav.trades'), url: '/trades' },
+    { name: course.trade, url: tradeSlug ? `/trades/${tradeSlug}` : '/trades' },
   ]);
 
   return (
@@ -271,7 +272,7 @@ export default function CoursePage() {
                 {purchasing ? t('course.processing') : t('course.purchase', { price: formatPrice(displayPrice, displayCurrency) })}
               </Button>
             ) : (
-              <Link to="/login" state={{ from: `/courses/${slug}` }}>
+              <Link to="/login" state={{ from: tradeSlug ? `/trades/${tradeSlug}` : '/trades' }}>
                 <Button size="lg" className="w-full mb-4">
                   {t('course.signInToPurchase')}
                 </Button>

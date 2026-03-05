@@ -3,21 +3,22 @@
  * Adding a new trade course automatically gets correct SEO via getCoursePageSEO(course).
  */
 
-export function getCoursePageSEO(course) {
+export function getCoursePageSEO(course, tradeSlug) {
   if (!course) return null;
   const tradeName = course.trade;
   const tradeCode = course.tradeCode || '';
   const totalChapters = course.totalChapters ?? 0;
   const totalQuestions = course.totalQuestions ?? 0;
+  const canonical = tradeSlug ? `/trades/${tradeSlug}` : `/trades`;
 
   return {
     title: `${tradeName} Red Seal Exam Prep — ${tradeCode} Study Guide`,
     description: `Prepare for your ${tradeName} Red Seal certification exam with confidence. ${totalChapters} chapters, ${totalQuestions}+ practice questions, and a full mock exam. Based on the official ${tradeCode} standard. Study at your own pace — one-time purchase, lifetime access.`,
     keywords: `${tradeName}, Red Seal, ${tradeCode}, exam prep, study guide, practice questions, certification, Canadian trades`,
-    canonical: `/courses/${course.slug}`,
+    canonical,
     ogType: 'product',
     ogImage: `/og-courses/${course.slug}.png`,
-    structuredData: getCourseStructuredData(course),
+    structuredData: getCourseStructuredData(course, tradeSlug),
   };
 }
 
@@ -57,9 +58,10 @@ export function getTradeGuideSEO(guide) {
   };
 }
 
-export function getCourseStructuredData(course) {
+export function getCourseStructuredData(course, tradeSlug) {
   if (!course) return null;
   const price = typeof course.price === 'number' ? (course.price / 100).toFixed(2) : '0.00';
+  const courseUrl = tradeSlug ? `https://www.certready.ca/trades/${tradeSlug}` : 'https://www.certready.ca/trades';
 
   return {
     '@context': 'https://schema.org',
@@ -89,7 +91,7 @@ export function getCourseStructuredData(course) {
       price,
       priceCurrency: 'CAD',
       availability: 'https://schema.org/InStock',
-      url: `https://www.certready.ca/courses/${course.slug}`,
+      url: courseUrl,
     },
     numberOfCredits: course.totalChapters ?? 0,
     totalHistoricalEnrollment: null,
@@ -140,7 +142,7 @@ export function getFAQStructuredData(faqs) {
   };
 }
 
-/** items = [{ name: 'Home', url: '/' }, { name: 'Courses', url: '/courses' }, ...] */
+/** items = [{ name: 'Home', url: '/' }, { name: 'Trades', url: '/trades' }, ...] */
 export function getBreadcrumbStructuredData(items) {
   if (!items || !items.length) return null;
   return {
@@ -161,7 +163,7 @@ export function getAllCoursesPageSEO() {
     title: 'Red Seal Exam Prep Courses — All Trades',
     description: "Browse CertReady's Red Seal exam preparation courses for Canadian trades. Hairstylist (332A), Plumber (306A), and more. One-time purchase, lifetime access, free first 2 chapters.",
     keywords: 'Red Seal courses, exam prep, Canadian trades, Hairstylist, Plumber, 332A, 306A, certification, study guide',
-    canonical: '/courses',
+    canonical: '/trades',
   };
 }
 
@@ -211,23 +213,7 @@ export function getTradeGuidePageSEO(trade) {
 /** SEO for /trades/:tradeSlug — trade exam page. Pass course and tradeSlug. */
 export function getTradeExamPageSEO(course, tradeSlug) {
   if (!course || !tradeSlug) return null;
-  const base = getCoursePageSEO(course);
-  if (!base) return null;
-  const tradeUrl = `https://www.certready.ca/trades/${tradeSlug}`;
-  const structuredData = base.structuredData
-    ? {
-        ...base.structuredData,
-        url: tradeUrl,
-        offers: base.structuredData.offers
-          ? { ...base.structuredData.offers, url: tradeUrl }
-          : undefined,
-      }
-    : null;
-  return {
-    ...base,
-    canonical: `/trades/${tradeSlug}`,
-    structuredData,
-  };
+  return getCoursePageSEO(course, tradeSlug);
 }
 
 /** SEO for /practice-tests list */
