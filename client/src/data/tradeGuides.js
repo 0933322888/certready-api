@@ -92,6 +92,50 @@ export const tradeGuides = [
     ],
   },
   {
+    slug: 'carpenter',
+    courseSlug: 'carpenter-403a',
+    tradeName: 'Carpenter',
+    tradeCode: '403A',
+    examQuestions: 100,
+    passMark: 70,
+    apprenticeshipHours: 7200,
+    apprenticeshipLevels: 4,
+    examWeighting: [
+      { area: 'Performs Common Occupational Skills (MWA A)', percent: 12 },
+      { area: 'Performs Planning and Layout (MWA B)', percent: 14 },
+      { area: 'Performs Concrete Work (MWA C)', percent: 16 },
+      { area: 'Performs Framing (MWA D)', percent: 20 },
+      { area: 'Performs Exterior Finishing (MWA E)', percent: 14 },
+      { area: 'Performs Interior Finishing (MWA F)', percent: 14 },
+      { area: 'Performs Renovations (MWA G)', percent: 10 },
+    ],
+    faqs: [
+      {
+        question: 'How many questions are on the Red Seal Carpenter exam?',
+        answer: 'The Red Seal Carpenter (403A) interprovincial exam contains 100 multiple-choice questions to be completed in 3 hours. A minimum score of 70% (70 correct answers) is required to pass.',
+      },
+      {
+        question: 'What is the most important topic on the Red Seal Carpenter exam?',
+        answer: 'MWA D (Performs Framing) has the highest weighting at 20% of the exam. MWA C (Performs Concrete Work), especially formwork, is also heavily tested at 16%.',
+      },
+      {
+        question: 'How long is the Carpenter apprenticeship in Canada?',
+        answer: 'The Red Seal Carpenter (403A) apprenticeship requires 7,200 hours of training across 4 levels, combining on-the-job experience with in-school technical training.',
+      },
+      {
+        question: 'Are acronyms or formulas provided during the Red Seal Carpenter exam?',
+        answer: 'An official list of trade acronyms (e.g. CMHC, ICF, OSB, WHMIS) is provided with the exam. You must still know what they mean to answer questions correctly.',
+      },
+    ],
+    topStudyTips: [
+      'Focus on Framing (MWA D) first — 20% of the exam; master rafter calculations, I-joist rules, and wall components',
+      'Concrete and formwork (MWA C) — 16 questions; lateral pressure, form components, and stripping times are tested',
+      'Practise layout and calculation questions — diagonal check, stud count, rafter and stair calculations',
+      'Know safety hierarchy, PPE, LOTO, and PAT (powder-actuated tool) certification requirements',
+      'Memorize key terms from the RSOS glossary — they appear in scenario-based questions',
+    ],
+  },
+  {
     slug: 'construction-electrician',
     courseSlug: 'construction-electrician-309a',
     tradeName: 'Construction Electrician',
@@ -131,6 +175,49 @@ export const tradeGuides = [
       'Memorize key CEC formulas and application (voltage drop, conduit fill, etc.)',
       'Understand commissioning and testing procedures for various systems',
       'Practice fault diagnosis scenarios across all system types',
+    ],
+  },
+  {
+    slug: 'refrigeration-air-conditioning-mechanic',
+    courseSlug: 'refrigeration-air-conditioning-mechanic-313a',
+    tradeName: 'Refrigeration & Air Conditioning Mechanic',
+    tradeCode: '313A',
+    examQuestions: 125,
+    passMark: 70,
+    apprenticeshipHours: 9000,
+    apprenticeshipLevels: 3,
+    examWeighting: [
+      { area: 'Common Occupational Skills (MWA A)', percent: 8 },
+      { area: 'Routine Trade Activities (MWA B)', percent: 16 },
+      { area: 'Plans Installation (MWA C)', percent: 13 },
+      { area: 'Performs Installation (MWA D)', percent: 21 },
+      { area: 'Performs Commissioning (MWA E)', percent: 17 },
+      { area: 'Performs Maintenance and Service (MWA F)', percent: 25 },
+    ],
+    faqs: [
+      {
+        question: 'How many questions are on the Refrigeration and Air Conditioning (313A) exam?',
+        answer: 'The Skilled Trades Ontario HVAC/R (313A) exam contains 125 multiple-choice questions to be completed in 4 hours. A minimum score of 70% is required to pass.',
+      },
+      {
+        question: 'What is the most important topic on the HVAC 313A exam?',
+        answer: 'MWA F (Performs Maintenance and Service) has the highest weighting at 25% of the exam. MWA D (Performs Installation) is next at 21%. Together they represent 46% of the exam.',
+      },
+      {
+        question: 'How long is the HVAC/R apprenticeship in Ontario?',
+        answer: 'The Refrigeration and Air Conditioning Systems Mechanic (313A) apprenticeship requires 9,000 hours of training across 3 levels, combining on-the-job experience with in-school technical training.',
+      },
+      {
+        question: 'What references are used on the 313A exam?',
+        answer: 'The exam is based on the RSOS and references CSA B52, B149, ASHRAE standards, WHMIS, and the Canadian Electrical Code. Familiarity with refrigerant tables and machinery room ventilation requirements is essential.',
+      },
+    ],
+    topStudyTips: [
+      'Prioritize MWA F and MWA D — together they are 46% of the exam',
+      'Master the pressure-enthalpy (P-H) diagram for thermodynamic and troubleshooting questions',
+      'Know CSA B52 refrigerant classifications and machinery room ventilation requirements',
+      'Practice superheat, subcooling, and compression ratio calculations',
+      'Understand VFD safety: capacitor discharge times and verification before servicing',
     ],
   },
 ];

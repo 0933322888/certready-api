@@ -1784,7 +1784,7 @@ export const hairstylistCourse = {
                     title: 'Full Mock Exam',
                     subtitle: 'Timed 120-question practice exam (3 hours), covering all 8 Major Work Activities',
                     isFree: false,
-                    estimatedMinutes: 60,
+                    estimatedMinutes: 5,
                     isMockExam: true,
                     sections: [
                         {

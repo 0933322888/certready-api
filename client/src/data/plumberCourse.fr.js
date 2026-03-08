@@ -2051,7 +2051,7 @@ const plumberCourseFR = {
             title: 'Examen blanc Sceau rouge et stratégie d\'examen',
             subtitle: 'Questions pratiques couvrant les 7 Grandes tâches de l\'apprentissage, avec conseils pour réussir l\'examen',
             isFree: false,
-            estimatedMinutes: 90,
+            estimatedMinutes: 5,
             isMockExam: true,
             sections: [
               {

@@ -114,7 +114,7 @@
     "signInLink": "Sign in",
     "signingIn": "Signing in...",
     "creatingAccount": "Creating account...",
-    "welcomeBackToast": "Welcome back!",
+    "welcomeBackToast": "Glad to see you!",
     "loginFailed": "Login failed. Please check your credentials.",
     "passwordsNoMatch": "Passwords do not match",
     "accountCreated": "Account created successfully!",
@@ -165,7 +165,7 @@
     "seoInvalidLinkDescription": "This password reset link is invalid or has expired."
   },
   "dashboard": {
-    "welcome": "Welcome back, {{name}}!",
+    "welcome": "Glad to see you, {{name}}!",
     "continueJourney": "Continue your learning journey",
     "myCourses": "My Courses",
     "continueLearning": "Continue Learning",

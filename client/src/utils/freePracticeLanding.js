@@ -3,6 +3,7 @@
  * Example: /electrician-red-seal-practice-questions → tradeSlug construction-electrician
  */
 export const FREE_PRACTICE_LANDING_TRADES = {
+  carpenter: 'carpenter',
   electrician: 'construction-electrician',
   plumber: 'plumber',
   hairstylist: 'hairstylist',

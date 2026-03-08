@@ -1550,7 +1550,7 @@ const plumberCourse = {
           title: 'Red Seal Mock Exam and Exam Strategy',
           subtitle: '125-question timed practice exam (3 hours 45 min), plus tips for exam success',
           isFree: false,
-          estimatedMinutes: 90,
+          estimatedMinutes: 5,
           isMockExam: true,
           sections: [
             {

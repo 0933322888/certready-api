@@ -2336,7 +2336,7 @@ const electricianCourse = {
           title: 'Full Mock Exam',
           subtitle: '100-question timed practice exam — Red Seal style, 3 hours, all 5 MWAs proportionally represented',
           isFree: false,
-          estimatedMinutes: 180,
+          estimatedMinutes: 5,
           isMockExam: true,
           sections: [
             {

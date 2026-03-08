@@ -14,6 +14,13 @@ import Button from '../ui/Button';
 import Card from '../ui/Card';
 import api from '../../utils/api';
 
+/** Renders string with **bold** segments as inline <strong> (for list items) */
+function formatInlineBold(str) {
+  if (typeof str !== 'string') return str;
+  const parts = str.split(/\*\*(.*?)\*\*/g);
+  return parts.map((p, i) => (i % 2 === 1 ? <strong key={i}>{p}</strong> : p));
+}
+
 export default function ChapterContent({ course, chapter, onQuestionComplete }) {
   const { t } = useTranslation();
   const { user } = useAuth();
@@ -51,30 +58,45 @@ export default function ChapterContent({ course, chapter, onQuestionComplete }) 
             {content.text}
           </p>
         );
+
+      case 'text':
+        return (
+          <p className="text-text-primary leading-relaxed mb-4 text-base">
+            {content.text}
+          </p>
+        );
       
       case 'keyTerm':
         return (
           <KeyTermCard term={content.term} definition={content.definition} />
         );
-      
+
       case 'bullets':
+      case 'list': {
+        const items = content.items || [];
         return (
-          <ul className="list-none space-y-2 my-4 ml-4">
-            {content.items.map((item, index) => (
-              <li key={index} className="flex items-start">
-                <span className="text-accent mr-3 mt-1.5">•</span>
-                <span className="text-text-primary text-base leading-relaxed flex-1">{item}</span>
-              </li>
-            ))}
-          </ul>
+          <div className="my-4">
+            {content.title && (
+              <p className="text-text-primary font-semibold mb-2 text-base">{content.title}</p>
+            )}
+            <ul className="list-none space-y-2 ml-4">
+              {items.map((item, index) => (
+                <li key={index} className="flex items-start">
+                  <span className="text-accent mr-3 mt-1.5">•</span>
+                  <span className="text-text-primary text-base leading-relaxed flex-1">{formatInlineBold(item)}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
         );
+      }
       
       case 'numbered':
         return (
           <ol className="list-decimal space-y-2 my-4 ml-6">
             {content.items.map((item, index) => (
               <li key={index} className="text-text-primary text-base leading-relaxed">
-                {item}
+                {formatInlineBold(item)}
               </li>
             ))}
           </ol>
@@ -82,15 +104,48 @@ export default function ChapterContent({ course, chapter, onQuestionComplete }) 
       
       case 'table':
         return (
-          <ComparisonTable headers={content.headers} rows={content.rows} />
+          <div>
+            <ComparisonTable headers={content.headers} rows={content.rows} />
+            {content.notes && (
+              <p className="text-text-muted text-sm mt-2 italic">{content.notes}</p>
+            )}
+          </div>
         );
       
       case 'infoBox':
         return (
           <InfoBox title={content.title} items={content.items} />
         );
-      
+
+      case 'callout':
+        const isWarning = content.style === 'warning';
+        return (
+          <div className={`rounded-xl border p-4 my-4 ${isWarning ? 'bg-amber-500/10 border-amber-500/40' : 'bg-accent/10 border-accent/30'}`}>
+            <div className="flex items-start gap-3">
+              {isWarning ? (
+                <svg className="w-5 h-5 text-amber-600 flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z" />
+                </svg>
+              ) : (
+                <svg className="w-5 h-5 text-accent flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+                </svg>
+              )}
+              <p className={`text-base leading-relaxed flex-1 ${isWarning ? 'text-amber-800 dark:text-amber-200' : 'text-text-primary'}`}>
+                {content.text}
+              </p>
+            </div>
+          </div>
+        );
+
       default:
+        if (content.text) {
+          return (
+            <p className="text-text-primary leading-relaxed mb-4 text-base">
+              {content.text}
+            </p>
+          );
+        }
         return null;
     }
   };
@@ -146,7 +201,7 @@ export default function ChapterContent({ course, chapter, onQuestionComplete }) 
           <div className="space-y-4">
             {section.content && section.content.map((contentBlock, index) => (
               <div key={index}>
-                {renderContent(contentBlock)}
+                {renderContent(contentBlock) }
               </div>
             ))}
           </div>

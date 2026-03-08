@@ -175,6 +175,52 @@ export const TRADE_DATA = {
     courseUrl: "/trades/plumber",
     practiceUrl: "/practice-tests/plumber",
   },
+
+  carpenter: {
+    slug: "carpenter",
+    name: "Carpenter",
+    tradeCode: "403A",
+    apprenticeshipHours: 7200,
+    examQuestions: 100,
+    examDuration: "3 hours",
+    passingScore: 70,
+    overviewShort:
+      "Construct and repair structural and finish components in residential, commercial, and industrial buildings across Canada.",
+    overview:
+      "The Carpenter Red Seal exam (403A) certifies your ability to perform layout, concrete work, framing, and interior and exterior finishing. With a Red Seal, your journeyperson certificate is recognized in every province and territory, giving you full mobility to work anywhere in Canada.",
+    mwas: [
+      { id: "A", title: "Performs Common Occupational Skills", weight: 12, items: ["Safety, tools, work organization", "Temporary access structures", "Site layout and hoarding"] },
+      { id: "B", title: "Performs Planning and Layout", weight: 14, items: ["Layout from drawings", "Diagonal check and squaring", "Stud and rafter calculations", "Stair layout"] },
+      { id: "C", title: "Performs Concrete Work", weight: 16, items: ["Formwork systems and components", "Lateral pressure and bracing", "Embedded steel and stripping"] },
+      { id: "D", title: "Performs Framing", weight: 20, items: ["Floor, wall, and roof framing", "Headers, joists, rafters", "I-joists and trusses"] },
+      { id: "E", title: "Performs Exterior Finishing", weight: 14, items: ["Cladding, siding, flashing", "Windows and doors", "Cornice and soffit"] },
+      { id: "F", title: "Performs Interior Finishing", weight: 14, items: ["Drywall, flooring, trim", "Stairs and railings", "Demountable walls"] },
+      { id: "G", title: "Performs Renovations", weight: 10, items: ["Hazardous materials", "Temporary shoring", "Scribing and joining new to existing"] },
+    ],
+    difficultyRating: 4,
+    difficultyNote:
+      "The Carpenter Red Seal covers seven major work activities from safety and layout to concrete, framing, and finishing. Formwork (MWA C) and framing (MWA D) carry the most questions; calculation and code (e.g. NBC stairs) appear throughout.",
+    challengePoints: [
+      { icon: "📐", heading: "Layout and calculations", body: "Diagonal check, stud count, rafter length, stair rise/run — all from memory under time pressure." },
+      { icon: "🪵", heading: "Framing and formwork", body: "MWA D (20%) and MWA C (16%) demand deep knowledge of components, sequencing, and code." },
+      { icon: "📋", heading: "Seven MWAs", body: "From safety and PAT certification to interior trim and renovations — broad scope in 100 questions." },
+      { icon: "⏱", heading: "3 hours for 100 questions", body: "About 108 seconds per question. Exam strategy and pacing matter as much as knowledge." },
+    ],
+    sampleQuestions: [
+      { question: "When installing floor joists, how should the crown (bow) in the lumber be oriented?", options: ["Crown down", "Crown up", "Crown to the side", "It does not matter"], correct: 1, explanation: "Joists are installed crown-up so that under load the deflection flattens the crown rather than increasing it, reducing bounce and improving floor performance.", mwa: "D" },
+      { question: "What is the primary purpose of a bird's mouth cut in a rafter?", options: ["To allow ventilation", "To reduce weight", "To allow the rafter to sit flat on the top plate", "To strengthen the rafter"], correct: 2, explanation: "A bird's mouth consists of a seat cut and plumb cut so the rafter bears properly on the wall plate while maintaining the correct roof slope.", mwa: "D" },
+      { question: "According to OHS and best practice, who must perform a field-level risk assessment (FLRA) before a task?", options: ["Only the supervisor", "Only the site safety officer", "The worker(s) performing the task", "The general contractor only"], correct: 2, explanation: "A field-level risk assessment is performed by the workers doing the task, at the point of work, to identify hazards and controls before starting.", mwa: "A" },
+    ],
+    studyTips: [
+      { icon: "📊", tip: "Framing + Concrete = 36%", body: "MWA D (Framing, 20%) and MWA C (Concrete/Formwork, 16%) are your highest-yield areas. Master rafter math and formwork components." },
+      { icon: "📐", tip: "Drill layout calculations", body: "Diagonal check, stud count, stair rise/run, and rafter length appear repeatedly. Practice until automatic." },
+      { icon: "🛡", tip: "Know safety and PAT rules", body: "LOTO, PPE, ladder/scaffold requirements, and powder-actuated tool certification are tested in MWA A." },
+      { icon: "⏲", tip: "Run timed mock exams", body: "Take at least one full 100-question, 3-hour practice exam before test day. Flag and return rather than getting stuck." },
+    ],
+    courseSlug: "carpenter-403a",
+    courseUrl: "/trades/carpenter",
+    practiceUrl: "/practice-tests/carpenter",
+  },
   hairstylist: {
     slug: "hairstylist",
     name: "Hairstylist",
@@ -326,6 +372,51 @@ export const TRADE_DATA = {
     courseUrl: "/trades/hairstylist",
     practiceUrl: "/practice-tests/hairstylist",
   },
+
+  "refrigeration-air-conditioning-mechanic": {
+    slug: "refrigeration-air-conditioning-mechanic",
+    name: "Refrigeration & Air Conditioning Mechanic",
+    tradeCode: "313A",
+    apprenticeshipHours: 9000,
+    examQuestions: 125,
+    examDuration: "4 hours",
+    passingScore: 70,
+    overviewShort:
+      "Install, commission, and maintain refrigeration and air conditioning systems in residential, commercial, and industrial buildings across Canada.",
+    overview:
+      "The Refrigeration and Air Conditioning Systems Mechanic (313A) certification validates your ability to plan, install, commission, and maintain HVAC/R systems — from residential split systems to commercial refrigeration and building automation. Skilled Trades Ontario 313A is recognized across the province; combined with Red Seal alignment, strong preparation supports both provincial and interprovincial mobility.",
+    mwas: [
+      { id: "A", title: "Common Occupational Skills", weight: 8, items: ["Performs safety-related functions", "Uses and maintains tools and equipment", "Organizes work", "Reads drawings and specifications", "Communicates and documents"] },
+      { id: "B", title: "Routine Trade Activities", weight: 16, items: ["Performs trade-specific layout and assembly", "Handles refrigerants and materials", "Uses and maintains trade equipment", "Performs routine servicing and diagnostics"] },
+      { id: "C", title: "Plans Installation", weight: 13, items: ["Plans system layout from drawings", "Selects equipment and materials", "Coordinates with other trades", "Obtains permits and inspections"] },
+      { id: "D", title: "Performs Installation", weight: 21, items: ["Installs refrigeration and AC systems", "Installs ductwork and air distribution", "Installs controls and electrical connections", "Performs startup and basic commissioning"] },
+      { id: "E", title: "Performs Commissioning", weight: 17, items: ["Verifies system performance", "Balances air and water systems", "Documents commissioning results", "Hands over to owner"] },
+      { id: "F", title: "Performs Maintenance and Service", weight: 25, items: ["Diagnoses faults and performs repairs", "Performs preventive maintenance", "Handles refrigerant recovery and charging", "Optimizes system operation"] },
+    ],
+    difficultyRating: 4,
+    difficultyNote:
+      "The 313A exam spans six major work activities from safety and planning to installation, commissioning, and maintenance. MWA F (Maintenance and Service) at 25% and MWA D (Installation) at 21% dominate the exam. Thermodynamics, refrigerant handling, electrical and control systems, and code (CSA B52, B149, CEC) must be applied from memory under time pressure.",
+    challengePoints: [
+      { icon: "📐", heading: "P-H diagram and thermodynamics", body: "Superheat, subcooling, compression ratio, and system diagnosis require a solid mental model of the pressure-enthalpy diagram and refrigerant cycle." },
+      { icon: "📚", heading: "Multiple code references", body: "CSA B52 (refrigeration), B149 (gas), ASHRAE standards, WHMIS, and CEC — you need to know where to apply each and typical requirements." },
+      { icon: "🔢", heading: "Calculations under time pressure", body: "125 questions in 4 hours. Capacity, airflow, refrigerant charge, and electrical sizing appear repeatedly — practice until automatic." },
+      { icon: "⏱", heading: "4-hour exam stamina", body: "Longer than many Red Seal exams. Flag-and-return and pacing are essential; avoid getting stuck on single questions." },
+    ],
+    sampleQuestions: [
+      { question: "Before working on a system with a variable frequency drive (VFD), what must be done after lock-out?", options: ["Immediately discharge capacitors with a grounded screwdriver", "Wait the manufacturer-specified time for capacitors to discharge, then verify zero voltage with a calibrated multimeter", "Short the DC bus to chassis with a jumper", "Verify with a non-contact voltage tester only"], correct: 1, explanation: "VFDs store lethal DC charge in bus capacitors. You must wait the specified time (often 5–10 minutes) and then verify with a calibrated, rated multimeter — not a non-contact tester.", mwa: "A" },
+      { question: "A micron gauge levels off at 2,000 microns and holds after the pump is isolated. What does this most likely indicate?", options: ["A leak in the system", "Moisture in the system", "The system is adequately evacuated", "The vacuum pump is faulty"], correct: 0, explanation: "If the pressure rises or holds above target (e.g. 500 microns) after pump isolation, the system has a leak or outgassing. A tight system would hold low micron reading.", mwa: "F" },
+      { question: "Evaporator superheat is typically set to what range for comfort cooling?", options: ["2–4°F", "8–12°F", "15–20°F", "25–30°F"], correct: 1, explanation: "Evaporator superheat at the evaporator outlet is typically set to 8–12°F for comfort cooling to ensure no liquid slugging while maximizing capacity.", mwa: "F" },
+    ],
+    studyTips: [
+      { icon: "📊", tip: "MWA F + D = 46% of exam", body: "Maintenance/Service (25%) and Installation (21%) are the two largest areas. Prioritize diagnostics, refrigerant cycle, and installation procedures." },
+      { icon: "📐", tip: "Master the P-H diagram", body: "For thermodynamic and troubleshooting questions, mentally trace how symptoms shift operating points on a pressure-enthalpy diagram." },
+      { icon: "📖", tip: "Know CSA B52 and B149", body: "Refrigerant classifications, machinery room ventilation, and gas appliance requirements appear throughout. Internalize key tables and limits." },
+      { icon: "⏲", tip: "Practice full 4-hour mocks", body: "Run at least one full 125-question, 4-hour timed exam. Build stamina and a flag-and-return strategy." },
+    ],
+    courseSlug: "refrigeration-air-conditioning-mechanic-313a",
+    courseUrl: "/trades/refrigeration-air-conditioning-mechanic",
+    practiceUrl: "/practice-tests/refrigeration-air-conditioning-mechanic",
+  },
 };
 
 /** Get trade guide data by slug, or null if not found */
@@ -362,7 +453,7 @@ export const ALL_TRADES = [
   { name: "Boilermaker", code: "428A", slug: "boilermaker", live: false },
   { name: "Bricklayer", code: "402A", slug: "bricklayer", live: false },
   { name: "Cabinetmaker", code: "438A", slug: "cabinetmaker", live: false },
-  { name: "Carpenter", code: "403A", slug: "carpenter", live: false },
+  { name: "Carpenter", code: "403A", slug: "carpenter", live: true },
   { name: "Concrete Finisher", code: "409A", slug: "concrete-finisher", live: false },
   { name: "Construction Craft Worker", code: "300A", slug: "construction-craft-worker", live: false },
   { name: "Construction Electrician", code: "309A", slug: "construction-electrician", live: true },
@@ -396,7 +487,7 @@ export const ALL_TRADES = [
   { name: "Plumber", code: "306A", slug: "plumber", live: true },
   { name: "Powerline Technician", code: "442B", slug: "powerline-technician", live: false },
   { name: "Recreation Vehicle Service Technician", code: "625A", slug: "recreation-vehicle-service-technician", live: false },
-  { name: "Refrigeration & Air Conditioning Mechanic", code: "313A", slug: "refrigeration-air-conditioning-mechanic", live: false },
+  { name: "Refrigeration & Air Conditioning Mechanic", code: "313A", slug: "refrigeration-air-conditioning-mechanic", live: true },
   { name: "Roofer", code: "403B", slug: "roofer", live: false },
   { name: "Sheet Metal Worker", code: "308A", slug: "sheet-metal-worker", live: false },
   { name: "Sprinkler Fitter", code: "443B", slug: "sprinkler-fitter", live: false },
