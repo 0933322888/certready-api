@@ -109,13 +109,13 @@ export function getOrganizationStructuredData() {
   };
 }
 
-/** WebSite schema — helps Google show a proper site name (e.g. "CertReady — Red Seal Exam Prep") instead of the domain in search results. */
+/** WebSite schema — use a short brand name as the primary site name signal. */
 export function getWebSiteStructuredData() {
   return {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'CertReady — Red Seal Exam Prep',
-    alternateName: 'CertReady',
+    name: 'CertReady',
+    alternateName: 'certready.ca',
     url: 'https://www.certready.ca',
     description: 'Comprehensive Red Seal exam preparation for Canadian trades. Study guides, practice questions, and mock exams.',
     publisher: {
