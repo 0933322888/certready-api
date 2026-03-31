@@ -46,6 +46,12 @@ export const TRADE_TOPICS = {
     { id: 'E', title: 'Performs Commissioning' },
     { id: 'F', title: 'Maintenance and Service' },
   ],
+  welder: [
+    { id: 'A', title: 'Performs Common Occupational Skills' },
+    { id: 'B', title: 'Performs Fabricating Activities' },
+    { id: 'C', title: 'Performs Thermal Cutting and Gouging Activities' },
+    { id: 'D', title: 'Performs Welding Activities' },
+  ],
 };
 
 export function getTopicLabel(tradeSlug, topicId) {

@@ -417,6 +417,48 @@ export const TRADE_DATA = {
     courseUrl: "/trades/refrigeration-air-conditioning-mechanic",
     practiceUrl: "/practice-tests/refrigeration-air-conditioning-mechanic",
   },
+  welder: {
+    slug: "welder",
+    name: "Welder",
+    tradeCode: "456A",
+    apprenticeshipHours: 5400,
+    examQuestions: 125,
+    examDuration: "3 hours",
+    passingScore: 70,
+    overviewShort:
+      "Fabricate, fit, weld, cut, and repair metal components for structural, industrial, and pressure applications across Canada.",
+    overview:
+      "The Welder Red Seal exam certifies your ability to perform safe, code-compliant fabrication, thermal cutting and gouging, and welding across major processes used in Canada. It covers planning and layout, drawings and symbols, WPS/WPDS interpretation, fit-up and distortion control, and quality verification. Earning a Red Seal supports interprovincial mobility and demonstrates national-level trade competency.",
+    mwas: [
+      { id: "A", title: "Performs Common Occupational Skills", weight: 16, items: ["Performs safety-related functions", "Uses and maintains tools and equipment", "Organizes work", "Interprets documents and communicates work requirements"] },
+      { id: "B", title: "Performs Fabricating Activities", weight: 38, items: ["Interprets drawings and welding symbols", "Measures, marks, lays out, and prepares material", "Fits and assembles components", "Controls distortion and verifies dimensions"] },
+      { id: "C", title: "Performs Thermal Cutting and Gouging Activities", weight: 18, items: ["Performs oxy-fuel cutting", "Performs plasma arc cutting", "Performs air carbon arc gouging", "Selects process and parameters for material/position"] },
+      { id: "D", title: "Performs Welding Activities", weight: 28, items: ["Performs SMAW/GMAW/FCAW/GTAW/SAW as required", "Applies WPS/WPDS variables", "Controls weld quality and discontinuities", "Completes welds to acceptance criteria"] },
+    ],
+    difficultyRating: 4,
+    difficultyNote:
+      "The Welder exam is broad and heavily practical in its decision-making. Candidates must combine safety, code literacy, process knowledge, and fabrication math under time pressure. MWA B (Fabricating Activities) carries the highest weighting, and process-specific welding parameters are tested throughout.",
+    challengePoints: [
+      { icon: "📐", heading: "Heavy fabrication weighting", body: "MWA B is 38% of the exam, requiring strong layout, drawing interpretation, and fit-up judgment." },
+      { icon: "🔥", heading: "Multiple thermal processes", body: "OFC, PAC, and CAC-A selection and setup are tested by scenario, not just definitions." },
+      { icon: "⚙️", heading: "Procedure compliance", body: "You must apply WPS/WPDS variables correctly (amperage, voltage, travel speed, preheat, polarity) to remain code-compliant." },
+      { icon: "⏱", heading: "125 questions in 3 hours", body: "About 86 seconds per question means pacing and exam strategy matter alongside technical knowledge." },
+    ],
+    sampleQuestions: [
+      { question: "Which MWA carries the highest weighting on the Welder Red Seal exam?", options: ["MWA A", "MWA B", "MWA C", "MWA D"], correct: 1, explanation: "MWA B (Performs Fabricating Activities) is the largest section at 38% of the exam.", mwa: "B" },
+      { question: "A WPS specifies maximum heat input. Which variables are required to calculate heat input?", options: ["Amperage, voltage, and travel speed", "Wire diameter, stick-out, and gas flow", "Preheat temperature, interpass temperature, and polarity", "Electrode classification and joint angle"], correct: 0, explanation: "Heat input is calculated from amperage, voltage, and travel speed using the standard kJ/mm formula.", mwa: "D" },
+      { question: "Which process is commonly used to remove defective weld metal before repair?", options: ["GTAW", "PAC", "CAC-A", "SAW"], correct: 2, explanation: "Air carbon arc gouging (CAC-A) is commonly used to remove weld defects prior to re-welding.", mwa: "C" },
+    ],
+    studyTips: [
+      { icon: "📊", tip: "Prioritize MWA B first", body: "At 38% of the exam, fabrication activities are your highest-yield study area." },
+      { icon: "📖", tip: "Master WPS/WPDS interpretation", body: "Practice reading essential variables, limitations, and acceptance requirements quickly." },
+      { icon: "🔢", tip: "Drill core calculations", body: "Heat input, conversions, and layout math should be automatic by exam day." },
+      { icon: "⏲", tip: "Run full timed sets", body: "Train for 125 questions in a single sitting to build pace and focus endurance." },
+    ],
+    courseSlug: "welder-456a",
+    courseUrl: "/trades/welder",
+    practiceUrl: "/practice-tests/welder",
+  },
 };
 
 /** Get trade guide data by slug, or null if not found */
@@ -497,5 +539,5 @@ export const ALL_TRADES = [
   { name: "Tower Crane Operator", code: "339B", slug: "tower-crane-operator", live: false },
   { name: "Transport Trailer Technician", code: "310T", slug: "transport-trailer-technician", live: false },
   { name: "Truck and Transport Mechanic", code: "310T", slug: "truck-transport-mechanic", live: false },
-  { name: "Welder", code: "456A", slug: "welder", live: false },
+  { name: "Welder", code: "456A", slug: "welder", live: true },
 ];

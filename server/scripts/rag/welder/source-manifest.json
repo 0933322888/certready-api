@@ -1,0 +1,55 @@
+{
+  "tradeSlug": "welder",
+  "tradeCode": "456A",
+  "title": "Welder (Red Seal) Exam Prep",
+  "sources": [
+    {
+      "id": "overview",
+      "type": "url",
+      "value": "https://red-seal.ca/eng/trades/weld/overview.shtml",
+      "priority": 5
+    },
+    {
+      "id": "rsos_pdf",
+      "type": "pdf",
+      "value": "c:/Users/Andrii/Downloads/welder_rsos-eng.pdf",
+      "priority": 1
+    },
+    {
+      "id": "exam_weightings",
+      "type": "url",
+      "value": "https://red-seal.ca/eng/trades/weld/exam-weightings.shtml",
+      "priority": 2
+    },
+    {
+      "id": "appendix_a",
+      "type": "url",
+      "value": "https://red-seal.ca/eng/trades/weld/app-a.shtml",
+      "priority": 3
+    },
+    {
+      "id": "mwa_a",
+      "type": "url",
+      "value": "https://red-seal.ca/eng/trades/weld/mwa-a.shtml",
+      "priority": 2
+    },
+    {
+      "id": "mwa_b",
+      "type": "url",
+      "value": "https://red-seal.ca/eng/trades/weld/mwa-b.shtml",
+      "priority": 2
+    },
+    {
+      "id": "mwa_c",
+      "type": "url",
+      "value": "https://red-seal.ca/eng/trades/weld/mwa-c.shtml",
+      "priority": 2
+    },
+    {
+      "id": "mwa_d",
+      "type": "url",
+      "value": "https://red-seal.ca/eng/trades/weld/mwa-d.shtml",
+      "priority": 2
+    }
+  ]
+}

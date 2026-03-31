@@ -11,6 +11,7 @@ const TRADE_SLUG_TO_COURSE_SLUG = {
   carpenter: 'carpenter-403a',
   plumber: 'plumber-306a',
   hairstylist: 'hairstylist-332a',
+  welder: 'welder-456a',
 };
 
 /** Full mock exam question count per trade (for readiness 20% calculation) */
@@ -19,6 +20,7 @@ const EXAM_QUESTIONS_BY_TRADE = {
   carpenter: 100,
   plumber: 125,
   hairstylist: 120,
+  welder: 125,
 };
 
 /**

@@ -220,6 +220,47 @@ export const tradeGuides = [
       'Understand VFD safety: capacitor discharge times and verification before servicing',
     ],
   },
+  {
+    slug: 'welder',
+    courseSlug: 'welder-456a',
+    tradeName: 'Welder',
+    tradeCode: '456A',
+    examQuestions: 125,
+    passMark: 70,
+    apprenticeshipHours: 5400,
+    apprenticeshipLevels: 3,
+    examWeighting: [
+      { area: 'Performs Common Occupational Skills (MWA A)', percent: 16 },
+      { area: 'Performs Fabricating Activities (MWA B)', percent: 38 },
+      { area: 'Performs Thermal Cutting and Gouging Activities (MWA C)', percent: 18 },
+      { area: 'Performs Welding Activities (MWA D)', percent: 28 },
+    ],
+    faqs: [
+      {
+        question: 'How many questions are on the Red Seal Welder exam?',
+        answer: 'The Red Seal Welder interprovincial exam contains 125 multiple-choice questions. A minimum score of 70% is required to pass.',
+      },
+      {
+        question: 'What is the highest-weighted area on the Welder exam?',
+        answer: 'MWA B (Performs Fabricating Activities) is the largest section at 38% of the exam, so it should be a top study priority.',
+      },
+      {
+        question: 'How long is the Welder apprenticeship?',
+        answer: 'The Welder apprenticeship typically includes 5,400 total hours of combined on-the-job and in-school training across 3 levels.',
+      },
+      {
+        question: 'Do I need to memorize formulas for the Welder exam?',
+        answer: 'Yes. Heat input, basic fabrication math, and unit conversions are commonly tested, so you should practice using them quickly.',
+      },
+    ],
+    topStudyTips: [
+      'Prioritize MWA B first; it carries the biggest exam weight',
+      'Master WPS/WPDS interpretation and weld symbols',
+      'Drill process selection, polarity, and parameter ranges',
+      'Review cutting, gouging, and rigging safety scenarios',
+      'Run timed practice to build pace for 125 questions',
+    ],
+  },
 ];
 
 export function getGuideBySlug(slug) {

@@ -9,6 +9,7 @@ import constructionElectricianQuestions from './constructionElectrician.js';
 import plumberQuestions from './plumber.js';
 import hairstylistQuestions from './hairstylist.js';
 import hvacQuestions from './hvac.js';
+import welderQuestions from './welder.js';
 
 export { TRADE_TOPICS, getTopicLabel };
 
@@ -19,4 +20,5 @@ export const QUESTIONS = [
   ...plumberQuestions,
   ...hairstylistQuestions,
   ...hvacQuestions,
+  ...welderQuestions,
 ];

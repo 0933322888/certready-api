@@ -8,11 +8,21 @@
     "start": "node index.js",
     "dev": "node --watch index.js",
     "seed": "node seed.js",
+    "seed:course": "node scripts/upsertCourse.js",
+    "seed:practice": "node scripts/seedPracticeQuestions.js",
+    "seed:practice:replace": "node scripts/seedPracticeQuestionsReplace.js",
     "simulate-purchase": "node scripts/manualPurchase.js",
     "check-env": "node check-env.js",
-    "test-env": "node test-env.js"
+    "test-env": "node test-env.js",
+    "rag:welder:build": "node scripts/rag/welder/buildCorpus.js",
+    "rag:welder:embed": "node scripts/rag/welder/embedCorpus.js",
+    "rag:welder:generate": "node scripts/rag/welder/generateAssets.js",
+    "rag:welder:generate-until-done": "node scripts/rag/welder/runGenerateUntilDone.js",
+    "rag:welder:validate-questions": "node scripts/rag/welder/validateQuestions.js",
+    "rag:welder:promote-questions": "node scripts/rag/welder/promoteQuestions.js"
   },
   "dependencies": {
+    "@google/genai": "^1.46.0",
     "bcryptjs": "^2.4.3",
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
@@ -21,6 +31,8 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.0.3",
     "nodemailer": "^6.9.7",
+    "openai": "^6.33.0",
+    "pdf-parse": "^2.4.5",
     "stripe": "^14.9.0"
   }
 }

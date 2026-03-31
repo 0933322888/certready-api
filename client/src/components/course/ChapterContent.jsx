@@ -117,6 +117,27 @@ export default function ChapterContent({ course, chapter, onQuestionComplete }) 
           <InfoBox title={content.title} items={content.items} />
         );
 
+      case 'image':
+        return (
+          <figure className="my-6">
+            <div className="rounded-xl border border-border bg-surface p-3 flex justify-center">
+              <img
+                src={content.src}
+                alt={content.alt}
+                className="max-w-full h-auto max-h-[min(420px,70vh)] object-contain"
+                loading="lazy"
+                decoding="async"
+              />
+            </div>
+            {(content.caption || content.credit) && (
+              <figcaption className="mt-2 text-sm text-text-muted text-center max-w-2xl mx-auto space-y-1">
+                {content.caption && <p>{content.caption}</p>}
+                {content.credit && <p className="text-xs opacity-90">{content.credit}</p>}
+              </figcaption>
+            )}
+          </figure>
+        );
+
       case 'callout':
         const isWarning = content.style === 'warning';
         return (

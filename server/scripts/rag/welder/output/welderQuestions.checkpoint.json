@@ -1,0 +1,732 @@
+{
+  "generatedAt": "2026-03-27T19:00:01.403Z",
+  "totalRequested": 40,
+  "topics": {
+    "A": {
+      "target": 6,
+      "questions": [
+        {
+          "tradeSlug": "welder",
+          "topicId": "A",
+          "topicLabel": "Performs Common Occupational Skills",
+          "question": "What is the primary purpose of maintaining tools and equipment in the welding trade?",
+          "options": [
+            "To increase productivity",
+            "To ensure safety and prevent accidents",
+            "To reduce costs and save time",
+            "To improve the quality of welds"
+          ],
+          "correctIndex": 1,
+          "explanation": "Maintaining tools and equipment is crucial to ensure safety and prevent accidents in the welding trade. This is because faulty or damaged equipment can lead to serious injuries or even fatalities. By maintaining tools and equipment, welders can prevent accidents and ensure a safe working environment.",
+          "citations": [
+            "rsos_pdf-c23",
+            "mwa_a-c1"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "A",
+          "topicLabel": "Performs Common Occupational Skills",
+          "question": "What is the importance of performing hazard assessments in the welding trade?",
+          "options": [
+            "To identify potential safety hazards and take preventive measures",
+            "To increase productivity and efficiency",
+            "To reduce costs and save time",
+            "To improve the quality of welds"
+          ],
+          "correctIndex": 0,
+          "explanation": "Performing hazard assessments is crucial in the welding trade to identify potential safety hazards and take preventive measures. This helps to prevent accidents and ensure a safe working environment. By identifying potential hazards, welders can take steps to mitigate them and prevent injuries or fatalities.",
+          "citations": [
+            "rsos_pdf-c9",
+            "mwa_a-c30"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "A",
+          "topicLabel": "Performs Common Occupational Skills",
+          "question": "What is the purpose of using personal protective equipment (PPE) in the welding trade?",
+          "options": [
+            "To increase productivity and efficiency",
+            "To reduce costs and save time",
+            "To improve the quality of welds",
+            "To protect the welder from injury or harm"
+          ],
+          "correctIndex": 3,
+          "explanation": "The primary purpose of using PPE in the welding trade is to protect the welder from injury or harm. PPE helps to prevent injuries from sparks, flames, and other hazards associated with welding. By wearing PPE, welders can ensure their safety and prevent serious injuries or fatalities.",
+          "citations": [
+            "rsos_pdf-c24",
+            "exam_weightings-c2"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "A",
+          "topicLabel": "Performs Common Occupational Skills",
+          "question": "What is the importance of interpreting drawings and welding symbols in the welding trade?",
+          "options": [
+            "To increase productivity and efficiency",
+            "To reduce costs and save time",
+            "To improve the quality of welds",
+            "To understand the specifications and requirements of the welding project"
+          ],
+          "correctIndex": 3,
+          "explanation": "Interpreting drawings and welding symbols is crucial in the welding trade to understand the specifications and requirements of the welding project. This helps welders to ensure that they are following the correct procedures and meeting the required standards. By interpreting drawings and welding symbols, welders can prevent errors and ensure that the final product meets the required specifications.",
+          "citations": [
+            "rsos_pdf-c58",
+            "rsos_pdf-c93"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "A",
+          "topicLabel": "Performs Common Occupational Skills",
+          "question": "What is the purpose of planning job tasks in the welding trade?",
+          "options": [
+            "To increase productivity and efficiency",
+            "To reduce costs and save time",
+            "To improve the quality of welds",
+            "To ensure that the job is completed safely and efficiently"
+          ],
+          "correctIndex": 3,
+          "explanation": "Planning job tasks is crucial in the welding trade to ensure that the job is completed safely and efficiently. This involves determining the task requirements, sequencing the order of operations, and scheduling jobs and tasks. By planning job tasks, welders can prevent accidents, ensure that the job is completed on time, and meet the required standards.",
+          "citations": [
+            "rsos_pdf-c28",
+            "mwa_a-c30"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "A",
+          "topicLabel": "Performs Common Occupational Skills",
+          "question": "What is the primary purpose of maintaining hand, power, layout, and measuring tools in the welding trade?",
+          "options": [
+            "To ensure compliance with safety regulations",
+            "To keep them in safe working condition",
+            "To reduce the cost of tool replacement",
+            "To increase the efficiency of the welding process"
+          ],
+          "correctIndex": 1,
+          "explanation": "Maintaining hand, power, layout, and measuring tools is crucial to keep them in safe working condition, which is essential for ensuring the quality and safety of the welding process. While compliance with safety regulations, reducing tool replacement costs, and increasing efficiency are all important considerations, they are not the primary purpose of maintaining these tools.",
+          "citations": [
+            "rsos_pdf-c24",
+            "mwa_a-c1"
+          ]
+        }
+      ]
+    },
+    "B": {
+      "target": 9,
+      "questions": [
+        {
+          "tradeSlug": "welder",
+          "topicId": "B",
+          "topicLabel": "Performs layout and fabrication of components for welding",
+          "question": "What is the primary purpose of performing layout before fabrication in welding?",
+          "options": [
+            "To ensure proper fit and accuracy",
+            "To reduce material waste",
+            "To increase production speed",
+            "To improve weld quality"
+          ],
+          "correctIndex": 0,
+          "explanation": "Performing layout before fabrication is crucial to prevent waste and ensure proper fit and accuracy. This is because layout involves measuring and marking materials, which helps to prevent errors and ensure that the components are fabricated correctly.",
+          "citations": [
+            "mwa_b-c1",
+            "rsos_pdf-c89"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "B",
+          "topicLabel": "Performs layout and fabrication of components for welding",
+          "question": "What type of tools and equipment are used to transfer dimensions from drawings to materials?",
+          "options": [
+            "Measuring tapes and calipers",
+            "Combination squares and plumb bobs",
+            "Marking devices and compasses",
+            "All of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "The correct answer is all of the above. Measuring tapes and calipers are used to measure dimensions, while combination squares and plumb bobs are used to ensure accuracy and precision. Marking devices and compasses are used to mark the dimensions on the materials.",
+          "citations": [
+            "rsos_pdf-c89",
+            "mwa_b-c6"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "B",
+          "topicLabel": "Performs layout and fabrication of components for welding",
+          "question": "What is the purpose of verifying components' dimensions, conditions, and grade before fabrication?",
+          "options": [
+            "To ensure compliance with job specifications",
+            "To reduce material waste",
+            "To increase production speed",
+            "To improve weld quality"
+          ],
+          "correctIndex": 0,
+          "explanation": "Verifying components' dimensions, conditions, and grade is crucial to ensure compliance with job specifications. This helps to prevent errors and ensure that the components are fabricated correctly.",
+          "citations": [
+            "mwa_b-c1",
+            "rsos_pdf-c91"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "B",
+          "topicLabel": "Performs layout and fabrication of components for welding",
+          "question": "What is the purpose of using templates in layout and fabrication?",
+          "options": [
+            "To ensure accuracy and precision",
+            "To reduce material waste",
+            "To increase production speed",
+            "To improve weld quality"
+          ],
+          "correctIndex": 0,
+          "explanation": "Using templates in layout and fabrication helps to ensure accuracy and precision. Templates provide a guide for measuring and marking materials, which helps to prevent errors and ensure that the components are fabricated correctly.",
+          "citations": [
+            "mwa_b-c1",
+            "rsos_pdf-c89"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "B",
+          "topicLabel": "Performs layout and fabrication of components for welding",
+          "question": "What type of mathematical calculations are used to transfer dimensions from drawings to materials?",
+          "options": [
+            "Conversions and ratios",
+            "Proportions and fractions",
+            "Geometry and decimals",
+            "All of the above"
+          ],
+          "correctIndex": 3,
+          "explanation": "The correct answer is all of the above. Conversions and ratios are used to convert between different units of measurement, while proportions and fractions are used to calculate dimensions. Geometry and decimals are used to calculate angles and shapes.",
+          "citations": [
+            "rsos_pdf-c89",
+            "mwa_b-c6"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "B",
+          "topicLabel": "Performs layout and fabrication of components for welding",
+          "question": "What is the primary purpose of verifying components' dimensions, conditions, and grade before fabrication?",
+          "options": [
+            "To ensure compliance with job specifications",
+            "To select the correct welding process",
+            "To determine the required welding equipment",
+            "To prepare the components for assembly"
+          ],
+          "correctIndex": 0,
+          "explanation": "Verifying components' dimensions, conditions, and grade before fabrication is crucial to ensure that the components meet the job specifications and can be properly fabricated and assembled.",
+          "citations": [
+            "rsos_pdf-c91",
+            "mwa_b-c8"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "B",
+          "topicLabel": "Performs layout and fabrication of components for welding",
+          "question": "What type of calculations are used to transfer dimensions from drawings to materials?",
+          "options": [
+            "Conversions, ratios, and proportions",
+            "Geometry and trigonometry",
+            "Algebra and calculus",
+            "Statistics and probability"
+          ],
+          "correctIndex": 0,
+          "explanation": "Conversions, ratios, and proportions are used to transfer dimensions from drawings to materials, ensuring accurate measurements and fits.",
+          "citations": [
+            "rsos_pdf-c89",
+            "mwa_b-c6"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "B",
+          "topicLabel": "Performs layout and fabrication of components for welding",
+          "question": "What is the purpose of using templates in layout and fabrication?",
+          "options": [
+            "To transfer dimensions from drawings to materials",
+            "To prepare components for assembly",
+            "To ensure accurate measurements and fits",
+            "To select the correct welding process"
+          ],
+          "correctIndex": 2,
+          "explanation": "Using templates in layout and fabrication helps ensure accurate measurements and fits, reducing errors and waste.",
+          "citations": [
+            "mwa_b-c1",
+            "rsos_pdf-c24"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "B",
+          "topicLabel": "Performs layout and fabrication of components for welding",
+          "question": "What is the primary purpose of fitting components for welding?",
+          "options": [
+            "To assemble the components",
+            "To prepare the components for welding",
+            "To ensure proper fit and alignment",
+            "To select the correct welding process"
+          ],
+          "correctIndex": 2,
+          "explanation": "Fitting components for welding is crucial to ensure proper fit and alignment, which affects the quality and strength of the weld.",
+          "citations": [
+            "rsos_pdf-c91",
+            "mwa_b-c8"
+          ]
+        }
+      ]
+    },
+    "C": {
+      "target": 7,
+      "questions": [
+        {
+          "tradeSlug": "welder",
+          "topicId": "C",
+          "topicLabel": "Performs cutting and gouging",
+          "question": "What is the primary purpose of using oxy-fuel gas cutting (OFC) equipment?",
+          "options": [
+            "To cut ferrous and non-ferrous metals with high precision",
+            "To cut carbon steel and other materials with minimal distortion",
+            "To perform welding operations with high accuracy",
+            "To remove cracks and defects from metal surfaces"
+          ],
+          "correctIndex": 1,
+          "explanation": "Oxy-fuel gas cutting (OFC) equipment is primarily used for cutting carbon steel and other materials with minimal distortion, making it a cost-effective and versatile process.",
+          "citations": [
+            "rsos_pdf-c105",
+            "rsos_pdf-c114"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "C",
+          "topicLabel": "Performs cutting and gouging",
+          "question": "What type of flame is typically used for cutting and gouging operations using oxy-fuel gas cutting (OFC) equipment?",
+          "options": [
+            "Neutral flame",
+            "Carburizing flame",
+            "Oxidizing flame",
+            "Reducing flame"
+          ],
+          "correctIndex": 0,
+          "explanation": "A neutral flame is typically used for cutting and gouging operations using oxy-fuel gas cutting (OFC) equipment, as it provides a stable and consistent flame.",
+          "citations": [
+            "rsos_pdf-c105",
+            "rsos_pdf-c113"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "C",
+          "topicLabel": "Performs cutting and gouging",
+          "question": "What is the primary function of a flashback arrestor in oxy-fuel gas cutting (OFC) equipment?",
+          "options": [
+            "To regulate gas flow",
+            "To prevent flashback",
+            "To ignite the fuel gas",
+            "To adjust the torch valves"
+          ],
+          "correctIndex": 1,
+          "explanation": "The primary function of a flashback arrestor in oxy-fuel gas cutting (OFC) equipment is to prevent flashback, which can cause damage to the equipment and pose a safety risk.",
+          "citations": [
+            "rsos_pdf-c105",
+            "rsos_pdf-c114"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "C",
+          "topicLabel": "Performs cutting and gouging",
+          "question": "What is the purpose of pre-heating the material to the kindling point before cutting using oxy-fuel gas cutting (OFC) equipment?",
+          "options": [
+            "To reduce the risk of flashback",
+            "To increase the cutting speed",
+            "To improve the quality of the cut",
+            "To initiate the cutting process"
+          ],
+          "correctIndex": 3,
+          "explanation": "Pre-heating the material to the kindling point before cutting using oxy-fuel gas cutting (OFC) equipment helps to initiate the cutting process by making the material more receptive to the flame.",
+          "citations": [
+            "rsos_pdf-c113",
+            "rsos_pdf-c114"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "C",
+          "topicLabel": "Performs cutting and gouging",
+          "question": "What type of equipment is used for air carbon arc cutting (CAC-A) process?",
+          "options": [
+            "Power source and compressor",
+            "Oxy-fuel gas cutting equipment",
+            "Plasma arc cutting equipment",
+            "Shielded metal arc welding equipment"
+          ],
+          "correctIndex": 0,
+          "explanation": "The air carbon arc cutting (CAC-A) process uses equipment such as a power source and compressor, which provides the necessary air flow and pressure for the cutting operation.",
+          "citations": [
+            "rsos_pdf-c124",
+            "rsos_pdf-c130"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "C",
+          "topicLabel": "Performs cutting and gouging",
+          "question": "What is the primary purpose of using a flashback arrestor in oxy-fuel gas cutting (OFC) equipment?",
+          "options": [
+            "To increase the cutting speed",
+            "To improve the quality of the cut",
+            "To prevent flashback and ensure safe operation",
+            "To reduce the cost of the equipment"
+          ],
+          "correctIndex": 2,
+          "explanation": "The primary purpose of a flashback arrestor is to prevent flashback, which can cause injury or damage to the equipment. This is a critical safety feature in OFC equipment.",
+          "citations": [
+            "rsos_pdf-c115"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "C",
+          "topicLabel": "Performs cutting and gouging",
+          "question": "What type of electrode is typically used for air carbon arc cutting (CAC-A) process?",
+          "options": [
+            "Tungsten electrode",
+            "Copper electrode",
+            "Carbon electrode",
+            "Steel electrode"
+          ],
+          "correctIndex": 2,
+          "explanation": "Carbon electrodes are commonly used for CAC-A process due to their ability to withstand high temperatures and provide a stable arc.",
+          "citations": [
+            "rsos_pdf-c124"
+          ]
+        }
+      ]
+    },
+    "D": {
+      "target": 18,
+      "questions": [
+        {
+          "tradeSlug": "welder",
+          "topicId": "D",
+          "topicLabel": "Performs welding processes",
+          "question": "What is the primary advantage of using the Gas Tungsten Arc Welding (GTAW) process?",
+          "options": [
+            "High production rate",
+            "Low operating cost",
+            "High deposition rate",
+            "High quality welds with minimal clean-up"
+          ],
+          "correctIndex": 3,
+          "explanation": "The GTAW process provides high quality welds and requires minimal clean-up, making it a preferred choice for certain applications.",
+          "citations": [
+            "rsos_pdf-c165"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "D",
+          "topicLabel": "Performs welding processes",
+          "question": "What type of welding process is commonly used for joining most ferrous and some non-ferrous metals?",
+          "options": [
+            "Shielded Metal Arc Welding (SMAW)",
+            "Flux Cored Arc Welding (FCAW)",
+            "Gas Metal Arc Welding (GMAW)",
+            "Submerged Arc Welding (SAW)"
+          ],
+          "correctIndex": 0,
+          "explanation": "SMAW is a commonly used process for joining most ferrous and some non-ferrous metals due to its versatility and portability.",
+          "citations": [
+            "mwa_d-c1",
+            "rsos_pdf-c130"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "D",
+          "topicLabel": "Performs welding processes",
+          "question": "What is the primary characteristic of the Metal Cored Arc Welding (MCAW) process?",
+          "options": [
+            "High slag production",
+            "Low deposition rate",
+            "No slag produced",
+            "High spatter production"
+          ],
+          "correctIndex": 2,
+          "explanation": "The MCAW process uses a tubular wire with a powdered metal core and produces no slag, making it a desirable choice for certain applications.",
+          "citations": [
+            "rsos_pdf-c141"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "D",
+          "topicLabel": "Performs welding processes",
+          "question": "What is the primary advantage of using the Submerged Arc Welding (SAW) process?",
+          "options": [
+            "High quality welds",
+            "Low operating cost",
+            "High deposition rate",
+            "Highest production rate"
+          ],
+          "correctIndex": 3,
+          "explanation": "The SAW process provides the highest production rate, making it a preferred choice for large-scale productions.",
+          "citations": [
+            "rsos_pdf-c165",
+            "rsos_pdf-c152"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "D",
+          "topicLabel": "Performs welding processes",
+          "question": "What type of power source is typically used for the Flux Cored Arc Welding (FCAW), Metal Cored Arc Welding (MCAW), and Gas Metal Arc Welding (GMAW) processes?",
+          "options": [
+            "Constant Current (CC)",
+            "Constant Voltage (CV)",
+            "Alternating Current (AC)",
+            "Direct Current (DC)"
+          ],
+          "correctIndex": 1,
+          "explanation": "The FCAW, MCAW, and GMAW processes typically use a Constant Voltage (CV) power source.",
+          "citations": [
+            "rsos_pdf-c141"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "D",
+          "topicLabel": "Performs welding processes",
+          "question": "What is the primary advantage of using the Flux Cored Arc Welding (FCAW) process?",
+          "options": [
+            "High deposition rate and low operating cost",
+            "High precision and minimal distortion",
+            "Portability and ease of use",
+            "Ability to weld ferrous and non-ferrous metals"
+          ],
+          "correctIndex": 0,
+          "explanation": "The FCAW process is widely used in production shops due to its high productivity, low operating cost, and high efficiency. This makes option A the correct answer.",
+          "citations": [
+            "rsos_pdf-c141"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "D",
+          "topicLabel": "Performs welding processes",
+          "question": "What type of welding process is commonly used for joining most ferrous and some non-ferrous metals, and is known for being readily available, easily accessible, very reliable, versatile, and portable?",
+          "options": [
+            "Shielded Metal Arc Welding (SMAW)",
+            "Gas Metal Arc Welding (GMAW)",
+            "Flux Cored Arc Welding (FCAW)",
+            "Gas Tungsten Arc Welding (GTAW)"
+          ],
+          "correctIndex": 0,
+          "explanation": "The SMAW process is a commonly used process for joining most ferrous and some non-ferrous metals, and is known for its availability, accessibility, reliability, versatility, and portability.",
+          "citations": [
+            "mwa_d-c1",
+            "rsos_pdf-c130"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "D",
+          "topicLabel": "Performs welding processes",
+          "question": "What is a key characteristic of the Metal Cored Arc Welding (MCAW) process?",
+          "options": [
+            "High deposition rate and no slag production",
+            "Low operating cost and high efficiency",
+            "Portability and ease of use",
+            "Ability to weld ferrous and non-ferrous metals"
+          ],
+          "correctIndex": 0,
+          "explanation": "The MCAW process is known for its high deposition rate and the fact that it produces no slag, making option A the correct answer.",
+          "citations": [
+            "rsos_pdf-c141"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "D",
+          "topicLabel": "Performs welding processes",
+          "question": "What type of power source is typically used for the Flux Cored Arc Welding (FCAW), Metal Cored Arc Welding (MCAW), and Gas Metal Arc Welding (GMAW) processes?",
+          "options": [
+            "Constant Current (CC) power source",
+            "Constant Voltage (CV) power source",
+            "Alternating Current (AC) power source",
+            "Direct Current (DC) power source"
+          ],
+          "correctIndex": 1,
+          "explanation": "The FCAW, MCAW, and GMAW processes typically use a Constant Voltage (CV) power source, making option B the correct answer.",
+          "citations": [
+            "rsos_pdf-c141"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "D",
+          "topicLabel": "Performs welding processes",
+          "question": "What is the primary advantage of using the Submerged Arc Welding (SAW) process?",
+          "options": [
+            "High deposition rate and low operating cost",
+            "High precision and minimal distortion",
+            "Portability and ease of use",
+            "Highest production rate among all welding processes"
+          ],
+          "correctIndex": 3,
+          "explanation": "The SAW process provides the highest production rate among all welding processes, making option D the correct answer.",
+          "citations": [
+            "rsos_pdf-c152"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "D",
+          "topicLabel": "Performs welding processes",
+          "question": "What is the primary advantage of using the Gas Metal Arc Welding (GMAW) process?",
+          "options": [
+            "High deposition rate and low distortion rate",
+            "Ability to weld most ferrous and non-ferrous metals",
+            "Portability and ease of access",
+            "High productivity and low operating cost"
+          ],
+          "correctIndex": 0,
+          "explanation": "The GMAW process has a high deposition rate and low distortion rate, making it suitable for applications such as sheet metal, structural steel, and piping.",
+          "citations": [
+            "rsos_pdf-c141"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "D",
+          "topicLabel": "Performs welding processes",
+          "question": "What type of power source is typically used for the Flux Cored Arc Welding (FCAW), Metal Cored Arc Welding (MCAW), and Gas Metal Arc Welding (GMAW) processes?",
+          "options": [
+            "Constant Current (CC) machine with voltage sensing wire feeder",
+            "Constant Voltage (CV) machine with wire feeder",
+            "Alternating Current (AC) machine with voltage sensing wire feeder",
+            "Direct Current (DC) machine with wire feeder"
+          ],
+          "correctIndex": 1,
+          "explanation": "The FCAW, MCAW, and GMAW processes typically use a Constant Voltage (CV) power source and a wire feeder that supplies continuously fed wire.",
+          "citations": [
+            "rsos_pdf-c141"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "D",
+          "topicLabel": "Performs welding processes",
+          "question": "What is the primary characteristic of the Submerged Arc Welding (SAW) process?",
+          "options": [
+            "High production rate and ability to use AC and DC currents concurrently",
+            "Portability and ease of access",
+            "Ability to weld most ferrous and non-ferrous metals",
+            "High deposition rate and low distortion rate"
+          ],
+          "correctIndex": 0,
+          "explanation": "The SAW process provides the highest production rate and is the only wire feed process that may use AC and DC currents concurrently.",
+          "citations": [
+            "rsos_pdf-c165"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "D",
+          "topicLabel": "Performs welding processes",
+          "question": "What is the primary advantage of using the Shielded Metal Arc Welding (SMAW) process?",
+          "options": [
+            "High deposition rate and low distortion rate",
+            "Ability to weld most ferrous and non-ferrous metals",
+            "Portability and ease of access",
+            "Readily available, easily accessible, very reliable, versatile, and portable"
+          ],
+          "correctIndex": 3,
+          "explanation": "The SMAW process is readily available, easily accessible, very reliable, versatile, and portable, making it widely used despite being one of the slowest welding processes.",
+          "citations": [
+            "mwa_d-c1",
+            "rsos_pdf-c130"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "D",
+          "topicLabel": "Performs welding processes",
+          "question": "What type of welding process is commonly used for joining most ferrous and some non-ferrous metals, and is known for being readily available, easily accessible, very reliable, versatile, and portable?",
+          "options": [
+            "Gas Tungsten Arc Welding (GTAW)",
+            "Flux Cored Arc Welding (FCAW)",
+            "Shielded Metal Arc Welding (SMAW)",
+            "Submerged Arc Welding (SAW)"
+          ],
+          "correctIndex": 2,
+          "explanation": "The SMAW process is commonly used for joining most ferrous and some non-ferrous metals, and is known for being readily available, easily accessible, very reliable, versatile, and portable.",
+          "citations": [
+            "mwa_d-c1",
+            "rsos_pdf-c130"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "D",
+          "topicLabel": "Performs welding processes",
+          "question": "What is the primary advantage of using the Gas Tungsten Arc Welding (GTAW) process for welding?",
+          "options": [
+            "High deposition rate",
+            "Low operating cost",
+            "High quality welds with minimal clean-up",
+            "Fast welding speed"
+          ],
+          "correctIndex": 2,
+          "explanation": "The GTAW process provides high quality welds and requires minimal clean-up, making it a preferred choice for certain applications.",
+          "citations": [
+            "rsos_pdf-c152"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "D",
+          "topicLabel": "Performs welding processes",
+          "question": "What type of welding process is commonly used for joining most ferrous and some non-ferrous metals, and is known for being readily available, easily accessible, very reliable, versatile, and portable?",
+          "options": [
+            "Shielded Metal Arc Welding (SMAW)",
+            "Flux Cored Arc Welding (FCAW)",
+            "Gas Metal Arc Welding (GMAW)",
+            "Submerged Arc Welding (SAW)"
+          ],
+          "correctIndex": 0,
+          "explanation": "SMAW is a commonly used process for joining most ferrous and some non-ferrous metals, and is known for its availability, accessibility, reliability, versatility, and portability.",
+          "citations": [
+            "mwa_d-c1",
+            "rsos_pdf-c25"
+          ]
+        },
+        {
+          "tradeSlug": "welder",
+          "topicId": "D",
+          "topicLabel": "Performs welding processes",
+          "question": "What is the primary characteristic of the Submerged Arc Welding (SAW) process?",
+          "options": [
+            "High deposition rate",
+            "Low operating cost",
+            "Ability to use AC and DC currents concurrently",
+            "Portability"
+          ],
+          "correctIndex": 2,
+          "explanation": "The SAW process is the only wire feed process that may use AC and DC currents concurrently, making it suitable for large-scale productions.",
+          "citations": [
+            "rsos_pdf-c165"
+          ]
+        }
+      ]
+    }
+  }
+}

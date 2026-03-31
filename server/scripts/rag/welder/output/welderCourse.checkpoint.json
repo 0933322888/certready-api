@@ -1,0 +1,1914 @@
+{
+  "courseGenVersion": 2,
+  "generatedAt": "2026-03-27T19:46:03.448Z",
+  "course": {
+    "meta": {
+      "trade": "Welder",
+      "redSealCode": "456A",
+      "totalExamQuestions": 125,
+      "version": "2025"
+    },
+    "parts": [
+      {
+        "id": "part-1",
+        "number": 1,
+        "title": "Performs Common Occupational Skills",
+        "description": "Maintains tools and equipment, uses access and material handling equipment, performs safety-related activities, organizes work, and performs routine trade activities",
+        "weight": "16% of Total Exam",
+        "chapters": [
+          {
+            "id": "ch-1",
+            "number": 1,
+            "title": "Maintaining Tools and Equipment",
+            "subtitle": "Task A-1: Maintains hand, power, layout and measuring tools, stationary machinery, thermal cutting equipment, and welding equipment",
+            "isFree": true,
+            "estimatedMinutes": 30,
+            "sections": [
+              {
+                "id": "ch-1-s1",
+                "title": "Introduction to Maintaining Tools and Equipment",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Welders must maintain tools and equipment in order to keep them in safe working condition. This includes hand, power, layout, and measuring tools, as well as stationary machinery, thermal cutting equipment, and welding equipment."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Types of Tools and Equipment",
+                    "items": [
+                      "Hand tools",
+                      "Power tools",
+                      "Layout and measuring tools",
+                      "Stationary machinery",
+                      "Thermal cutting equipment",
+                      "Welding equipment"
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Lockout/Tagout (LOTO)",
+                    "definition": "A safety procedure used to prevent equipment from being accidentally started or energized during maintenance or repair."
+                  },
+                  {
+                    "type": "table",
+                    "headers": [
+                      "Tool/Equipment",
+                      "Maintenance Requirements"
+                    ],
+                    "rows": [
+                      [
+                        "Hand tools",
+                        "Regular cleaning and lubrication"
+                      ],
+                      [
+                        "Power tools",
+                        "Regular maintenance and inspection"
+                      ],
+                      [
+                        "Layout and measuring tools",
+                        "Calibration and verification"
+                      ]
+                    ]
+                  },
+                  {
+                    "type": "infoBox",
+                    "title": "Safety Precautions",
+                    "items": [
+                      "Always follow manufacturer's instructions",
+                      "Use personal protective equipment (PPE) as required",
+                      "Ensure proper ventilation and lighting"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ch-1-s2",
+                "title": "Maintaining Hand, Power, Layout, and Measuring Tools",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Hand, power, layout, and measuring tools require regular maintenance to ensure they remain in good working condition. This includes cleaning, lubricating, and calibrating tools as needed."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Maintenance Procedures",
+                    "items": [
+                      "Clean tools after use",
+                      "Lubricate tools regularly",
+                      "Calibrate measuring tools as needed",
+                      "Inspect tools for damage or wear"
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Calibration",
+                    "definition": "The process of verifying the accuracy of a measuring tool or instrument."
+                  },
+                  {
+                    "type": "table",
+                    "headers": [
+                      "Tool",
+                      "Maintenance Frequency"
+                    ],
+                    "rows": [
+                      [
+                        "Hand tools",
+                        "Daily/Weekly"
+                      ],
+                      [
+                        "Power tools",
+                        "Weekly/Monthly"
+                      ],
+                      [
+                        "Layout and measuring tools",
+                        "Monthly/Quarterly"
+                      ]
+                    ]
+                  },
+                  {
+                    "type": "infoBox",
+                    "title": "Tool Storage",
+                    "items": [
+                      "Store tools in a dry, secure location",
+                      "Use toolboxes or chests to organize tools",
+                      "Label tools and equipment for easy identification"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ch-1-s3",
+                "title": "Maintaining Stationary Machinery, Thermal Cutting Equipment, and Welding Equipment",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Stationary machinery, thermal cutting equipment, and welding equipment require regular maintenance to ensure they remain in good working condition. This includes cleaning, lubricating, and inspecting equipment as needed."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Maintenance Procedures",
+                    "items": [
+                      "Clean equipment after use",
+                      "Lubricate equipment regularly",
+                      "Inspect equipment for damage or wear",
+                      "Perform routine maintenance tasks as scheduled"
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Preventive Maintenance",
+                    "definition": "Regular maintenance tasks performed to prevent equipment failure or downtime."
+                  },
+                  {
+                    "type": "table",
+                    "headers": [
+                      "Equipment",
+                      "Maintenance Requirements"
+                    ],
+                    "rows": [
+                      [
+                        "Stationary machinery",
+                        "Regular cleaning and lubrication"
+                      ],
+                      [
+                        "Thermal cutting equipment",
+                        "Regular maintenance and inspection"
+                      ],
+                      [
+                        "Welding equipment",
+                        "Regular maintenance and calibration"
+                      ]
+                    ]
+                  },
+                  {
+                    "type": "infoBox",
+                    "title": "Safety Precautions",
+                    "items": [
+                      "Always follow manufacturer's instructions",
+                      "Use personal protective equipment (PPE) as required",
+                      "Ensure proper ventilation and lighting"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sourceChunkIds": [
+              "mwa_a-c1",
+              "rsos_pdf-c34",
+              "mwa_a-c2",
+              "rsos_pdf-c39",
+              "rsos_pdf-c37",
+              "mwa_a-c9",
+              "rsos_pdf-c35",
+              "mwa_a-c7",
+              "rsos_pdf-c54",
+              "mwa_a-c31",
+              "mwa_a-c4"
+            ]
+          },
+          {
+            "id": "ch-2",
+            "number": 2,
+            "title": "Using Access and Material Handling Equipment",
+            "subtitle": "Task A-2: Uses access equipment and material handling equipment",
+            "isFree": false,
+            "estimatedMinutes": 45,
+            "sections": [
+              {
+                "id": "ch-2-s1",
+                "title": "Introduction to Access Equipment",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Welders use access equipment, such as scaffolding, ladders, and aerial work platforms, to safely and effectively perform their duties. Access equipment is selected according to job requirements and must be inspected for operation and compliance with manufacturers' specifications."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Types of Access Equipment",
+                    "items": [
+                      "Scaffolding",
+                      "Ladders",
+                      "Aerial work platforms",
+                      "Fall arrest harnesses",
+                      "Anchor points"
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Access Equipment",
+                    "definition": "Equipment used to access high or hard-to-reach areas, such as scaffolding, ladders, and aerial work platforms."
+                  },
+                  {
+                    "type": "table",
+                    "headers": [
+                      "Type of Access Equipment",
+                      "Description"
+                    ],
+                    "rows": [
+                      [
+                        "Scaffolding",
+                        "A temporary structure used to support workers and materials"
+                      ],
+                      [
+                        "Ladders",
+                        "A vertical or near-vertical set of rungs used for climbing"
+                      ],
+                      [
+                        "Aerial work platforms",
+                        "A machine used to lift workers to high areas"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ch-2-s2",
+                "title": "Operating Access Equipment",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Access equipment must be operated according to manufacturers' specifications and jurisdictional regulations. Welders must verify that scaffolding is secure, level, and stable, and that the footing of ladders is secure, level, and stable."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Pre-Operational Checks",
+                    "items": [
+                      "Verify scaffolding is secure, level, and stable",
+                      "Verify footing of ladders is secure, level, and stable",
+                      "Inspect access equipment for damage or wear",
+                      "Ensure all safety features are functioning properly"
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Pre-Operational Check",
+                    "definition": "A check performed before operating access equipment to ensure it is safe and functioning properly."
+                  },
+                  {
+                    "type": "infoBox",
+                    "title": "Safety Reminders",
+                    "items": [
+                      "Always follow manufacturers' instructions",
+                      "Ensure proper training and certification",
+                      "Use personal protective equipment (PPE) as required"
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ch-2-s3",
+                "title": "Material Handling Equipment",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Material handling equipment, such as forklifts and cranes, is used to move and handle materials. Welders must select material handling equipment according to the task and inspect it for safe operation."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Types of Material Handling Equipment",
+                    "items": [
+                      "Forklifts",
+                      "Cranes",
+                      "Rigging equipment",
+                      "Hoisting equipment"
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Material Handling Equipment",
+                    "definition": "Equipment used to move and handle materials, such as forklifts and cranes."
+                  },
+                  {
+                    "type": "table",
+                    "headers": [
+                      "Type of Material Handling Equipment",
+                      "Description"
+                    ],
+                    "rows": [
+                      [
+                        "Forklifts",
+                        "A machine used to lift and move materials"
+                      ],
+                      [
+                        "Cranes",
+                        "A machine used to lift and move heavy loads"
+                      ],
+                      [
+                        "Rigging equipment",
+                        "Equipment used to lift and move materials using ropes and pulleys"
+                      ]
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sourceChunkIds": [
+              "rsos_pdf-c41",
+              "rsos_pdf-c43",
+              "rsos_pdf-c42",
+              "rsos_pdf-c44",
+              "rsos_pdf-c46",
+              "rsos_pdf-c45",
+              "rsos_pdf-c47",
+              "mwa_a-c11",
+              "mwa_a-c14",
+              "mwa_a-c1",
+              "mwa_a-c17",
+              "mwa_a-c12",
+              "rsos_pdf-c49",
+              "rsos_pdf-c61"
+            ]
+          },
+          {
+            "id": "ch-3",
+            "number": 3,
+            "title": "Performing Safety-Related Activities",
+            "subtitle": "Task A-3: Performs hazard assessments, maintains safe work environment, and uses personal protective equipment (PPE) and safety equipment",
+            "isFree": false,
+            "estimatedMinutes": 60,
+            "sections": [
+              {
+                "id": "ch-3-s1",
+                "title": "Performing Hazard Assessments to Identify Workplace Hazards",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "A hazard assessment is a systematic process used to identify potential risks before starting work. As a welder, you must perform these assessments to recognize hazards such as poor ventilation, chemical spills, toxic fumes, hydrogen sulfide (H2S), electrical shocks, mechanical entanglement, potential explosions, and radiological exposure. These hazards can arise from the work environment, materials, or equipment being used, and failing to identify them can lead to serious injuries or fatalities."
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "To conduct a hazard assessment, begin with a thorough worksite inspection. Walk through the area and look for hazards such as unguarded machinery, exposed electrical wiring, or improperly stored hazardous materials. Pay attention to environmental conditions like weather or time of day, as these can increase risks—for example, wind can disperse toxic fumes or rain can create slip hazards. Document any hazards you identify and report them according to your company’s policies and Occupational Health and Safety (OH&S) regulations."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Key Steps in Performing a Hazard Assessment",
+                    "items": [
+                      "Inspect the worksite for potential hazards, including machinery, materials, and environmental conditions.",
+                      "Identify hazards such as poor ventilation, chemical spills, toxic fumes, or mechanical entanglement risks.",
+                      "Assess risks associated with changes in environmental conditions, such as weather or time of day.",
+                      "Document identified hazards and report them according to company policies and OH&S regulations.",
+                      "Participate in safety meetings to communicate hazards and understand site-specific risks.",
+                      "Review site-specific training requirements, such as confined space entry or fall protection systems, to ensure compliance with safety protocols."
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Hazard Assessment",
+                    "definition": "A systematic process used to identify, evaluate, and mitigate potential risks in the workplace before work begins, ensuring a safe working environment."
+                  },
+                  {
+                    "type": "table",
+                    "headers": [
+                      "Hazard Type",
+                      "Example",
+                      "Potential Risk",
+                      "Mitigation Strategy"
+                    ],
+                    "rows": [
+                      [
+                        "Poor Ventilation",
+                        "Welding in an enclosed space",
+                        "Exposure to toxic fumes or gases",
+                        "Use mechanical ventilation or respiratory protection"
+                      ],
+                      [
+                        "Chemical Spills",
+                        "Acids or fuels stored improperly",
+                        "Chemical burns or environmental contamination",
+                        "Store materials in designated areas and use spill kits"
+                      ],
+                      [
+                        "Electrical Shocks",
+                        "Exposed wiring or faulty equipment",
+                        "Electrocution or equipment damage",
+                        "Inspect equipment and use lockout/tagout (LOTO) procedures"
+                      ],
+                      [
+                        "Mechanical Entanglement",
+                        "Unguarded moving parts on machinery",
+                        "Severe injuries or fatalities",
+                        "Install guards and follow safe work practices"
+                      ],
+                      [
+                        "Radiological Exposure",
+                        "Radiographic inspections",
+                        "Radiation exposure to workers",
+                        "Follow radiation safety protocols and use shielding"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ch-3-s2",
+                "title": "Maintaining a Safe Work Environment",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Maintaining a safe work environment is critical to preventing accidents and ensuring compliance with OH&S regulations. This involves selecting and using tools and equipment appropriately, handling and storing hazardous materials correctly, and installing temporary safety protections as required. For example, you must ensure that stationary machines have unobstructed ranges of motion, are properly guarded, and are well-marked to prevent accidental contact with moving parts."
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Good housekeeping is another essential aspect of maintaining a safe work environment. This includes keeping work areas clean and free of clutter, properly storing combustible materials, and ensuring that emergency exits and safety locations are clearly marked and accessible. For instance, first aid stations, eye wash stations, muster points, and fire extinguishers must be located and identified to facilitate quick response in case of an emergency."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Best Practices for Maintaining a Safe Work Environment",
+                    "items": [
+                      "Select and use tools and equipment according to the task and manufacturer’s specifications to ensure safe operation.",
+                      "Handle and store hazardous materials in designated areas as per company policies, standards, and WHMIS guidelines.",
+                      "Install temporary safety protections, such as barriers or caution tape, to isolate hazardous areas.",
+                      "Practice good housekeeping by keeping work areas clean, organized, and free of clutter.",
+                      "Ensure stationary machines are unobstructed, guarded, and well-marked to prevent accidental contact.",
+                      "Follow emergency procedures, including reporting hazardous spills, evacuation routes, and injured worker protocols.",
+                      "Plan safe routes when moving materials to avoid collisions or tripping hazards.",
+                      "Protect or remove combustible materials from the work area to reduce fire risks."
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Safe Work Permit",
+                    "definition": "A formal document that authorizes specific work to be carried out in a designated area, ensuring that all safety measures are in place and risks are mitigated before work begins."
+                  },
+                  {
+                    "type": "infoBox",
+                    "title": "Emergency Procedures and Safety Locations",
+                    "items": [
+                      "First aid stations: Locate and ensure they are stocked with essential supplies.",
+                      "Eye wash stations: Verify they are functional and accessible in case of chemical exposure.",
+                      "Muster points: Identify and communicate the designated assembly area in case of evacuation.",
+                      "Fire extinguishers: Ensure they are inspected, accessible, and appropriate for the types of fires likely to occur.",
+                      "Reporting hazardous spills: Follow company protocols to contain and report spills immediately.",
+                      "Evacuation procedures: Know the escape routes and practice emergency drills regularly."
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ch-3-s3",
+                "title": "Selecting, Inspecting, and Using Personal Protective Equipment (PPE) and Safety Equipment",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Personal Protective Equipment (PPE) and safety equipment are your last line of defense against workplace hazards. Selecting the correct PPE for a task is critical to your safety. For example, when welding, you must wear a welding helmet with the appropriate filter lens to protect against ultraviolet and infrared radiation, as well as flame-resistant clothing to protect against sparks and spatter. Always choose PPE based on the specific hazards of the task, company policies, and OH&S regulations."
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Before using PPE, inspect it for signs of wear, damage, or expiration. For instance, check respirators for cracks or worn straps, and ensure welding gloves are free of holes or burns. If PPE is damaged, remove it from service immediately and report it for replacement. Proper fit is also essential—adjust straps on harnesses, ensure hard hats sit level on your head, and verify that safety glasses fit snugly without gaps."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "PPE and Safety Equipment Selection and Use",
+                    "items": [
+                      "Select PPE based on the task, hazard, company policies, and OH&S regulations (e.g., hard hats, respirators, hearing protection, fall arrest harnesses).",
+                      "Inspect PPE for wear, damage, or expiration before each use; remove damaged equipment from service.",
+                      "Adjust PPE to ensure proper fit according to manufacturer specifications (e.g., harness straps, helmet sizing).",
+                      "Wear PPE consistently during all hazardous tasks, including welding, grinding, or handling hazardous materials.",
+                      "Operate safety equipment such as fire extinguishers, safety blankets, and grinder guards according to manufacturer specifications.",
+                      "Store and maintain PPE in a clean, dry environment to prevent degradation or contamination.",
+                      "Follow training and certification requirements for using specific PPE, such as fall arrest systems or respiratory protection."
+                    ]
+                  },
+                  {
+                    "type": "table",
+                    "headers": [
+                      "PPE Type",
+                      "Purpose",
+                      "Inspection Check",
+                      "Storage Requirements"
+                    ],
+                    "rows": [
+                      [
+                        "Welding Helmet",
+                        "Protects against UV/IR radiation and sparks",
+                        "Check lens clarity and headgear condition",
+                        "Store in a dry, dust-free case"
+                      ],
+                      [
+                        "Respirator",
+                        "Filters harmful fumes or particles",
+                        "Inspect straps, seals, and filters for damage",
+                        "Store in a sealed bag to prevent contamination"
+                      ],
+                      [
+                        "Fall Arrest Harness",
+                        "Prevents falls from heights",
+                        "Check webbing, buckles, and D-rings for wear",
+                        "Hang on a clean, dry hook away from chemicals"
+                      ],
+                      [
+                        "Safety Glasses",
+                        "Protects eyes from debris and sparks",
+                        "Inspect lenses for scratches or cracks",
+                        "Store in a protective case"
+                      ],
+                      [
+                        "Hearing Protection",
+                        "Reduces noise exposure",
+                        "Check for cracks or worn cushioning",
+                        "Store in a dry, clean container"
+                      ]
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Lockout/Tagout (LOTO)",
+                    "definition": "A safety procedure used to ensure that hazardous energy sources are properly isolated and rendered inoperative before maintenance or servicing of equipment begins, preventing accidental startup or release of energy."
+                  }
+                ]
+              }
+            ],
+            "sourceChunkIds": [
+              "rsos_pdf-c52",
+              "rsos_pdf-c49",
+              "rsos_pdf-c54",
+              "rsos_pdf-c48",
+              "rsos_pdf-c50"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "part-2",
+        "number": 2,
+        "title": "Performs Layout and Fabrication of Components for Welding",
+        "description": "Performs layout, fabricates components, and assembles components for welding",
+        "weight": "22% of Total Exam",
+        "chapters": [
+          {
+            "id": "ch-4",
+            "number": 1,
+            "title": "Performing Layout",
+            "subtitle": "Task B-7: Develops templates and transfers dimensions from drawings to materials",
+            "isFree": true,
+            "estimatedMinutes": 30,
+            "sections": [
+              {
+                "id": "ch-4-s1",
+                "title": "Selecting and Using Layout Tools for Template Development",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Proper layout begins with selecting the correct measuring and layout tools for the task. Combination squares, measuring tapes, plumb bobs, and straightedges are fundamental for ensuring straight lines and accurate measurements. Marking devices such as scribe tools, transfer punches, and center punches are essential for transferring dimensions from drawings to templates without distortion. Digital tools like calipers and levels provide precision for complex or repetitive layouts, reducing human error in measurements."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Common Measuring and Layout Tools",
+                    "items": [
+                      "Combination squares: Used for marking 90° and 45° angles, measuring depths, and scribing lines parallel to edges.",
+                      "Measuring tapes: Flexible and extendable for measuring long distances or irregular surfaces.",
+                      "Plumb bobs: Ensures vertical alignment for reference lines on templates.",
+                      "Straightedges: Provides a reference for drawing straight lines over long distances.",
+                      "Marking devices (scribers, transfer punches, center punches): Transfers dimensions precisely from drawings to templates.",
+                      "Digital measuring tools (calipers, levels): Offers high precision for critical dimensions and repetitive tasks."
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Working Point",
+                    "definition": "A reference point on a drawing or template from which all other dimensions and lines are extended or measured. It serves as the origin for layout operations."
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Axis",
+                    "definition": "A straight line that represents the centerline or primary reference line of a component. It is used to align and orient parts during layout and fabrication."
+                  },
+                  {
+                    "type": "table",
+                    "headers": [
+                      "Tool",
+                      "Primary Use",
+                      "Application in Layout"
+                    ],
+                    "rows": [
+                      [
+                        "Combination Square",
+                        "Marking angles and measuring depths",
+                        "Used to scribe lines at 90° or 45° and measure step heights on templates."
+                      ],
+                      [
+                        "Measuring Tape",
+                        "Measuring linear distances",
+                        "Essential for measuring long sections of material or transferring overall dimensions from drawings."
+                      ],
+                      [
+                        "Plumb Bob",
+                        "Establishing vertical reference",
+                        "Used to ensure templates or components are aligned vertically during layout."
+                      ],
+                      [
+                        "Straightedge",
+                        "Drawing straight lines",
+                        "Provides a reliable edge for scribing long, straight lines on templates."
+                      ],
+                      [
+                        "Digital Caliper",
+                        "Precision measurement of small dimensions",
+                        "Used for measuring thicknesses, hole diameters, and tight tolerances on templates."
+                      ]
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ch-4-s2",
+                "title": "Developing Templates: Materials, Starting Points, and Profiles",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Templates are physical guides used to mark materials before cutting, drilling, or bending. The choice of template material depends on the application, durability requirements, and environmental conditions. Wood and cardboard are cost-effective for temporary or low-stress layouts, while metal templates offer durability and fire resistance for repeated use. Paper templates are suitable for simple, one-time layouts but lack longevity."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Template Materials and Their Properties",
+                    "items": [
+                      "Wood: Lightweight, easy to cut, and suitable for one-time or low-stress layouts. Prone to warping in humid conditions.",
+                      "Cardboard: Inexpensive and easy to shape, ideal for temporary templates or prototyping. Not durable for repeated use.",
+                      "Metal: Highly durable and fire-resistant, used for templates requiring long-term accuracy or repeated use. Requires specialized tools for cutting and shaping.",
+                      "Paper: Used for simple layouts or when minimal precision is required. Not suitable for wet or high-temperature environments."
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Starting Point",
+                    "definition": "The initial reference location on a template or material from which all other dimensions and features are laid out. It is typically aligned with a working point or axis on the drawing."
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "To develop a template, start by identifying the working point and axis from the drawing. Extend lines from these points to mark the overall profile of the component. Transfer dimensions from the drawing to the template using the selected tools, ensuring accuracy at each step. Once the profile is complete, mark critical information such as part numbers, material specifications, and layout details directly on the template for future reference."
+                  },
+                  {
+                    "type": "infoBox",
+                    "title": "Hazards and Safe Work Practices for Template Development",
+                    "items": [
+                      "Pinch points: Keep hands and tools clear when using straightedges or marking devices to avoid crushing injuries.",
+                      "Burns: Be cautious when using metal templates near heat sources or during cutting operations.",
+                      "Debris: Wear safety glasses to protect against flying particles when cutting or marking templates.",
+                      "Fire hazards: Ensure metal templates are stored away from flammable materials to prevent ignition."
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ch-4-s3",
+                "title": "Transferring Dimensions from Drawings to Materials",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Transferring dimensions accurately from drawings to materials is critical to prevent waste and ensure components fit together correctly during welding. Begin by interpreting the drawing, including welding symbols, centerlines, hole locations, and end preparation lines. Identify work points such as base points, axes, and hole locations to guide the layout process. Use the appropriate tools to mark these points on the material before proceeding with cutting or fabrication."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Work Points and Their Applications",
+                    "items": [
+                      "Center lines: Represent the primary axis of symmetry for a component, used to align parts during fabrication.",
+                      "Hole locations: Marked for drilling or punching operations, ensuring components are assembled correctly.",
+                      "End preparation lines: Indicate where materials will be beveled, chamfered, or cut to prepare for welding.",
+                      "Base point: The origin point from which all other dimensions are measured, critical for maintaining accuracy.",
+                      "Axis: A reference line used to orient components and ensure proper alignment during assembly."
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Kerf",
+                    "definition": "The width of material removed by a cutting process, such as sawing or plasma cutting. It must be accounted for when transferring dimensions to avoid misalignment in assembled components."
+                  },
+                  {
+                    "type": "paragraph",
+                    "text": "Perform mathematical calculations as needed to adjust dimensions for factors like bend allowances, material thickness, or kerf. Verify the layout for accuracy by double-checking measurements against the drawing and specifications. Ensure the total material required is calculated to maximize efficiency and minimize waste. Once verified, proceed with marking the material using the template or directly from the drawing."
+                  },
+                  {
+                    "type": "table",
+                    "headers": [
+                      "Factor",
+                      "Impact on Layout",
+                      "Calculation or Adjustment"
+                    ],
+                    "rows": [
+                      [
+                        "Bend Allowance",
+                        "Affects the length of material needed for bent components.",
+                        "Calculated using material thickness, bend radius, and angle to determine the neutral axis."
+                      ],
+                      [
+                        "Kerf",
+                        "Reduces the final length of material after cutting.",
+                        "Accounted for by adding the kerf width to the cut line when transferring dimensions."
+                      ],
+                      [
+                        "Material Thickness",
+                        "Influences the position of hole locations and end preparations.",
+                        "Ensure hole depths and chamfers are adjusted to accommodate thickness."
+                      ],
+                      [
+                        "Seam Location",
+                        "Determines where components will be joined during welding.",
+                        "Mark seam locations precisely to ensure proper fit-up and alignment."
+                      ]
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sourceChunkIds": [
+              "rsos_pdf-c86",
+              "rsos_pdf-c84",
+              "rsos_pdf-c89",
+              "mwa_b-c1",
+              "mwa_b-c2",
+              "mwa_b-c4",
+              "mwa_b-c5"
+            ]
+          },
+          {
+            "id": "ch-5",
+            "number": 2,
+            "title": "Fabricating Components",
+            "subtitle": "Task B-8: Prepares materials, fits components for welding, and assembles components",
+            "isFree": false,
+            "estimatedMinutes": 60,
+            "sections": [
+              {
+                "id": "ch-5-s1",
+                "title": "Preparing Materials for Fabrication",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Preparing materials is the first critical step in the fabrication process and directly impacts the quality of the final weldment. Before any cutting, drilling, or forming begins, the welder must verify that the material type, grade, thickness, and size match the job specifications. This verification prevents costly errors and ensures compliance with welding procedures (WPS/WPDS). Common preparation processes include drilling, punching, forming, grinding, and thermal processes, each requiring specific tools and techniques tailored to the material properties."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Key Preparation Processes and Their Applications",
+                    "items": [
+                      "Drilling: Used to create holes for bolts, screws, or alignment pins; requires drill presses or hand drills with appropriate drill bits for the material.",
+                      "Punching: Creates holes or notches in sheet metal or plate; performed using punch presses or ironworkers for efficiency.",
+                      "Forming: Shapes materials through bending, rolling, or pressing to achieve desired contours; requires specialized tooling like press brakes or rolls.",
+                      "Grinding: Removes burrs, sharp edges, or excess material; performed using angle grinders, bench grinders, or files depending on the task.",
+                      "Thermal Processes: Includes processes like plasma cutting or oxy-fuel cutting to shape materials; requires adherence to safety protocols due to heat and sparks."
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Material Verification",
+                    "definition": "The process of confirming that the material type, grade, thickness, and size match the job specifications before fabrication begins. This step ensures compliance with welding procedures and prevents defects."
+                  },
+                  {
+                    "type": "table",
+                    "headers": [
+                      "Tool/Equipment",
+                      "Application",
+                      "Safety Considerations"
+                    ],
+                    "rows": [
+                      [
+                        "Drill Press",
+                        "Drilling precise holes in metal or wood",
+                        "Secure workpiece, wear PPE (eye protection, gloves), ensure proper drill speed for material"
+                      ],
+                      [
+                        "Punch Press",
+                        "Creating holes or notches in sheet metal",
+                        "Keep hands clear of press area, use foot pedal controls, inspect dies for wear"
+                      ],
+                      [
+                        "Angle Grinder",
+                        "Removing burrs, grinding edges, or cutting small sections",
+                        "Wear face shield, gloves, and respiratory protection; ensure disc is rated for material"
+                      ],
+                      [
+                        "Plasma Cutter",
+                        "Cutting metal using ionized gas and electric arc",
+                        "Use in well-ventilated area, wear flame-resistant clothing, ensure proper grounding"
+                      ]
+                    ]
+                  },
+                  {
+                    "type": "infoBox",
+                    "title": "Common Hazards and Safe Work Practices",
+                    "items": [
+                      "Pinch points: Keep hands and clothing clear of moving parts on drills, presses, and grinders.",
+                      "Burns: Wear flame-resistant clothing and gloves when handling hot materials or using thermal cutting tools.",
+                      "Debris: Use safety glasses and face shields to protect against flying particles during grinding or cutting.",
+                      "Cuts: Inspect tools for sharp edges or damaged guards before use; replace worn-out blades or discs."
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ch-5-s2",
+                "title": "Fitting Components for Welding",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Fitting components involves positioning and securing parts in preparation for welding, ensuring they align correctly and meet specified tolerances. This step is critical for achieving strong, defect-free welds and minimizing distortion. The process often includes mechanical joining methods such as tack welding, clamps, or fixtures to hold components in place before the final weld is applied. Proper fitting also accounts for factors like thermal expansion and contraction, which can affect the final assembly if not managed correctly."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Tools and Equipment for Fitting Components",
+                    "items": [
+                      "Clamps: Used to hold parts in alignment; include C-clamps, bar clamps, or specialized welding clamps.",
+                      "Fixtures: Custom-made tools that hold components in precise positions; often used in repetitive fabrication tasks.",
+                      "Hi-Lo Gauges: Measure gaps between components to ensure proper fit-up before welding.",
+                      "Wedges: Help align parts or adjust gaps; used in conjunction with clamps or fixtures.",
+                      "Pre-heating Equipment: Used to heat base metals before tack welding to reduce thermal stress and improve weld quality."
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Tack Welding",
+                    "definition": "A temporary weld used to hold components in place before the final weld is applied. Tack welds must be strategically placed to control expansion and contraction, and they should be removed or incorporated into the final weld if required by specifications."
+                  },
+                  {
+                    "type": "table",
+                    "headers": [
+                      "Tacking Method",
+                      "Application",
+                      "Advantages",
+                      "Disadvantages"
+                    ],
+                    "rows": [
+                      [
+                        "Bridge Tack",
+                        "Used to bridge gaps between parts",
+                        "Quick to apply, reduces distortion",
+                        "May require removal if not incorporated into final weld"
+                      ],
+                      [
+                        "Penetrating Tack",
+                        "Fuses parts together at specific points",
+                        "Provides strong temporary hold, reduces movement",
+                        "Can leave small weld marks that require grinding"
+                      ],
+                      [
+                        "Plug Tack",
+                        "Fills holes or gaps with weld metal",
+                        "Useful for aligning misaligned parts",
+                        "May create excess weld metal that must be removed"
+                      ]
+                    ]
+                  },
+                  {
+                    "type": "infoBox",
+                    "title": "Methods to Control Expansion and Contraction",
+                    "items": [
+                      "Use Strongbacks: Rigid bars attached to components to maintain alignment during welding.",
+                      "Employ Gussets: Triangular plates welded between components to add rigidity and reduce distortion.",
+                      "Follow Tacking Sequence: Weld tacks in a specific order to distribute heat evenly and minimize warping.",
+                      "Use Heat Sinks: Place metal blocks or water-cooled tools near weld areas to absorb excess heat."
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ch-5-s3",
+                "title": "Assembling Components for Final Welding",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Assembling components involves joining pre-fitted parts into a final structure or assembly, ensuring alignment, gaps, and tolerances meet specifications. This step requires careful planning and the use of appropriate tools and fastening devices to achieve a structurally sound weldment. The assembly process must account for factors like material allowances for bending, braking, or rolling, as well as the orientation and level of components to prevent misalignment or distortion during welding."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Tools and Equipment for Assembly",
+                    "items": [
+                      "Alignment Tools: Include hi-lo gauges, straightedges, and levels to ensure components are plumb and level.",
+                      "Fastening Devices: Bolts, clips, or temporary welds used to secure components during assembly.",
+                      "Jigs and Fixtures: Custom tools that hold components in precise positions for consistent assembly.",
+                      "Cranes and Slings: Used to lift and position heavy components safely.",
+                      "Sawhorses: Provide stable support for smaller components during assembly."
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Assembly Sequence",
+                    "definition": "The predetermined order in which components are assembled, designed to minimize distortion, control thermal expansion, and ensure structural integrity. The sequence is typically outlined in the welding procedure specification (WPS) or job drawings."
+                  },
+                  {
+                    "type": "table",
+                    "headers": [
+                      "Fastening Device",
+                      "Application",
+                      "Advantages",
+                      "Limitations"
+                    ],
+                    "rows": [
+                      [
+                        "Bolts",
+                        "Temporary or permanent fastening of components",
+                        "Easy to install and remove, reusable",
+                        "Requires precise hole alignment, may loosen over time"
+                      ],
+                      [
+                        "Clips",
+                        "Used to secure sheet metal or thin components",
+                        "Quick to apply, reduces need for drilling",
+                        "Limited strength for heavy loads"
+                      ],
+                      [
+                        "Temporary Welds",
+                        "Hold components in place before final welding",
+                        "Provides strong hold, can be incorporated into final weld",
+                        "May require grinding to remove excess metal"
+                      ]
+                    ]
+                  },
+                  {
+                    "type": "infoBox",
+                    "title": "Regulatory Requirements for Assembly",
+                    "items": [
+                      "Pressure Vessels: Assemblies for pressure vessels must comply with ASME Boiler and Pressure Vessel Code (Section VIII) or other applicable standards.",
+                      "Structural Steel: Assemblies for structural steel must meet CSA S16 or AISC standards for welding and fabrication.",
+                      "Codes and Standards: Always refer to job-specific codes, such as AWS D1.1 for structural welding or API 1104 for pipeline welding.",
+                      "Inspection Requirements: Components may require non-destructive testing (NDT) like visual inspection, ultrasonic testing, or radiographic testing to ensure compliance."
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sourceChunkIds": [
+              "mwa_b-c6",
+              "mwa_b-c7",
+              "mwa_b-c8",
+              "rsos_pdf-c90",
+              "rsos_pdf-c91",
+              "rsos_pdf-c93",
+              "rsos_pdf-c94",
+              "rsos_pdf-c95",
+              "rsos_pdf-c96"
+            ]
+          },
+          {
+            "id": "ch-6",
+            "number": 3,
+            "title": "Assembling Components",
+            "subtitle": "Task B-8: Assembles components for welding",
+            "isFree": false,
+            "estimatedMinutes": 45,
+            "sections": [
+              {
+                "id": "ch-6-s1",
+                "title": "Preparing Materials for Assembly",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Preparing materials for welding is a critical step that ensures components meet job specifications before assembly. The welder must verify the material type, grade, thickness, and size to confirm compliance with the welding procedure specification (WPS) or job drawings. This verification prevents costly errors, such as using the wrong material or incorrect dimensions, which could compromise the structural integrity of the final weldment. Tools like calipers, micrometers, and visual inspection are commonly used to confirm these attributes."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Key Steps in Material Preparation",
+                    "items": [
+                      "Verify material type, grade, thickness, and size against job specifications using WPS or drawings.",
+                      "Clean weld areas using abrasive techniques such as grinding, filing, or chemical cleaning to remove contaminants like rust, oil, or slag.",
+                      "Prepare edges for assembly by squaring or bevelling according to job specifications, tolerances, and welding symbols.",
+                      "Perform material preparation processes such as drilling, punching, forming, or thermal cutting as required by the job.",
+                      "Ensure all preparation processes are completed and documented before proceeding to the next step."
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Welding Procedure Specification (WPS)",
+                    "definition": "A document that provides the required variables for a specific welding procedure, including base metal specifications, filler metal, welding parameters, and joint design, to ensure consistent and quality welds."
+                  },
+                  {
+                    "type": "table",
+                    "headers": [
+                      "Preparation Process",
+                      "Tools/Equipment",
+                      "Purpose",
+                      "Safety Considerations"
+                    ],
+                    "rows": [
+                      [
+                        "Drilling",
+                        "Drill press, hand drills, drill bits",
+                        "Create holes for fasteners or alignment",
+                        "Secure workpiece, wear PPE, avoid loose clothing near rotating parts"
+                      ],
+                      [
+                        "Punching",
+                        "Punch press, hole punches",
+                        "Create holes or notches in metal",
+                        "Ensure proper die alignment, use gloves to handle sharp edges"
+                      ],
+                      [
+                        "Forming",
+                        "Brakes, rollers, hammers",
+                        "Shape metal to required contours",
+                        "Use appropriate PPE, secure workpiece to prevent movement"
+                      ],
+                      [
+                        "Grinding",
+                        "Angle grinders, bench grinders, files",
+                        "Remove excess material, smooth edges, or clean surfaces",
+                        "Wear face shield, gloves, and ensure proper ventilation"
+                      ],
+                      [
+                        "Thermal Cutting",
+                        "Oxy-fuel torches, plasma cutters",
+                        "Cut metal to specified dimensions",
+                        "Follow fire safety protocols, ensure proper ventilation, wear flame-resistant PPE"
+                      ]
+                    ]
+                  },
+                  {
+                    "type": "infoBox",
+                    "title": "Common Hazards in Material Preparation",
+                    "items": [
+                      "Pinch points: Risk of crushing injuries when handling or securing materials.",
+                      "Burns: Exposure to hot metal, sparks, or flames during thermal processes.",
+                      "Debris: Flying particles from grinding or cutting can cause eye injuries.",
+                      "Cuts: Sharp edges on metal or tools can result in lacerations.",
+                      "Chemical exposure: Fumes from cleaning agents or grinding dust may pose health risks."
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ch-6-s2",
+                "title": "Fitting Components for Welding",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Fitting components for welding involves mechanically joining parts to ensure proper alignment and fit before permanent welding. This step is essential to maintain dimensional accuracy and prevent distortion during the welding process. The welder must select appropriate tools and equipment, such as clamps, fixtures, or tack welds, to hold components in place. Pre-heating base metals may also be required to reduce thermal stress and ensure consistent weld quality."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Tacking Methods and Applications",
+                    "items": [
+                      "Bridge tacking: Used to maintain alignment between two components without full penetration.",
+                      "Penetrating tacks: Provide deeper fusion to ensure stronger temporary joints.",
+                      "Plug tacking: Fills holes or gaps to secure components in place.",
+                      "Sequential tacking: Applied in a specific order to control expansion and contraction.",
+                      "Pre-heating: Applied to base metals to reduce thermal stress and improve weld quality."
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Tack Welding",
+                    "definition": "A temporary weld used to hold components in position before the final weld is applied. Tack welds must be strategically placed to minimize distortion and ensure proper alignment."
+                  },
+                  {
+                    "type": "table",
+                    "headers": [
+                      "Tacking Method",
+                      "Application",
+                      "Advantages",
+                      "Disadvantages"
+                    ],
+                    "rows": [
+                      [
+                        "Bridge Tacking",
+                        "Maintains alignment between two components",
+                        "Minimizes distortion, easy to remove",
+                        "Provides limited strength for heavy components"
+                      ],
+                      [
+                        "Penetrating Tacks",
+                        "Ensures stronger temporary joints",
+                        "Increases fusion depth, reduces misalignment",
+                        "May require post-tack grinding to remove excess material"
+                      ],
+                      [
+                        "Plug Tacking",
+                        "Fills holes or gaps to secure components",
+                        "Provides stability for irregular shapes",
+                        "Can create stress concentrations if not properly placed"
+                      ],
+                      [
+                        "Sequential Tacking",
+                        "Applied in a specific order to control expansion",
+                        "Reduces warping and distortion",
+                        "Requires careful planning and execution"
+                      ]
+                    ]
+                  },
+                  {
+                    "type": "infoBox",
+                    "title": "Tools and Equipment for Fitting Components",
+                    "items": [
+                      "Clamps: Used to hold components in place during assembly.",
+                      "Fixtures: Custom tools designed to hold components in precise alignment.",
+                      "Hi-lo gauges: Measure gaps and alignments to ensure proper fit.",
+                      "Wedges: Adjust components to achieve level or plumb alignment.",
+                      "Pre-heating equipment: Torches or heating elements used to pre-heat base metals."
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ch-6-s3",
+                "title": "Assembling Components for Welding",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Assembling components for welding requires careful planning and execution to ensure the final weldment meets design specifications. The welder must determine the correct sequence for assembly, set gaps and alignments within tolerance levels, and verify the assembly at every stage. Fastening devices such as bolts or clips may be used to temporarily secure components before welding. Cranes, slings, and alignment tools are often employed to handle large or heavy parts safely."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Assembly Sequence and Alignment",
+                    "items": [
+                      "Determine the assembly sequence based on drawings and job specifications to ensure proper fit and alignment.",
+                      "Set gaps and alignments within tolerance levels using tools like hi-lo gauges or straightedges.",
+                      "Fit, place, and adjust components to ensure they are level, plumb, and oriented correctly according to the drawings.",
+                      "Use fastening devices such as bolts or clips to temporarily secure components before welding.",
+                      "Verify the assembly at every stage to ensure compliance with specifications and prevent errors."
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Assembly Sequence",
+                    "definition": "The predetermined order in which components are assembled to ensure proper fit, alignment, and structural integrity. The sequence is typically outlined in job drawings or welding procedure specifications."
+                  },
+                  {
+                    "type": "table",
+                    "headers": [
+                      "Fastening Device",
+                      "Application",
+                      "Advantages",
+                      "Limitations"
+                    ],
+                    "rows": [
+                      [
+                        "Bolts",
+                        "Temporary or permanent fastening of components",
+                        "Easy to install and remove, reusable",
+                        "Requires precise hole alignment, may loosen over time"
+                      ],
+                      [
+                        "Clips",
+                        "Secure components during assembly",
+                        "Quick to apply, reduces movement",
+                        "Limited load-bearing capacity"
+                      ],
+                      [
+                        "Clamps",
+                        "Hold components in place during welding",
+                        "Adjustable for different sizes, reusable",
+                        "May obstruct access to weld areas"
+                      ],
+                      [
+                        "Jigs and Fixtures",
+                        "Ensure precise alignment and repeatability",
+                        "Improves consistency and accuracy",
+                        "Custom fabrication required, may be costly"
+                      ]
+                    ]
+                  },
+                  {
+                    "type": "infoBox",
+                    "title": "Safety Practices for Component Assembly",
+                    "items": [
+                      "Inspect all tools and equipment for damage or wear before use to prevent malfunctions.",
+                      "Use cranes, slings, and lifting devices according to load capacity ratings to avoid overloading.",
+                      "Wear appropriate PPE, including gloves, safety glasses, and flame-resistant clothing, to protect against hazards.",
+                      "Ensure proper ventilation in confined spaces to reduce exposure to fumes and gases.",
+                      "Follow lockout/tagout procedures when working with equipment to prevent accidental startups."
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ch-6-s4",
+                "title": "Regulatory Requirements and Quality Assurance",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Welders must adhere to regulatory requirements and industry standards when assembling components for welding, particularly for pressure vessels or critical structures. These standards, such as CSA W59 or ASME Section IX, outline the codes, procedures, and tolerances that must be followed to ensure safety and compliance. Failure to comply with these regulations can result in structural failures, legal penalties, or loss of certification."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Key Regulatory Standards for Assembly",
+                    "items": [
+                      "CSA W59: Canadian standard for welding of steel structures, including fabrication and assembly requirements.",
+                      "ASME Section IX: American standard for qualification of welding procedures and welders, applicable to pressure vessels and piping.",
+                      "AWS D1.1: American Welding Society standard for structural welding, covering fabrication and assembly practices.",
+                      "ISO 3834: International standard for quality requirements in welding, ensuring consistent and reliable welds.",
+                      "Local building codes: Regulations specific to the jurisdiction, such as fire safety or structural integrity requirements."
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Welding Code",
+                    "definition": "A set of technical standards that govern welding practices, including materials, procedures, qualifications, and inspection requirements. Codes ensure consistency, safety, and reliability in welded structures."
+                  },
+                  {
+                    "type": "table",
+                    "headers": [
+                      "Standard/Codes",
+                      "Scope",
+                      "Key Requirements",
+                      "Applicability"
+                    ],
+                    "rows": [
+                      [
+                        "CSA W59",
+                        "Steel structures",
+                        "Fabrication, assembly, and welding procedures",
+                        "Canada, structural steel applications"
+                      ],
+                      [
+                        "ASME Section IX",
+                        "Pressure vessels and piping",
+                        "Qualification of welding procedures and welders",
+                        "North America, critical pressure applications"
+                      ],
+                      [
+                        "AWS D1.1",
+                        "Structural welding",
+                        "Fabrication, assembly, and inspection requirements",
+                        "United States, structural steel applications"
+                      ],
+                      [
+                        "ISO 3834",
+                        "Quality in welding",
+                        "Quality control, inspection, and documentation",
+                        "International, applicable to all welding industries"
+                      ],
+                      [
+                        "Local Building Codes",
+                        "Structural integrity and safety",
+                        "Fire safety, load-bearing requirements, and inspections",
+                        "Jurisdiction-specific, varies by region"
+                      ]
+                    ]
+                  },
+                  {
+                    "type": "infoBox",
+                    "title": "Quality Assurance Practices in Assembly",
+                    "items": [
+                      "Verify all components and materials against job specifications before assembly to ensure compliance.",
+                      "Document each step of the assembly process, including measurements, alignments, and fastening methods.",
+                      "Perform visual inspections and non-destructive testing (NDT) as required by the welding code or job specifications.",
+                      "Calibrate tools and equipment regularly to maintain accuracy and reliability.",
+                      "Train and certify welders and assemblers according to industry standards to ensure competency."
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sourceChunkIds": [
+              "mwa_b-c7",
+              "mwa_b-c8",
+              "rsos_pdf-c90",
+              "rsos_pdf-c91",
+              "rsos_pdf-c93",
+              "rsos_pdf-c94",
+              "rsos_pdf-c95",
+              "rsos_pdf-c96"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "part-3",
+        "number": 3,
+        "title": "Performs Cutting and Gouging",
+        "description": "Uses tools and equipment for non-thermal cutting and grinding, uses oxy-fuel gas cutting (OFC) process, and uses plasma arc cutting (PAC) process",
+        "weight": "18% of Total Exam",
+        "chapters": [
+          {
+            "id": "ch-7",
+            "number": 1,
+            "title": "Using Tools and Equipment for Non-Thermal Cutting and Grinding",
+            "subtitle": "Task C-9: Selects cutting and grinding tools, cuts using stationary power tools, and cuts using hand tools",
+            "isFree": true,
+            "estimatedMinutes": 30,
+            "sections": [
+              {
+                "id": "ch-7-s1",
+                "title": "Selecting Cutting and Grinding Tools for Non-Thermal Processes",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Selecting the correct cutting and grinding tools is critical to achieving clean cuts, minimizing waste, and ensuring operator safety. Tools must be matched to the material type, thickness, and the specific cutting or grinding operation required. For example, carbon steel requires different blades and discs than stainless steel or aluminum due to differences in hardness and heat resistance. Always refer to the manufacturer's specifications for tool compatibility and recommended operating parameters."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Key Factors in Tool Selection",
+                    "items": [
+                      "Material type: Ferrous metals (e.g., carbon steel) typically require bi-metal or carbon steel blades, while non-ferrous metals (e.g., aluminum) may need carbide or diamond blades to prevent binding or premature wear.",
+                      "Material thickness: Thicker materials require tools with higher torque and larger teeth or grit sizes to maintain cutting efficiency and reduce strain on the tool.",
+                      "Type of cut: Straight cuts may use abrasive discs, while bevel or radius cuts often require specialized blades or grinding wheels designed for angular operations.",
+                      "Tool limitations: Consider the maximum RPM, feed rate, and power source (e.g., pneumatic vs. electric) of the tool to ensure it can handle the task without overheating or failing.",
+                      "Finish requirements: Rough cuts may use coarser abrasives, while finishing operations require finer grits or specialized blades to achieve smooth edges."
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Bi-metal blade",
+                    "definition": "A cutting blade with a high-speed steel cutting edge welded to a flexible alloy steel back, designed for cutting ferrous metals with high durability and resistance to heat."
+                  },
+                  {
+                    "type": "table",
+                    "headers": [
+                      "Tool Type",
+                      "Material Compatibility",
+                      "Typical Applications",
+                      "Limitations"
+                    ],
+                    "rows": [
+                      [
+                        "Band Saw",
+                        "Ferrous and non-ferrous metals",
+                        "Straight cuts in thick materials",
+                        "Limited to straight cuts; slower than cold cut saws"
+                      ],
+                      [
+                        "Cold Cut Saw",
+                        "Ferrous metals (carbon steel, stainless steel)",
+                        "Precision cuts in structural shapes",
+                        "Not suitable for non-ferrous metals"
+                      ],
+                      [
+                        "Nibbler",
+                        "Thin metals (up to 1/4\")",
+                        "Cutting curves and intricate shapes",
+                        "Limited to thin materials; slower for long cuts"
+                      ],
+                      [
+                        "Power Hacksaw",
+                        "Ferrous metals",
+                        "Straight cuts in bars and rods",
+                        "Slow cutting speed; requires manual feed"
+                      ],
+                      [
+                        "Abrasive Disc (Angle Grinder)",
+                        "Ferrous and non-ferrous metals",
+                        "Bevel cuts, grinding, and finishing",
+                        "Generates sparks and heat; requires proper PPE"
+                      ]
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ch-7-s2",
+                "title": "Operating Stationary Power Tools for Cutting",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Stationary power tools, such as band saws and cold cut saws, provide stability and precision for cutting operations. These tools are ideal for repetitive tasks or when cutting multiple pieces of the same material. Proper setup and operation are essential to avoid tool damage, material warping, or injury. Always ensure the material is securely clamped and the blade or disc is properly tensioned before starting the cut."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Pre-Operational Checks for Stationary Power Tools",
+                    "items": [
+                      "Verify the tool is rated for the material type and thickness to be cut.",
+                      "Inspect the blade or disc for cracks, wear, or damage; replace if necessary.",
+                      "Check blade tension and alignment to prevent drift or breakage during cutting.",
+                      "Ensure the workpiece is securely clamped to prevent movement or kickback.",
+                      "Adjust feed rate and speed according to the manufacturer’s specifications for the material.",
+                      "Clear the work area of debris and ensure proper ventilation, especially when cutting metals that produce fine particles."
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Feed Rate",
+                    "definition": "The speed at which the cutting tool advances into the material, typically measured in inches per minute (IPM) or millimeters per minute (mm/min). Proper feed rate prevents tool overheating and ensures a clean cut."
+                  },
+                  {
+                    "type": "table",
+                    "headers": [
+                      "Tool",
+                      "Recommended Speed (RPM)",
+                      "Feed Rate",
+                      "Material Examples"
+                    ],
+                    "rows": [
+                      [
+                        "Band Saw",
+                        "100–300",
+                        "10–30 IPM",
+                        "Carbon steel, stainless steel"
+                      ],
+                      [
+                        "Cold Cut Saw",
+                        "1,500–3,000",
+                        "5–15 IPM",
+                        "Structural steel, angle iron"
+                      ],
+                      [
+                        "Power Hacksaw",
+                        "80–120",
+                        "5–10 IPM",
+                        "Rods, bars"
+                      ],
+                      [
+                        "Nibbler",
+                        "1,200–2,500",
+                        "5–20 IPM",
+                        "Sheet metal, thin plates"
+                      ]
+                    ]
+                  },
+                  {
+                    "type": "infoBox",
+                    "title": "Safety Practices for Stationary Power Tools",
+                    "items": [
+                      "Wear appropriate PPE: Safety glasses, hearing protection, and gloves to protect against flying debris and noise.",
+                      "Never remove safety guards or operate tools with damaged guards.",
+                      "Keep hands and loose clothing away from moving parts to prevent entanglement.",
+                      "Use push sticks or guides for small or awkwardly shaped workpieces to maintain a safe distance from the blade.",
+                      "Disconnect power before changing blades or performing maintenance to avoid accidental startups."
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ch-7-s3",
+                "title": "Cutting with Portable Power Tools",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Portable power tools, such as circular saws, reciprocating saws, and angle grinders, offer flexibility for cutting operations in tight spaces or on job sites where stationary tools are impractical. These tools require careful selection of speed settings and cutting accessories to match the material and task. Always prioritize stability and control to prevent kickback or loss of control during operation."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Types of Portable Power Tools and Their Applications",
+                    "items": [
+                      "Circular Saw: Ideal for straight cuts in sheet metal, plywood, or plastic; uses abrasive or carbide-tipped blades.",
+                      "Reciprocating Saw: Versatile for cutting curves, notches, or irregular shapes in metals and plastics; uses bi-metal blades.",
+                      "Angle Grinder: Used for bevel cuts, grinding, and finishing; compatible with abrasive discs, wire wheels, or cutting wheels.",
+                      "Beveling Machine: Designed for precise bevel cuts on edges or joints; often used in pipe fabrication.",
+                      "Nibbler: Cuts intricate shapes and curves in thin metals without producing burrs or sharp edges."
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Kickback",
+                    "definition": "A sudden, uncontrolled reaction of a power tool where the workpiece or tool is violently thrown back toward the operator, often caused by improper tool handling, dull blades, or incorrect feed direction."
+                  },
+                  {
+                    "type": "table",
+                    "headers": [
+                      "Tool",
+                      "Blade/Disc Type",
+                      "Speed Setting",
+                      "Typical Applications"
+                    ],
+                    "rows": [
+                      [
+                        "Circular Saw",
+                        "Abrasive or carbide-tipped",
+                        "High (3,000–5,000 RPM)",
+                        "Straight cuts in sheet metal"
+                      ],
+                      [
+                        "Reciprocating Saw",
+                        "Bi-metal",
+                        "Medium (1,000–2,500 SPM)",
+                        "Curves and notches in metals"
+                      ],
+                      [
+                        "Angle Grinder",
+                        "Abrasive disc or cutting wheel",
+                        "High (8,000–11,000 RPM)",
+                        "Bevel cuts and grinding"
+                      ],
+                      [
+                        "Beveling Machine",
+                        "Specialized beveling wheel",
+                        "Medium (2,000–4,000 RPM)",
+                        "Edge beveling in pipes"
+                      ],
+                      [
+                        "Nibbler",
+                        "Carbide or steel punch",
+                        "Low (500–1,500 strokes/min)",
+                        "Intricate cuts in thin metals"
+                      ]
+                    ]
+                  },
+                  {
+                    "type": "infoBox",
+                    "title": "Hazards and Mitigation for Portable Power Tools",
+                    "items": [
+                      "Flying debris: Always wear safety glasses and a face shield; use a dust collection system if available.",
+                      "Sparks and heat: Keep a fire extinguisher nearby and clear flammable materials from the work area.",
+                      "Rotating equipment: Ensure the tool is properly secured to the workpiece to prevent loss of control.",
+                      "Electrical shocks: Inspect power cords for damage and use ground fault circuit interrupters (GFCIs) when working in wet conditions.",
+                      "Noise: Use hearing protection, especially when operating tools for extended periods."
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ch-7-s4",
+                "title": "Cutting with Hand Tools",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Hand tools, such as hacksaws, files, snips, and pipe cutters, are essential for precision cutting in confined spaces or when power tools are unavailable. These tools require proper technique and safety practices to avoid injury and achieve accurate results. Always select the right tool for the material and cut type, and ensure the workpiece is securely held to prevent slippage."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Types of Hand Tools and Their Uses",
+                    "items": [
+                      "Hacksaw: Used for straight cuts in metals, plastics, and wood; choose blades based on material hardness and tooth pitch.",
+                      "Files: For smoothing edges, deburring, or shaping; available in various cuts (e.g., bastard, second-cut, smooth).",
+                      "Snips: Designed for cutting sheet metal and thin materials; available in straight, left, and right-hand models.",
+                      "Pipe Cutters: Used for cutting pipes without deforming the material; available in adjustable and fixed sizes.",
+                      "Chisels: For cutting or shaping metal, wood, or masonry; requires a hammer or mallet for operation."
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Tooth Pitch",
+                    "definition": "The number of teeth per inch on a hacksaw blade; finer pitches (e.g., 18–32 TPI) are used for hard metals, while coarser pitches (e.g., 6–14 TPI) are for softer materials."
+                  },
+                  {
+                    "type": "table",
+                    "headers": [
+                      "Tool",
+                      "Material Compatibility",
+                      "Typical Applications",
+                      "Safety Considerations"
+                    ],
+                    "rows": [
+                      [
+                        "Hacksaw",
+                        "Ferrous and non-ferrous metals, plastics",
+                        "Straight cuts in bars and rods",
+                        "Ensure blade tension is correct to prevent breakage"
+                      ],
+                      [
+                        "Files",
+                        "Metals, wood, plastics",
+                        "Deburring, smoothing edges",
+                        "Use a handle to prevent hand injuries"
+                      ],
+                      [
+                        "Snips",
+                        "Sheet metal, thin materials",
+                        "Cutting curves and straight edges",
+                        "Keep fingers clear of cutting blades"
+                      ],
+                      [
+                        "Pipe Cutters",
+                        "Copper, aluminum, steel pipes",
+                        "Cutting pipes without deformation",
+                        "Ensure proper alignment to avoid uneven cuts"
+                      ],
+                      [
+                        "Chisels",
+                        "Metal, wood, masonry",
+                        "Shaping or cutting materials",
+                        "Wear gloves and eye protection; strike firmly but controlled"
+                      ]
+                    ]
+                  },
+                  {
+                    "type": "infoBox",
+                    "title": "Safe Work Practices for Hand Tools",
+                    "items": [
+                      "Inspect tools before use: Check for cracks, dull edges, or loose handles that could cause injury.",
+                      "Secure the workpiece: Use clamps or a vice to prevent movement during cutting.",
+                      "Cut away from your body: Always direct the cutting motion away from yourself and others.",
+                      "Use the right tool for the job: Avoid forcing a tool beyond its intended use, as this can lead to breakage or injury.",
+                      "Store tools properly: Keep cutting edges covered and tools organized to prevent accidents."
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sourceChunkIds": [
+              "rsos_pdf-c98",
+              "rsos_pdf-c97",
+              "rsos_pdf-c99",
+              "rsos_pdf-c104",
+              "mwa_c-c2",
+              "mwa_c-c3",
+              "mwa_c-c8"
+            ]
+          },
+          {
+            "id": "ch-8",
+            "number": 2,
+            "title": "Using Oxy-Fuel Gas Cutting (OFC) Process",
+            "subtitle": "Task C-10: Selects OFC gas and equipment, sets up OFC equipment, and performs cut and gouge using OFC equipment",
+            "isFree": false,
+            "estimatedMinutes": 45,
+            "sections": [
+              {
+                "id": "ch-8-s1",
+                "title": "Selecting OFC Gases and Equipment Based on Task Requirements",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Selecting the correct oxy-fuel cutting (OFC) gases and equipment is critical to achieving quality cuts and ensuring safety. The process is cost-effective, portable, and primarily used for cutting carbon steel, though it requires no external power source. Equipment selection depends on the material thickness, type of cut, and job-specific requirements. For example, thicker materials demand higher gas pressures and larger tip sizes to maintain proper heat input and cutting efficiency."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Key Factors in Equipment Selection",
+                    "items": [
+                      "Material thickness: Thicker materials (e.g., over 12 mm) require larger tip sizes and higher oxygen pressures to ensure complete penetration and a clean cut.",
+                      "Type of cut: Straight cuts, bevels, and gouges each require specific torch angles, tip shapes, and gas flow rates to optimize performance and minimize defects.",
+                      "Gas type: Acetylene is commonly used for its high flame temperature and versatility, while propane or natural gas may be selected for cost efficiency or availability in certain regions.",
+                      "Regulator type: Single-stage regulators are suitable for consistent pressure applications, whereas two-stage regulators provide better pressure stability for precision work or varying gas demands.",
+                      "Torch and hose size: Larger hoses (e.g., 3/8-inch) are necessary for high-volume gas flow, while smaller hoses may suffice for lighter-duty tasks."
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Flashback Arrestor",
+                    "definition": "A safety device installed between the torch and hose to prevent the flame from traveling back into the gas supply, reducing the risk of explosions or equipment damage."
+                  },
+                  {
+                    "type": "table",
+                    "headers": [
+                      "Component",
+                      "Purpose",
+                      "Selection Criteria"
+                    ],
+                    "rows": [
+                      [
+                        "Regulator",
+                        "Controls gas pressure from the cylinder to the torch",
+                        "Choose based on gas type (oxygen vs. fuel) and pressure requirements (low vs. high-pressure applications)."
+                      ],
+                      [
+                        "Torch Body",
+                        "Houses the mixing chamber and valves for gas flow control",
+                        "Select based on application (manual vs. mechanized) and compatibility with torch tips."
+                      ],
+                      [
+                        "Tip Size",
+                        "Determines the size and shape of the flame and gas flow",
+                        "Match tip size to material thickness; larger tips for thicker materials."
+                      ],
+                      [
+                        "Hose",
+                        "Transports gas from the regulator to the torch",
+                        "Size depends on gas flow needs; larger hoses for higher volumes."
+                      ],
+                      [
+                        "Flashback Arrestor",
+                        "Prevents flame backflow into the gas supply",
+                        "Mandatory for all OFC setups to enhance safety."
+                      ]
+                    ]
+                  },
+                  {
+                    "type": "infoBox",
+                    "title": "Common OFC Gases and Their Characteristics",
+                    "items": [
+                      "Acetylene: High flame temperature (3100°C), fast cutting speed, but requires careful handling due to instability at pressures above 15 psi.",
+                      "Propane: Lower cost and safer to store, but produces a lower flame temperature (~2800°C) and slower cutting speeds.",
+                      "Natural Gas: Similar to propane in safety and cost, but with slightly higher flame temperature (~2900°C).",
+                      "Methylacetylene-Propadiene (MPS): High heat output and stability, suitable for heavy-duty cutting applications.",
+                      "Oxygen: Not a fuel gas but essential for combustion; purity must be at least 99.5% for optimal cutting performance."
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ch-8-s2",
+                "title": "Setting Up OFC Equipment Safely and Correctly",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Proper setup of OFC equipment is essential to prevent accidents and ensure efficient operation. Before assembly, inspect all components for damage, wear, or leaks. Cylinders must be secured upright in a well-ventilated area, away from heat sources or flammable materials. Always open cylinder valves slowly to avoid pressure surges, and ensure regulators are compatible with the gas type. Incorrect assembly, such as mismatched threads or missing safety devices, can lead to gas leaks, flashbacks, or explosions."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Step-by-Step Setup Procedure",
+                    "items": [
+                      "Secure cylinders: Place oxygen and fuel cylinders upright in a stable position, chained or clamped to prevent tipping. Ensure they are at least 6 meters apart or separated by a fire-resistant barrier.",
+                      "Inspect and clean connections: Check hoses, regulators, and torch fittings for cracks, burns, or debris. Use a soft brush or compressed air to remove dirt from valve outlets before attaching regulators.",
+                      "Install safety devices: Attach flashback arrestors to both the oxygen and fuel gas lines to prevent flame backflow. Ensure reverse-flow check valves are installed if required by local regulations.",
+                      "Connect hoses and torch: Attach hoses to the regulators and torch, ensuring left-hand threads for fuel gas and right-hand threads for oxygen to prevent cross-connection.",
+                      "Set initial pressures: Adjust regulators to the manufacturer’s recommended pressures for the material thickness and gas type. For example, acetylene typically requires 5–15 psi, while oxygen may need 30–40 psi for cutting."
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Kindling Point",
+                    "definition": "The minimum temperature at which a material will ignite and sustain combustion. For carbon steel, this is approximately 700–800°C, which must be achieved before initiating a cut."
+                  },
+                  {
+                    "type": "table",
+                    "headers": [
+                      "Component",
+                      "Inspection Check",
+                      "Action if Defective"
+                    ],
+                    "rows": [
+                      [
+                        "Cylinder Valve",
+                        "Check for debris or damage",
+                        "Clean or replace valve if debris is present; do not force open."
+                      ],
+                      [
+                        "Hose",
+                        "Inspect for cracks, burns, or leaks",
+                        "Replace hose if damaged; never repair with tape or clamps."
+                      ],
+                      [
+                        "Regulator",
+                        "Test for pressure leaks using soapy water",
+                        "Replace regulator if leaks are detected or if pressure fluctuates abnormally."
+                      ],
+                      [
+                        "Flashback Arrestor",
+                        "Ensure it is installed and functional",
+                        "Replace if damaged or if it fails a pressure test."
+                      ],
+                      [
+                        "Torch Tip",
+                        "Check for blockages or wear",
+                        "Clean tip with a tip cleaner or replace if damaged."
+                      ]
+                    ]
+                  },
+                  {
+                    "type": "infoBox",
+                    "title": "Critical Safety Practices During Setup",
+                    "items": [
+                      "Always wear appropriate PPE, including safety glasses, flame-resistant clothing, and gloves rated for high temperatures.",
+                      "Ensure the work area is free of flammable materials, sparks, or ignition sources within a 3-meter radius.",
+                      "Never use oil or grease on OFC equipment, as it can ignite under pressure and cause explosions.",
+                      "Label all cylinders clearly and store oxygen and fuel cylinders separately to prevent cross-contamination.",
+                      "Conduct a leak test using soapy water on all connections before igniting the torch."
+                    ]
+                  }
+                ]
+              },
+              {
+                "id": "ch-8-s3",
+                "title": "Performing Cuts and Gouges: Techniques and Troubleshooting",
+                "content": [
+                  {
+                    "type": "paragraph",
+                    "text": "Executing a quality cut or gouge with OFC equipment requires precise control of flame type, travel speed, and torch angle. The process begins with preheating the material to its kindling point, typically indicated by a bright red glow. The neutral flame is most commonly used for cutting, as it provides a balanced heat distribution without oxidizing or carburizing the metal. Adjusting the torch angle and travel speed ensures a consistent kerf width and minimizes slag adhesion."
+                  },
+                  {
+                    "type": "bullets",
+                    "title": "Key Techniques for Effective Cutting and Gouging",
+                    "items": [
+                      "Preheat the material: Heat the starting point until it glows red (approximately 700–800°C) to initiate the cut. Use a neutral flame for most carbon steel applications to avoid excessive oxidation or carbon buildup.",
+                      "Maintain proper torch angle: For straight cuts, hold the torch at a 5–15° angle to the workpiece, leaning slightly in the direction of travel. For gouging, a steeper angle (30–45°) helps remove more material efficiently.",
+                      "Control travel speed: Too slow a speed causes excessive slag and overheating, while too fast a speed results in an incomplete cut. Aim for a steady, controlled motion that produces a consistent kerf.",
+                      "Adjust flame type: Use a neutral flame for cutting to balance heat and oxygen. A carburizing flame may be used for gouging to increase heat input, while an oxidizing flame can help remove slag but may cause excessive oxidation.",
+                      "Monitor for defects: Watch for irregularities such as excessive slag, incomplete cuts, or warping. Adjust travel speed, angle, or gas pressures as needed to correct these issues."
+                    ]
+                  },
+                  {
+                    "type": "keyTerm",
+                    "term": "Backfire",
+                    "definition": "A loud popping sound caused by the flame briefly burning back into the torch tip, often due to incorrect gas pressures, dirty tips, or improper torch handling. It can extinguish the flame or damage the tip if not corrected immediately."
+                  },
+                  {
+                    "type": "table",
+                    "headers": [
+                      "Issue",
+                      "Cause",
+                      "Corrective Action"
+                    ],
+                    "rows": [
+                      [
+                        "Excessive Slag",
+                        "Insufficient preheat, slow travel speed, or incorrect flame type",
+                        "Increase preheat time, adjust travel speed, or switch to a neutral flame."
+                      ],
+                      [
+                        "Incomplete Cut",
+                        "Low oxygen pressure, dirty tip, or fast travel speed",
+                        "Increase oxygen pressure, clean the tip, or slow down the travel speed."
+                      ],
+                      [
+                        "Warping",
+                        "Excessive heat input or uneven heating",
+                        "Reduce heat input by adjusting flame size or travel speed; use a heat sink if necessary."
+                      ],
+                      [
+                        "Backfire",
+                        "Incorrect gas pressures, dirty tip, or sudden pressure changes",
+                        "Shut off the torch immediately, check and adjust pressures, and clean the tip."
+                      ],
+                      [
+                        "Flashback",
+                        "Flame traveling back into the hose or regulator",
+                        "Shut off both gases immediately, disconnect the hose, and inspect for blockages or damaged arrestors."
+                      ]
+                    ]
+                  },
+                  {
+                    "type": "infoBox",
+                    "title": "Shutting Down OFC Equipment Safely",
+                    "items": [
+                      "Close fuel gas valve first: Turn off the fuel gas valve on the torch, then the oxygen valve to purge the system of residual gases.",
+                      "Release residual pressure: Open the torch valves briefly to release any remaining gas in the hoses and torch, then close them again.",
+                      "Secure cylinders: Close the cylinder valves and release the pressure from the regulators by turning the adjusting screws counterclockwise until loose.",
+                      "Store equipment: Coil hoses neatly and store them in a dry, protected area. Ensure cylinders are capped and secured upright in a designated storage area.",
+                      "Inspect for damage: Check all components for wear or damage before the next use, and report any issues to a supervisor or safety officer."
+                    ]
+                  }
+                ]
+              }
+            ],
+            "sourceChunkIds": [
+              "rsos_pdf-c105",
+              "rsos_pdf-c106",
+              "rsos_pdf-c108",
+              "rsos_pdf-c109",
+              "rsos_pdf-c110",
+              "rsos_pdf-c112",
+              "rsos_pdf-c113",
+              "rsos_pdf-c114",
+              "mwa_c-c1",
+              "mwa_c-c17",
+              "mwa_c-c18",
+              "mwa_c-c19"
+            ]
+          },
+          {
+            "id": "ch-9",
+            "number": 3,
+            "title": "Using Plasma Arc Cutting (PAC) Process",
+            "subtitle": "Task C-11: Selects PAC equipment and consumables, sets up PAC equipment, and performs cut and gouge using PAC equipment",
+            "isFree": false,
+            "estimatedMinutes": 60,
+            "sections": []
+          }
+        ]
+      },
+      {
+        "id": "part-4",
+        "number": 4,
+        "title": "Performs Welding Processes",
+        "description": "Welds using shielded metal arc welding (SMAW) process, flux cored arc welding (FCAW), metal cored arc welding (MCAW), and gas metal arc welding (GMAW) processes",
+        "weight": "44% of Total Exam",
+        "chapters": [
+          {
+            "id": "ch-10",
+            "number": 1,
+            "title": "Welding Using Shielded Metal Arc Welding (SMAW) Process",
+            "subtitle": "Task D-13: Selects SMAW equipment and consumables, sets up SMAW equipment, and performs weld using SMAW equipment",
+            "isFree": true,
+            "estimatedMinutes": 30,
+            "sections": []
+          },
+          {
+            "id": "ch-11",
+            "number": 2,
+            "title": "Welding Using Flux Cored Arc Welding (FCAW), Metal Cored Arc Welding (MCAW), and Gas Metal Arc Welding (GMAW) Processes",
+            "subtitle": "Task D-14: Selects FCAW, MCAW, and GMAW gas, equipment, and consumables, sets up FCAW, MCAW, and GMAW equipment, and performs weld using FCAW, MCAW, and GMAW equipment",
+            "isFree": false,
+            "estimatedMinutes": 60,
+            "sections": []
+          },
+          {
+            "id": "ch-12",
+            "number": 3,
+            "title": "Welding Using Gas Tungsten Arc Welding (GTAW) Process",
+            "subtitle": "Task D-15: Selects GTAW gas, equipment, and consumables, sets up GTAW equipment, and performs weld using GTAW equipment",
+            "isFree": false,
+            "estimatedMinutes": 45,
+            "sections": []
+          }
+        ]
+      }
+    ]
+  },
+  "nextChapterIndex": 8
+}

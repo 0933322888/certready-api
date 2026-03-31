@@ -108,6 +108,14 @@ Use **live** Stripe keys (`sk_live_...`, `pk_live_...`) for production. Keep tes
 
 Optional: In **Settings → Domains**, set **www** as primary so that **certready.ca** redirects to **www.certready.ca** (or the opposite). Your app and SEO are already set for **www.certready.ca** (e.g. in `sitemap.xml` and canonical URLs).
 
+### Google Search Console (redirect “errors”)
+
+If Search Console shows “Page with redirection” for `http://certready.ca/` or `https://certready.ca/`, that is expected: those URLs redirect to `https://www.certready.ca/`. Google does not index redirecting URLs. To avoid confusion:
+
+- Use the Search Console property **`https://www.certready.ca`** (or the Domain property `certready.ca`).
+- Do not submit or request indexing for `http://certready.ca/` or `https://certready.ca/` (without www).
+- The canonical URL and sitemap are already set to `https://www.certready.ca/` in `client/index.html` and `client/public/sitemap.xml`.
+
 ---
 
 ## Step 5 — Point frontend to production backend and domain

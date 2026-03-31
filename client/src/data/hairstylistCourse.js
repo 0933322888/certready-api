@@ -234,6 +234,13 @@ export const hairstylistCourse = {
                                 },
                                 { type: 'keyTerm', term: 'Signal Word', definition: "A word on a WHMIS/GHS label indicating the relative degree of hazard: 'DANGER' indicates a more severe hazard; 'WARNING' indicates a less severe hazard" },
                                 { type: 'keyTerm', term: 'GHS pictograms', definition: 'Standardized symbols on WHMIS labels that visually communicate the type of hazard — e.g., flame (flammable), skull and crossbones (toxic), exclamation mark (irritant), health hazard (carcinogen/sensitizer)' },
+                                {
+                                    type: 'image',
+                                    src: '/course-images/hairstylist/ghs-pictograms-salon-sample.svg',
+                                    alt: 'Four GHS pictograms in a row: flame, corrosion, exclamation mark, and skull and crossbones.',
+                                    caption: 'Examples of symbols you may see on WHMIS labels and SDS summaries (flammable, corrosive, irritant/sensitizer, acute toxicity). Always read the full label and SDS for each product.',
+                                    credit: 'GHS pictograms: public domain (UN GHS); Wikimedia Commons. Composite: CertReady.',
+                                },
                                 { type: 'paragraph', text: 'Personal protective equipment (PPE) required when handling salon chemicals:' },
                                 {
                                     type: 'bullets', items: [
@@ -318,6 +325,13 @@ export const hairstylistCourse = {
                                         ['Rod-shaped', 'Bacilli', 'Mycobacterium tuberculosis (TB)'],
                                         ['Spiral / corkscrew', 'Spirilla', 'Treponema pallidum (syphilis)'],
                                     ]
+                                },
+                                {
+                                    type: 'image',
+                                    src: '/course-images/hairstylist/bacterial-morphology.svg',
+                                    alt: 'Diagram of bacterial shapes and arrangements: cocci, bacilli, spirilla, and common groupings.',
+                                    caption: 'Common bacterial shapes (cocci, bacilli, spirilla) match the terminology used for salon infection control.',
+                                    credit: 'LadyofHats / Wikimedia Commons (public domain).',
                                 },
                                 { type: 'paragraph', text: 'Bacteria can exist in two stages:' },
                                 {
@@ -753,6 +767,13 @@ export const hairstylistCourse = {
                                     ]
                                 },
                                 {
+                                    type: 'image',
+                                    src: '/course-images/hairstylist/head-landmarks-schematic.svg',
+                                    alt: 'Side profile of a head with labels for nape, occipital bone, parietal ridge, crown, and temporal region.',
+                                    caption: 'Relate these landmarks to your sectioning and weight lines when cutting.',
+                                    credit: 'CertReady schematic (not to scale).',
+                                },
+                                {
                                     type: 'table', headers: ['Face Shape', 'Characteristics', 'Flattering Approach'], rows: [
                                         ['Oval', 'Balanced proportions; forehead slightly wider than jaw; gently rounded at both ends', 'Most versatile — nearly any style works; considered the ideal shape to work toward'],
                                         ['Round', 'Width and length are nearly equal; soft, circular jawline; full cheeks', 'Add height at crown; keep sides close to head; avoid short, wide styles and center parts'],
@@ -784,6 +805,13 @@ export const hairstylistCourse = {
                                         ['Peptide bonds', 'The backbone of each keratin chain itself (not cross-links)', 'Very strong — broken only by strong chemicals or heat', 'Strong reducing agents, severe chemical overprocessing, extreme heat', 'Cannot be naturally re-formed once broken — causes permanent damage'],
                                     ]
                                 },
+                                {
+                                    type: 'image',
+                                    src: '/course-images/hairstylist/hair-shaft-cross-section.svg',
+                                    alt: 'Schematic hair shaft showing cuticle scales, cortex, and central medulla.',
+                                    caption: 'Simplified shaft structure: cuticle (outer scales), cortex (bulk of the strand), medulla (core, often reduced in fine hair).',
+                                    credit: 'CertReady schematic diagram (not to scale).',
+                                },
                             ],
                         },
                         {
@@ -791,6 +819,13 @@ export const hairstylistCourse = {
                             title: '6.4 The Hair Follicle and Skin Layers',
                             content: [
                                 { type: 'paragraph', text: 'Hair grows from the follicle — a pocket-shaped structure in the dermis. The health of the follicle determines the health of the hair.' },
+                                {
+                                    type: 'image',
+                                    src: '/course-images/hairstylist/hair-follicle-en.svg',
+                                    alt: 'Labeled diagram of a hair follicle in skin, including bulb, papilla, sebaceous gland, and arrector pili muscle.',
+                                    caption: 'Hair follicle in the dermis: relate this picture to terms like dermal papilla, hair bulb, sebaceous gland, and arrector pili.',
+                                    credit: 'Derived from NIH material; Wikimedia Commons (public domain). See File:Hair follicle-en.svg.',
+                                },
                                 {
                                     type: 'table', headers: ['Structure', 'Location', 'Function'], rows: [
                                         ['Dermal papilla', 'Base of the follicle', 'Rich in capillaries; delivers blood, oxygen, and nutrients to the growing hair bulb — essential for hair growth'],
@@ -820,6 +855,13 @@ export const hairstylistCourse = {
                                         ['Catagen', 'Transitional phase', '2–3 weeks', 'Cell division ceases; the hair follicle shrinks and detaches from the dermal papilla; the hair is cut off from its blood supply', 'Approximately 1–2%'],
                                         ['Telogen', 'Resting / shedding phase', '3–4 months', 'The old hair rests near the surface; a new anagen hair begins to form below; the old hair is shed when brushing or washing; normal shedding: 50–100 hairs/day', 'Approximately 10–15%'],
                                     ]
+                                },
+                                {
+                                    type: 'image',
+                                    src: '/course-images/hairstylist/hair-growth-cycle.svg',
+                                    alt: 'Three-step diagram: Anagen growth phase, Catagen transition, Telogen rest and shedding with typical durations and percentages.',
+                                    caption: 'Most scalp hairs are in anagen at any given time; diffuse shedding often reflects a shift toward telogen (e.g., telogen effluvium).',
+                                    credit: 'CertReady summary diagram.',
                                 },
                                 { type: 'keyTerm', term: 'Telogen effluvium', definition: 'A temporary form of hair loss where a large number of hairs simultaneously enter the telogen phase and shed — triggered by physical or emotional stress, illness, nutritional deficiency, hormonal changes, or surgery. Hair typically regrows within 3–6 months once the trigger is resolved.' },
                                 { type: 'keyTerm', term: 'Androgenetic alopecia', definition: 'Hereditary pattern hair loss caused by sensitivity to DHT (dihydrotestosterone) — the most common form of alopecia. Affects both men and women with characteristic patterns (temple recession and vertex thinning in men; diffuse thinning at the crown in women).' },
@@ -875,6 +917,13 @@ export const hairstylistCourse = {
                                         ['7.1–9.5', 'Mildly to moderately alkaline', 'Opens and swells the cuticle; allows chemical penetration', 'Regular shampoos (pH 7–8), alkaline perms (pH 8–9.5), semi-permanent colour'],
                                         ['9.5–14', 'Strongly alkaline', 'Severely opens and softens cuticle; penetrates to cortex rapidly', 'Sodium hydroxide relaxers (pH 12–14), bleaches'],
                                     ]
+                                },
+                                {
+                                    type: 'image',
+                                    src: '/course-images/hairstylist/ph-scale.svg',
+                                    alt: 'pH scale from acidic to alkaline with example substances at different pH values.',
+                                    caption: 'The pH scale: remember that healthy hair and scalp sit slightly acidic (~4.5–5.5), while many chemical services use alkaline pH to open the cuticle.',
+                                    credit: 'Tristanevanslee / Wikimedia Commons (CC0).',
                                 },
                                 { type: 'paragraph', text: 'Water quality affects chemical services:' },
                                 {
@@ -1020,6 +1069,13 @@ export const hairstylistCourse = {
                                         ['90° elevation', 'Hair is held straight out from the head', 'Weight is distributed evenly throughout; no concentration at perimeter', 'Uniform/equal-length layers; round shape; removes bulk throughout'],
                                         ['Over 90° (over-direction)', 'Hair is directed past 90°, further away from its natural fall', 'Creates longer layers below, shorter above; reverses graduation', 'Long, flowing layers; high-elevation cuts; disconnected shapes'],
                                     ]
+                                },
+                                {
+                                    type: 'image',
+                                    src: '/course-images/hairstylist/haircut-elevation-profile.svg',
+                                    alt: 'Side view of head with lines showing zero degree natural fall, forty-five degree, and ninety degree elevation from the scalp.',
+                                    caption: 'Elevation is measured from how far you lift the section away from the head — it controls where weight sits in the finished cut.',
+                                    credit: 'CertReady schematic (not to scale).',
                                 },
                                 { type: 'keyTerm', term: 'Over-direction', definition: 'Combing or holding hair away from its natural fall (natural distribution) before cutting — creates intentional weight displacement and graduation in the finished cut' },
                                 { type: 'keyTerm', term: 'Natural distribution', definition: 'Allowing the hair to fall exactly where gravity takes it — from the head — without combing it toward or away from the natural fall. The baseline for 0° elevation cuts.' },
@@ -1556,6 +1612,13 @@ export const hairstylistCourse = {
                                         ['Yellow (pale)', 'Violet or blue-violet toner'],
                                         ['Red', 'Green-based or ash toner'],
                                     ]
+                                },
+                                {
+                                    type: 'image',
+                                    src: '/course-images/hairstylist/rgb-color-wheel-360.svg',
+                                    alt: 'RGB colour wheel showing hues around a circle with white in the center.',
+                                    caption: 'A colour wheel helps you remember complements: opposite colours neutralize each other (e.g., violet tones counteract yellow). Hair colour uses the same idea when choosing ash, gold, or copper reflects.',
+                                    credit: 'Nl74 et al. / Wikimedia Commons (CC0). File:RGB color wheel 360.svg.',
                                 },
                             ],
                         },
