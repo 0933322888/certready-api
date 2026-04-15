@@ -110,7 +110,7 @@
       { "question": "Et si je rate l'examen ?", "answer": "Nous ne pouvons pas garantir que vous réussirez, mais nos cours sont conçus pour vous donner la meilleure préparation possible. Vous aurez un accès à vie pour revoir le matériel et repasser l'examen si nécessaire." },
       { "question": "Est-ce du matériel officiel STO ?", "answer": "Nos cours sont basés sur les normes officielles du curriculum des métiers spécialisés de l'Ontario et sont conçus pour vous aider à vous préparer à l'examen de certification. Nous ne sommes toutefois pas affiliés à STO." },
       { "question": "Quels modes de paiement sont acceptés ?", "answer": "Nous acceptons toutes les cartes de crédit principales via notre processeur de paiement sécurisé Stripe. Le paiement est traité de manière sécurisée et vous recevrez un accès immédiat après l'achat." },
-      { "question": "Puis-je obtenir un remboursement ?", "answer": "En raison de la nature numérique de nos cours, nous n'offrons pas de remboursement. Vous pouvez toutefois prévisualiser les deux premiers chapitres gratuitement avant d'acheter pour vous assurer que le cours répond à vos besoins." }
+      { "question": "Puis-je obtenir un remboursement ?", "answer": "En raison de la nature numérique de nos cours, nous n'offrons pas de remboursement. Toutefois, vos 5 premiers jours après l'inscription sont gratuits pour vous permettre d'explorer le cours avant d'acheter." }
     ]
   },
   "stats": {

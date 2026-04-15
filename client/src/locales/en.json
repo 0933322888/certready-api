@@ -378,7 +378,7 @@
       { "question": "What if I fail the exam?", "answer": "While we can't guarantee you'll pass, our courses are designed to give you the best possible preparation. You'll have lifetime access to review the materials and retake the exam as needed." },
       { "question": "Is this official STO material?", "answer": "Our courses are based on the official Skilled Trades Ontario curriculum standards and are designed to help you prepare for the certification exam. However, we are not affiliated with STO." },
       { "question": "What payment methods are accepted?", "answer": "We accept all major credit cards through our secure Stripe payment processor. Payment is processed securely and you'll receive immediate access upon purchase." },
-      { "question": "Can I get a refund?", "answer": "Due to the digital nature of our courses, we do not offer refunds. However, you can preview the first 2 chapters for free before purchasing to ensure the course meets your needs." }
+      { "question": "Can I get a refund?", "answer": "Due to the digital nature of our courses, we do not offer refunds. However, your first 5 days after registration are free, so you can explore the course before purchasing." }
     ]
   },
   "coursesPage": {
