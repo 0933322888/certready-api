@@ -335,7 +335,7 @@
     "step1Title": "Browse Courses",
     "step1Desc": "Explore available exam prep courses for your trade",
     "step2Title": "Preview Free",
-    "step2Desc": "Try the first 3 chapters free and check your readiness with a free exam test to see if it's right for you",
+    "step2Desc": "Enjoy your first 5 days free after registration and check your readiness with a free exam test to see if it's right for you",
     "step3Title": "Purchase & Study",
     "step3Desc": "Get full access and study at your own pace",
     "availableCourses": "Available Courses",
@@ -361,7 +361,7 @@
       "Lifetime access to all course materials",
       "No subscription — study at your own pace",
       "Based on official Skilled Trades Ontario curriculum standards",
-      "Free preview of the first 2 chapters before you buy"
+      "First 5 days free after registration before you buy"
     ],
     "viewCourses": "View Courses",
     "oneTime": "One-time payment",
@@ -383,7 +383,7 @@
   },
   "coursesPage": {
     "title": "Red Seal Exam Prep Courses — Canadian Trades Certification",
-    "subtitle": "Browse CertReady's Red Seal exam preparation courses. One-time purchase, lifetime access, and a free preview of the first 2 chapters for every trade. Based on the official Red Seal Occupational Standard.",
+    "subtitle": "Browse CertReady's Red Seal exam preparation courses. One-time purchase, lifetime access, and first 5 days free after registration for every trade. Based on the official Red Seal Occupational Standard.",
     "courseTitleSuffix": "Red Seal Exam Prep",
     "learnMoreAbout": "Learn more about the {{trade}} Red Seal exam →",
     "comingSoonTitle": "More Courses Coming Soon",
@@ -415,7 +415,7 @@
     "studyTipsHeading": "How to Study for the {{tradeName}} Red Seal Exam",
     "faqHeading": "Frequently Asked Questions",
     "ctaHeading": "Ready to Prepare? Try a Free Chapter",
-    "ctaSubtitle": "CertReady offers a comprehensive {{tradeName}} exam prep course — {{count}}+ practice questions, chapter-by-chapter content, and a full mock exam. The first 2 chapters are completely free.",
+    "ctaSubtitle": "CertReady offers a comprehensive {{tradeName}} exam prep course — {{count}}+ practice questions, chapter-by-chapter content, and a full mock exam. Your first 5 days after registration are completely free.",
     "viewCourseLink": "View the {{tradeName}} Course →",
     "tryPracticeLink": "Try free practice questions →"
   },

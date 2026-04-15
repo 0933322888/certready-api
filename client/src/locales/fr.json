@@ -67,7 +67,7 @@
     "step1Title": "Parcourir les cours",
     "step1Desc": "Explorez les cours de préparation aux examens pour votre métier",
     "step2Title": "Aperçu gratuit",
-    "step2Desc": "Essayez les deux premiers chapitres gratuitement et vérifiez votre niveau avec un test d'examen gratuit pour voir si ça vous convient",
+    "step2Desc": "Profitez de 5 jours gratuits après l'inscription et vérifiez votre niveau avec un test d'examen gratuit pour voir si ça vous convient",
     "step3Title": "Acheter et étudier",
     "step3Desc": "Obtenez l'accès complet et étudiez à votre rythme",
     "availableCourses": "Cours disponibles",
@@ -93,7 +93,7 @@
       "Accès à vie à tout le matériel du cours",
       "Sans abonnement — étudiez à votre rythme",
       "Basé sur les normes officielles du curriculum des métiers spécialisés de l'Ontario",
-      "Aperçu gratuit des deux premiers chapitres avant l'achat"
+      "5 jours gratuits après l'inscription avant l'achat"
     ],
     "viewCourses": "Voir les cours",
     "oneTime": "Paiement unique",
@@ -495,7 +495,7 @@
   },
   "coursesPage": {
     "title": "Cours de préparation aux examens Sceau rouge — Certification des métiers au Canada",
-    "subtitle": "Parcourez les cours de préparation à l'examen Sceau rouge de CertReady. Paiement unique, accès à vie et aperçu gratuit des deux premiers chapitres pour chaque métier. Basé sur la norme professionnelle officielle du Sceau rouge.",
+    "subtitle": "Parcourez les cours de préparation à l'examen Sceau rouge de CertReady. Paiement unique, accès à vie et 5 jours gratuits après l'inscription pour chaque métier. Basé sur la norme professionnelle officielle du Sceau rouge.",
     "courseTitleSuffix": "Préparation à l'examen Sceau rouge",
     "learnMoreAbout": "En savoir plus sur l'examen Sceau rouge {{trade}} →",
     "comingSoonTitle": "D'autres cours à venir",
