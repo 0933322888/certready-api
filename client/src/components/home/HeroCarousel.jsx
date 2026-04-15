@@ -45,6 +45,9 @@ export default function HeroCarousel() {
             }}
           />
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
+            <Badge variant="warm" className="text-sm px-4 py-1.5 mb-6">
+              {t('hero.freeWindowBadge')}
+            </Badge>
             <CertReadyLogoFull
               width={560}
               height={120}
@@ -55,6 +58,9 @@ export default function HeroCarousel() {
             </h1>
             <p className="text-xl md:text-2xl text-text-primary mb-10 max-w-3xl mx-auto leading-relaxed">
               {t('hero.subtitle')}
+            </p>
+            <p className="text-base md:text-lg text-accent-warm font-semibold mb-8 max-w-3xl mx-auto">
+              {t('hero.freeWindowSubtitle')}
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
               <Link to={paths.practiceTests}>

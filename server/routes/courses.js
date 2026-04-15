@@ -5,6 +5,22 @@ import { getCoursePricing } from '../utils/coursePricing.js';
 
 const router = express.Router();
 
+async function getOptionalAuthUser(req) {
+  if (!req.headers.authorization?.startsWith('Bearer ')) {
+    return null;
+  }
+
+  try {
+    const jwt = await import('jsonwebtoken');
+    const User = (await import('../models/User.js')).default;
+    const token = req.headers.authorization.split(' ')[1];
+    const decoded = jwt.default.verify(token, process.env.JWT_SECRET);
+    return await User.findById(decoded.id);
+  } catch (err) {
+    return null;
+  }
+}
+
 // @route   GET /api/courses
 // @desc    Get all published courses
 // @access  Public
@@ -14,9 +30,10 @@ router.get('/', async (req, res) => {
       .select('-__v')
       .sort({ createdAt: -1 });
 
+    const authUser = await getOptionalAuthUser(req);
     const withPricing = await Promise.all(
       courses.map(async (c) => {
-        const pricing = await getCoursePricing(c);
+        const pricing = await getCoursePricing(c, authUser);
         return {
           ...c.toObject(),
           ...pricing,
@@ -53,23 +70,13 @@ router.get('/:slug', async (req, res) => {
       return res.status(404).json({ message: 'Course not found' });
     }
 
-    const pricing = await getCoursePricing(course);
+    const authUser = await getOptionalAuthUser(req);
+    const pricing = await getCoursePricing(course, authUser);
 
     // Check if user owns the course (if authenticated)
     let ownsCourse = false;
-    if (req.headers.authorization?.startsWith('Bearer ')) {
-      try {
-        const jwt = await import('jsonwebtoken');
-        const User = (await import('../models/User.js')).default;
-        const token = req.headers.authorization.split(' ')[1];
-        const decoded = jwt.default.verify(token, process.env.JWT_SECRET);
-        const user = await User.findById(decoded.id);
-        if (user && user.purchases.includes(course._id)) {
-          ownsCourse = true;
-        }
-      } catch (err) {
-        // Token invalid or expired, continue without ownership
-      }
+    if (authUser && authUser.purchases.includes(course._id)) {
+      ownsCourse = true;
     }
 
     res.json({

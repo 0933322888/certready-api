@@ -54,18 +54,23 @@ router.post('/validate-promo', protect, async (req, res) => {
     if (!course) {
       return res.status(404).json({ valid: false, message: 'Course not found' });
     }
+    const user = await User.findById(req.user._id).select('createdAt');
+    if (!user) {
+      return res.status(404).json({ valid: false, message: 'User not found' });
+    }
+    const { currentPrice: basePrice, isFreeWindowActive, freeUntil } = await getCoursePricing(course, user);
     const { promo, message } = await getValidPromo(rawPromoCode, course._id);
     if (!promo) {
       return res.json({ valid: false, message: message || 'Invalid promo code' });
     }
-    let amountCents = course.price;
+    let amountCents = basePrice;
     if (promo.type === 'fixed_price') {
-      amountCents = promo.amountCents;
+      amountCents = Math.min(amountCents, promo.amountCents);
     } else if (promo.type === 'free') {
       amountCents = 0;
     }
     const currency = (course.currency || 'CAD').toUpperCase();
-    return res.json({ valid: true, amountCents, currency });
+    return res.json({ valid: true, amountCents, currency, isFreeWindowActive, freeUntil });
   } catch (error) {
     console.error('Validate promo error:', error);
     res.status(500).json({ valid: false, message: error.message });
@@ -88,7 +93,12 @@ router.post('/create-checkout-session', protect, async (req, res) => {
       return res.status(404).json({ message: 'Course not found' });
     }
 
-    const { currentPrice: basePrice } = await getCoursePricing(course);
+    const user = await User.findById(req.user._id);
+    if (!user) {
+      return res.status(404).json({ message: 'User not found' });
+    }
+
+    const { currentPrice: basePrice, isFreeWindowActive, freeUntil } = await getCoursePricing(course, user);
     let chargeAmountCents = basePrice;
     let promo = null;
     if (rawPromoCode) {
@@ -101,21 +111,21 @@ router.post('/create-checkout-session', protect, async (req, res) => {
 
     if (promo) {
       if (promo.type === 'fixed_price') {
-        chargeAmountCents = promo.amountCents;
+        chargeAmountCents = Math.min(chargeAmountCents, promo.amountCents);
       } else if (promo.type === 'free') {
         chargeAmountCents = 0;
       }
     }
 
     // Check if user already owns the course
-    const user = await User.findById(req.user._id);
     if (user.purchases.includes(course._id)) {
       return res.status(400).json({ message: 'You already own this course' });
     }
 
     // Free promo: grant access without Stripe
     if (chargeAmountCents === 0) {
-      const freeSessionId = `free_${promo?.code ?? 'promo'}_${req.user._id}_${course._id}`;
+      const freeSource = promo?.code ?? (isFreeWindowActive ? 'free_window' : 'promo');
+      const freeSessionId = `free_${freeSource}_${req.user._id}_${course._id}`;
       await Purchase.create({
         user: req.user._id,
         course: course._id,
@@ -130,7 +140,7 @@ router.post('/create-checkout-session', protect, async (req, res) => {
       await user.save();
 
       const successUrl = `${process.env.CLIENT_URL}/checkout/success?session_id=${encodeURIComponent(freeSessionId)}`;
-      return res.json({ sessionId: freeSessionId, url: successUrl });
+      return res.json({ sessionId: freeSessionId, url: successUrl, isFreeWindowActive, freeUntil });
     }
 
     const stripe = getStripe();
