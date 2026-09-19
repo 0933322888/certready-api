@@ -58,7 +58,7 @@ export default function LoginPage() {
                   message: t('auth.invalidEmail'),
                 },
               })}
-              className="w-full px-4 py-2.5 bg-surface-2 border border-border rounded-lg text-text-primary placeholder-text-dim focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
+              className="w-full px-4 py-3 bg-surface-2 border border-border rounded-lg text-text-primary text-base placeholder-text-dim focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent min-h-[44px]"
               placeholder={t('auth.emailPlaceholder')}
             />
             {errors.email && (
@@ -80,7 +80,7 @@ export default function LoginPage() {
                   message: t('auth.passwordMinLength'),
                 },
               })}
-              className="w-full px-4 py-2.5 bg-surface-2 border border-border rounded-lg text-text-primary placeholder-text-dim focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
+              className="w-full px-4 py-3 bg-surface-2 border border-border rounded-lg text-text-primary text-base placeholder-text-dim focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent min-h-[44px]"
               placeholder={t('auth.passwordPlaceholder')}
             />
             {errors.password && (

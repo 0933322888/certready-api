@@ -64,13 +64,25 @@ export default function ChapterSidebar({
       <aside
         className={`
           fixed md:static top-16 left-0 h-[calc(100vh-4rem)] md:h-auto
-          w-80 bg-surface border-r border-border z-50
+          w-[85vw] max-w-xs sm:w-80 bg-surface border-r border-border z-50
           overflow-y-auto transform transition-transform duration-300 ease-out
           ${onClose !== null ? (onClose ? 'translate-x-0' : '-translate-x-full') : 'translate-x-0'}
           md:translate-x-0
         `}
       >
         <div className="p-4">
+          <div className="flex items-center justify-between md:hidden mb-4 pb-2 border-b border-border">
+            <span className="text-sm font-semibold text-text-primary">Course Navigation</span>
+            <button
+              onClick={() => onClose && onChapterSelect && onChapterSelect(currentChapterId)}
+              className="p-1 rounded text-text-muted hover:text-text-primary"
+              aria-label={t('common.ariaLabelClose')}
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
           {/* Progress Tracker */}
           <div className="mb-6 pb-6 border-b border-border">
             <h3 className="text-sm font-semibold text-text-muted mb-2">{t('learn.progress')}</h3>

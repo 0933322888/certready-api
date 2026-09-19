@@ -107,25 +107,25 @@ export default function AdminClaimsPage() {
       <SEO noIndex title="Admin: Pass Reward Claims Management" />
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-8">
           <div>
-            <h1 className="text-3xl font-display font-bold text-text-primary">
+            <h1 className="text-2xl sm:text-3xl font-display font-bold text-text-primary">
               Pass Reward Claims Management
             </h1>
             <p className="text-sm text-text-muted mt-1">
               Review examination pass documents, manage approvals, and execute Stripe refunds.
             </p>
           </div>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
             <Link to="/admin/users">
-              <Button variant="outline" size="sm">
+              <Button variant="outline" size="sm" className="min-h-[40px]">
                 &larr; Users Management
               </Button>
             </Link>
             <select
               value={statusFilter}
               onChange={(e) => setStatusFilter(e.target.value)}
-              className="rounded-xl border border-border bg-surface px-4 py-2 text-sm text-text-primary"
+              className="rounded-xl border border-border bg-surface px-3 sm:px-4 py-2 text-sm text-text-primary min-h-[40px] flex-1 sm:flex-none"
             >
               <option value="">All Statuses</option>
               <option value="SUBMITTED">Submitted</option>
@@ -135,7 +135,7 @@ export default function AdminClaimsPage() {
               <option value="REFUNDED">Refunded</option>
               <option value="REJECTED">Rejected</option>
             </select>
-            <Button variant="outline" size="sm" onClick={() => fetchClaims(statusFilter)}>
+            <Button variant="outline" size="sm" onClick={() => fetchClaims(statusFilter)} className="min-h-[40px]">
               Refresh
             </Button>
           </div>

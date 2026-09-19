@@ -92,17 +92,17 @@ export default function PracticeQuestion({
   };
 
   return (
-    <div id={questionId} ref={questionRef} className="bg-surface border border-border rounded-xl p-6 my-6">
+    <div id={questionId} ref={questionRef} className="bg-surface border border-border rounded-xl p-4 sm:p-6 my-4 sm:my-6">
       <div className="mb-4">
-        <h3 className="text-lg font-semibold text-text-primary mb-4">{question}</h3>
-        <div className="space-y-2">
+        <h3 className="text-base sm:text-lg font-semibold text-text-primary mb-3 sm:mb-4 leading-snug">{question}</h3>
+        <div className="space-y-2.5">
           {options.map((option, index) => {
             const isSelected = selectedIndex === index;
             const isCorrectAnswer = index === correctIndex;
             const showCorrect = showExplanation && isCorrectAnswer;
             const showIncorrect = showExplanation && isSelected && !isCorrectAnswer;
 
-            let buttonClass = 'w-full text-left px-4 py-3 rounded-lg border-2 transition-all duration-200 ';
+            let buttonClass = 'w-full text-left px-3.5 sm:px-4 py-3 sm:py-3.5 rounded-lg border-2 transition-all duration-200 min-h-[48px] touch-manipulation ';
             if (showCorrect) {
               buttonClass += 'bg-success/20 border-success text-success';
             } else if (showIncorrect) {
@@ -110,7 +110,7 @@ export default function PracticeQuestion({
             } else if (isSelected) {
               buttonClass += 'bg-accent/20 border-accent text-accent';
             } else {
-              buttonClass += 'bg-surface-2 border-border text-text-primary hover:border-accent hover:bg-surface';
+              buttonClass += 'bg-surface-2 border-border text-text-primary hover:border-accent hover:bg-surface active:bg-surface';
             }
 
             return (
@@ -120,15 +120,16 @@ export default function PracticeQuestion({
                 disabled={selectedIndex !== null || showExplanation}
                 className={buttonClass}
               >
-                <div className="flex items-center justify-between">
-                  <span className="font-medium">
-                    {String.fromCharCode(65 + index)}. {option}
+                <div className="flex items-start justify-between gap-2">
+                  <span className="font-medium text-sm sm:text-base leading-relaxed break-words flex-1">
+                    <strong className="text-accent mr-1.5">{String.fromCharCode(65 + index)}.</strong>
+                    {option}
                   </span>
                   {showCorrect && (
-                    <Badge variant="success">{t('learn.correct')}</Badge>
+                    <Badge variant="success" className="shrink-0 mt-0.5">{t('learn.correct')}</Badge>
                   )}
                   {showIncorrect && (
-                    <Badge variant="danger">{t('learn.incorrect')}</Badge>
+                    <Badge variant="danger" className="shrink-0 mt-0.5">{t('learn.incorrect')}</Badge>
                   )}
                 </div>
               </button>
@@ -138,14 +139,14 @@ export default function PracticeQuestion({
       </div>
 
       {showExplanation && (
-        <div className="mt-4 p-4 bg-surface-2 rounded-lg border border-border">
-          <p className="text-sm text-text-primary leading-relaxed">
+        <div className="mt-4 p-3.5 sm:p-4 bg-surface-2 rounded-lg border border-border">
+          <p className="text-xs sm:text-sm text-text-primary leading-relaxed">
             <span className="font-semibold text-accent">{explanationText}: </span>
             {explanation}
           </p>
           {onNext && (
             <div className="mt-4">
-              <Button onClick={handleNext} size="sm">
+              <Button onClick={handleNext} size="sm" className="w-full sm:w-auto">
                 {nextText} →
               </Button>
             </div>

@@ -209,7 +209,7 @@ export default function LearnPage() {
       {learnSeo && <SEO {...learnSeo} />}
       <button
         onClick={() => setSidebarOpen(!sidebarOpen)}
-        className="fixed top-20 left-4 z-30 md:hidden bg-surface border border-border rounded-lg p-2 shadow-lg"
+        className="fixed top-20 left-4 z-30 md:hidden bg-surface border border-border rounded-xl p-2.5 shadow-xl min-w-[44px] min-h-[44px] flex items-center justify-center focus:outline-none focus:ring-2 focus:ring-accent"
         aria-label={t('common.ariaLabelToggleMenu')}
       >
         <svg className="w-6 h-6 text-text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">

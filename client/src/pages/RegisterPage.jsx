@@ -48,7 +48,7 @@ export default function RegisterPage() {
           <p className="text-text-muted">{t('auth.startToday')}</p>
         </div>
 
-        <form onSubmit={handleSubmit(onSubmit)} className="space-y-6">
+        <form onSubmit={handleSubmit(onSubmit)} className="space-y-4 sm:space-y-6">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-text-primary mb-2">
               {t('auth.fullName')}
@@ -63,7 +63,7 @@ export default function RegisterPage() {
                   message: t('auth.nameMinLength'),
                 },
               })}
-              className="w-full px-4 py-2.5 bg-surface-2 border border-border rounded-lg text-text-primary placeholder-text-dim focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
+              className="w-full px-4 py-3 bg-surface-2 border border-border rounded-lg text-text-primary text-base placeholder-text-dim focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent min-h-[44px]"
               placeholder={t('auth.namePlaceholder')}
             />
             {errors.name && (
@@ -85,7 +85,7 @@ export default function RegisterPage() {
                   message: t('auth.invalidEmail'),
                 },
               })}
-              className="w-full px-4 py-2.5 bg-surface-2 border border-border rounded-lg text-text-primary placeholder-text-dim focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
+              className="w-full px-4 py-3 bg-surface-2 border border-border rounded-lg text-text-primary text-base placeholder-text-dim focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent min-h-[44px]"
               placeholder={t('auth.emailPlaceholder')}
             />
             {errors.email && (
@@ -107,7 +107,7 @@ export default function RegisterPage() {
                   message: t('auth.passwordMinLength'),
                 },
               })}
-              className="w-full px-4 py-2.5 bg-surface-2 border border-border rounded-lg text-text-primary placeholder-text-dim focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
+              className="w-full px-4 py-3 bg-surface-2 border border-border rounded-lg text-text-primary text-base placeholder-text-dim focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent min-h-[44px]"
               placeholder={t('auth.passwordPlaceholder')}
             />
             {errors.password && (
@@ -125,7 +125,7 @@ export default function RegisterPage() {
               {...register('confirmPassword', {
                 required: t('auth.confirmPasswordRequired'),
               })}
-              className="w-full px-4 py-2.5 bg-surface-2 border border-border rounded-lg text-text-primary placeholder-text-dim focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent"
+              className="w-full px-4 py-3 bg-surface-2 border border-border rounded-lg text-text-primary text-base placeholder-text-dim focus:outline-none focus:ring-2 focus:ring-accent focus:border-transparent min-h-[44px]"
               placeholder={t('auth.passwordPlaceholder')}
             />
             {errors.confirmPassword && (

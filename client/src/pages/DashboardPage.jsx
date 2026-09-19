@@ -170,15 +170,15 @@ export default function DashboardPage() {
         <p className="text-text-muted mb-6">{t('dashboard.studyPlan.subtitle')}</p>
 
         <Card className="mb-6">
-          <form onSubmit={handleGeneratePlan} className="flex flex-wrap items-end gap-4">
-            <div className="flex-1 min-w-[200px]">
+          <form onSubmit={handleGeneratePlan} className="flex flex-col sm:flex-row sm:items-end gap-4">
+            <div className="w-full sm:flex-1 min-w-[200px]">
               <label className="block text-sm font-medium text-text-muted mb-1">
                 {t('dashboard.studyPlan.selectTrade')}
               </label>
               <select
                 value={studyPlanCourseSlug}
                 onChange={(e) => setStudyPlanCourseSlug(e.target.value)}
-                className="w-full rounded-xl border border-border bg-surface px-4 py-2.5 text-text-primary focus:ring-2 focus:ring-accent focus:border-accent"
+                className="w-full rounded-xl border border-border bg-surface px-4 py-2.5 text-text-primary focus:ring-2 focus:ring-accent focus:border-accent min-h-[44px]"
                 required
               >
                 <option value="">—</option>
@@ -187,7 +187,7 @@ export default function DashboardPage() {
                 ))}
               </select>
             </div>
-            <div className="flex-1 min-w-[180px]">
+            <div className="w-full sm:flex-1 min-w-[180px]">
               <label className="block text-sm font-medium text-text-muted mb-1">
                 {t('dashboard.studyPlan.examDate')}
               </label>
@@ -196,11 +196,11 @@ export default function DashboardPage() {
                 value={studyPlanExamDate}
                 onChange={(e) => setStudyPlanExamDate(e.target.value)}
                 min={new Date().toISOString().slice(0, 10)}
-                className="w-full rounded-xl border border-border bg-surface px-4 py-2.5 text-text-primary focus:ring-2 focus:ring-accent focus:border-accent"
+                className="w-full rounded-xl border border-border bg-surface px-4 py-2.5 text-text-primary focus:ring-2 focus:ring-accent focus:border-accent min-h-[44px]"
                 required
               />
             </div>
-            <Button type="submit" disabled={generating}>
+            <Button type="submit" disabled={generating} className="w-full sm:w-auto">
               {generating ? t('dashboard.studyPlan.generating') : t('dashboard.studyPlan.generate')}
             </Button>
           </form>

@@ -11,7 +11,7 @@ export default function Card({
   return (
     <div
       onClick={onClick}
-      className={`bg-surface border border-border rounded-xl p-6 ${hoverClasses} ${className}`}
+      className={`bg-surface border border-border rounded-xl p-4 sm:p-6 ${hoverClasses} ${className}`}
     >
       {children}
     </div>

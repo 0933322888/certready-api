@@ -239,16 +239,16 @@ export default function RedSealReadinessTestPage() {
         )}
 
         {phase === 'exam' && trade && questions.length > 0 && (
-          <div className="space-y-6">
-            <div className="flex flex-wrap items-center justify-between gap-4 bg-surface border border-border rounded-xl p-4 sticky top-20 z-10">
-              <div className="flex items-center gap-4">
+          <div className="space-y-4 sm:space-y-6">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 bg-surface border border-border rounded-xl p-3.5 sm:p-4 sticky top-16 sm:top-20 z-10 backdrop-blur-md bg-surface/90 shadow-md">
+              <div className="flex items-center justify-between sm:justify-start gap-4">
                 <span
-                  className={`text-lg font-mono font-semibold ${timeRemainingSeconds <= 60 ? 'text-danger' : 'text-text-primary'}`}
+                  className={`text-base sm:text-lg font-mono font-semibold ${timeRemainingSeconds <= 60 ? 'text-danger animate-pulse' : 'text-text-primary'}`}
                   aria-live="polite"
                 >
-                  {t('readinessTest.timeRemaining')}: {formatTime(timeRemainingSeconds)}
+                  ⏱ {t('readinessTest.timeRemaining')}: {formatTime(timeRemainingSeconds)}
                 </span>
-                <span className="text-text-muted text-sm">
+                <span className="text-text-muted text-xs sm:text-sm">
                   {t('readinessTest.answeredCount', { answered: answeredCount, total: questions.length })}
                 </span>
               </div>
@@ -257,7 +257,7 @@ export default function RedSealReadinessTestPage() {
                   variant="outline"
                   size="sm"
                   onClick={toggleMarkForReview}
-                  className={markedForReview.has(currentQuestion?.id) ? 'ring-2 ring-amber-500' : ''}
+                  className={`flex-1 sm:flex-none ${markedForReview.has(currentQuestion?.id) ? 'ring-2 ring-amber-500' : ''}`}
                 >
                   {markedForReview.has(currentQuestion?.id)
                     ? t('readinessTest.unmarkReview')
@@ -266,19 +266,20 @@ export default function RedSealReadinessTestPage() {
                 <Button
                   variant="secondary"
                   size="sm"
+                  className="flex-1 sm:flex-none"
                   onClick={() => setShowSubmitConfirm(true)}
                 >
-                  {t('readinessTest.submitExam')}
+                  {t('readinessTest.submitTest')}
                 </Button>
               </div>
             </div>
 
-            <Card className="p-6">
-              <p className="text-sm text-text-muted mb-4">
+            <Card className="p-4 sm:p-6">
+              <p className="text-xs sm:text-sm text-text-muted mb-3 sm:mb-4">
                 {t('readinessTest.questionOf', { current: currentIndex + 1, total: questions.length })}
               </p>
-              <h2 className="text-xl font-semibold text-text-primary mb-6">{currentQuestion.question}</h2>
-              <div className="space-y-3">
+              <h2 className="text-base sm:text-xl font-semibold text-text-primary mb-4 sm:mb-6 leading-snug">{currentQuestion.question}</h2>
+              <div className="space-y-2.5 sm:space-y-3">
                 {currentQuestion.options.map((option, index) => {
                   const isSelected = answers[currentQuestion.id] === index;
                   return (
@@ -286,14 +287,14 @@ export default function RedSealReadinessTestPage() {
                       key={index}
                       type="button"
                       onClick={() => handleAnswerSelect(currentQuestion.id, index)}
-                      className={`w-full text-left px-4 py-3 rounded-lg border-2 transition-all ${
+                      className={`w-full text-left px-3.5 sm:px-4 py-3 sm:py-3.5 rounded-lg border-2 transition-all min-h-[48px] touch-manipulation ${
                         isSelected
                           ? 'bg-accent/20 border-accent text-accent'
-                          : 'bg-surface-2 border-border text-text-primary hover:border-accent/50'
+                          : 'bg-surface-2 border-border text-text-primary hover:border-accent/50 active:bg-surface'
                       }`}
                     >
-                      <span className="font-medium">
-                        {String.fromCharCode(65 + index)}. {option}
+                      <span className="font-medium text-sm sm:text-base leading-relaxed break-words">
+                        <strong className="text-accent mr-1.5">{String.fromCharCode(65 + index)}.</strong> {option}
                       </span>
                     </button>
                   );
@@ -301,41 +302,50 @@ export default function RedSealReadinessTestPage() {
               </div>
             </Card>
 
-            <div className="flex flex-wrap items-center justify-between gap-4">
-              <Button
-                variant="outline"
-                onClick={() => setCurrentIndex((i) => Math.max(0, i - 1))}
-                disabled={currentIndex === 0}
-              >
-                ← {t('readinessTest.previous')}
-              </Button>
-              <Button
-                variant="outline"
-                onClick={() => setCurrentIndex((i) => Math.min(questions.length - 1, i + 1))}
-                disabled={currentIndex === questions.length - 1}
-              >
-                {t('readinessTest.next')} →
-              </Button>
-              <div className="flex flex-wrap gap-2 justify-center">
-                {questions.map((q, i) => (
-                  <button
-                    key={q.id}
-                    type="button"
-                    onClick={() => setCurrentIndex(i)}
-                    className={`w-9 h-9 rounded-lg border-2 text-sm font-medium transition-all ${
-                      i === currentIndex
-                        ? 'border-accent bg-accent text-white'
-                        : answers[q.id] !== undefined
-                        ? 'border-success/50 bg-success/10 text-text-primary'
-                        : markedForReview.has(q.id)
-                        ? 'border-amber-500 bg-amber-500/10 text-amber-600'
-                        : 'border-border bg-surface-2 text-text-muted hover:border-accent/50'
-                    }`}
-                    title={t('readinessTest.goToQuestion', { num: i + 1 })}
-                  >
-                    {i + 1}
-                  </button>
-                ))}
+            <div className="flex flex-col gap-4">
+              <div className="flex items-center justify-between gap-3">
+                <Button
+                  variant="outline"
+                  onClick={() => setCurrentIndex((i) => Math.max(0, i - 1))}
+                  disabled={currentIndex === 0}
+                  className="flex-1 sm:flex-initial"
+                >
+                  ← {t('readinessTest.previous')}
+                </Button>
+
+                <Button
+                  variant="outline"
+                  onClick={() => setCurrentIndex((i) => Math.min(questions.length - 1, i + 1))}
+                  disabled={currentIndex === questions.length - 1}
+                  className="flex-1 sm:flex-initial"
+                >
+                  {t('readinessTest.next')} →
+                </Button>
+              </div>
+
+              <div className="bg-surface border border-border rounded-xl p-3 sm:p-4">
+                <p className="text-xs text-text-muted mb-2 font-medium">Question Navigator:</p>
+                <div className="flex flex-wrap gap-1.5 sm:gap-2 max-h-48 overflow-y-auto p-1 justify-center sm:justify-start">
+                  {questions.map((q, i) => (
+                    <button
+                      key={q.id}
+                      type="button"
+                      onClick={() => setCurrentIndex(i)}
+                      className={`w-8 h-8 sm:w-9 sm:h-9 rounded-lg border text-xs sm:text-sm font-medium transition-all ${
+                        i === currentIndex
+                          ? 'border-accent bg-accent text-white font-bold'
+                          : answers[q.id] !== undefined
+                          ? 'border-success/50 bg-success/10 text-text-primary'
+                          : markedForReview.has(q.id)
+                          ? 'border-amber-500 bg-amber-500/10 text-amber-600'
+                          : 'border-border bg-surface-2 text-text-muted hover:border-accent/50'
+                      }`}
+                      title={t('readinessTest.goToQuestion', { num: i + 1 })}
+                    >
+                      {i + 1}
+                    </button>
+                  ))}
+                </div>
               </div>
             </div>
           </div>

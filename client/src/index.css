@@ -22,13 +22,32 @@
   box-sizing: border-box;
 }
 
+html {
+  /* Prevent horizontal scroll jumps on small mobile screens */
+  overflow-x: hidden;
+  /* Support mobile notches and dynamic address bars */
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
   font-family: 'DM Sans', sans-serif;
   background-color: var(--color-bg);
   color: var(--color-text-primary);
   line-height: 1.6;
+  overflow-x: hidden;
+  min-width: 320px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Ensure mobile interactive tap targets don't have grey flash on iOS/Android */
+a, button, input, select, textarea {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Responsive typography safeguards on mobile */
+h1 {
+  word-break: break-word;
 }
 
 h1, h2, h3, h4, h5, h6 {

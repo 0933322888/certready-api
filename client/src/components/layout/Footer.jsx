@@ -9,9 +9,9 @@ export default function Footer() {
   const { t } = useTranslation();
   return (
     <footer className="bg-surface border-t border-border mt-auto">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
-          <div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 sm:py-12">
+        <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+          <div className="col-span-2 md:col-span-1">
             <Link to="/" className="flex items-center mb-4">
               <CertReadyLogoCompact width={160} height={34} className="h-8 w-auto" />
             </Link>
@@ -88,16 +88,6 @@ export default function Footer() {
             <h3 className="font-semibold text-text-primary mb-4">{t('footer.legal')}</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <Link to="/pass-reward" className="text-text-muted hover:text-accent transition-colors">
-                  CertReady Pass Reward
-                </Link>
-              </li>
-              <li>
-                <Link to="/pass-reward/terms" className="text-text-muted hover:text-accent transition-colors">
-                  Pass Reward Terms
-                </Link>
-              </li>
-              <li>
                 <Link to="/privacy" className="text-text-muted hover:text-accent transition-colors">
                   {t('footer.privacy')}
                 </Link>
@@ -107,11 +97,17 @@ export default function Footer() {
                   {t('footer.terms')}
                 </Link>
               </li>
+              <li>
+                <Link to="/pass-reward-terms" className="text-text-muted hover:text-accent transition-colors">
+                  Pass Reward Terms
+                </Link>
+              </li>
             </ul>
           </div>
         </div>
-        <div className="mt-8 pt-8 border-t border-border text-center text-sm text-text-muted">
-          <p>{t('footer.copyright', { year: new Date().getFullYear() })}</p>
+        <div className="border-t border-border mt-8 sm:mt-12 pt-6 sm:pt-8 flex flex-col sm:flex-row items-center justify-between text-xs sm:text-sm text-text-muted gap-3">
+          <p>© {new Date().getFullYear()} CertReady. All rights reserved.</p>
+          <p className="text-center sm:text-right">Red Seal is a registered trademark of the Canadian Council of Directors of Apprenticeship (CCDA).</p>
         </div>
       </div>
     </footer>

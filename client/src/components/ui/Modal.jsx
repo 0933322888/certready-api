@@ -30,17 +30,17 @@ export default function Modal({
   };
 
   return (
-    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+    <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center p-0 sm:p-4">
       <div 
         className="fixed inset-0 bg-black/70 backdrop-blur-sm"
         onClick={onClose}
       />
-      <div className={`relative bg-surface border border-border rounded-2xl ${sizes[size]} w-full max-h-[90vh] overflow-y-auto z-10`}>
-        <div className="sticky top-0 bg-surface border-b border-border px-6 py-4 flex items-center justify-between">
-          <h2 className="text-xl font-display font-bold">{title}</h2>
+      <div className={`relative bg-surface border border-border rounded-t-2xl sm:rounded-2xl ${sizes[size]} w-full max-h-[90vh] overflow-y-auto z-10 shadow-2xl`}>
+        <div className="sticky top-0 bg-surface/95 backdrop-blur-md border-b border-border px-4 sm:px-6 py-3.5 sm:py-4 flex items-center justify-between z-10">
+          <h2 className="text-lg sm:text-xl font-display font-bold text-text-primary pr-2">{title}</h2>
           <button
             onClick={onClose}
-            className="text-text-muted hover:text-text-primary transition-colors"
+            className="text-text-muted hover:text-text-primary transition-colors p-2 -mr-2 rounded-lg hover:bg-surface-2 min-w-[40px] min-h-[40px] flex items-center justify-center"
             aria-label={t('common.ariaLabelClose')}
           >
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -48,7 +48,7 @@ export default function Modal({
             </svg>
           </button>
         </div>
-        <div className="p-6">
+        <div className="p-4 sm:p-6">
           {children}
         </div>
       </div>

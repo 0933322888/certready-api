@@ -116,17 +116,17 @@ export default function AdminUsersPage() {
 
         {/* Filters and Search Bar */}
         <div className="bg-surface border border-border rounded-xl p-4 mb-6 shadow-sm flex flex-col md:flex-row items-stretch md:items-center justify-between gap-4">
-          <form onSubmit={handleSearchSubmit} className="flex-1 flex gap-2">
+          <form onSubmit={handleSearchSubmit} className="flex-1 flex flex-col sm:flex-row gap-2">
             <div className="relative flex-1">
               <input
                 type="text"
                 placeholder="Search by name or email..."
                 value={searchInput}
                 onChange={(e) => setSearchInput(e.target.value)}
-                className="w-full bg-surface-2 border border-border rounded-lg pl-9 pr-4 py-2 text-sm text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent"
+                className="w-full bg-surface-2 border border-border rounded-lg pl-9 pr-4 py-2 text-sm text-text-primary placeholder:text-text-muted focus:outline-none focus:border-accent min-h-[42px]"
               />
               <svg
-                className="w-4 h-4 absolute left-3 top-2.5 text-text-muted"
+                className="w-4 h-4 absolute left-3 top-3 text-text-muted"
                 fill="none"
                 stroke="currentColor"
                 viewBox="0 0 24 24"
@@ -139,22 +139,25 @@ export default function AdminUsersPage() {
                 />
               </svg>
             </div>
-            <Button type="submit" size="sm">
-              Search
-            </Button>
-            {search && (
-              <Button
-                type="button"
-                variant="ghost"
-                size="sm"
-                onClick={() => {
-                  setSearchInput('');
-                  setSearch('');
-                }}
-              >
-                Clear
+            <div className="flex gap-2">
+              <Button type="submit" size="sm" className="flex-1 sm:flex-none">
+                Search
               </Button>
-            )}
+              {search && (
+                <Button
+                  type="button"
+                  variant="ghost"
+                  size="sm"
+                  onClick={() => {
+                    setSearchInput('');
+                    setSearch('');
+                  }}
+                  className="flex-1 sm:flex-none"
+                >
+                  Clear
+                </Button>
+              )}
+            </div>
           </form>
 
           <div className="flex items-center gap-2">
@@ -162,7 +165,7 @@ export default function AdminUsersPage() {
             <select
               value={sort}
               onChange={(e) => setSort(e.target.value)}
-              className="bg-surface-2 border border-border rounded-lg px-3 py-2 text-sm text-text-primary focus:outline-none focus:border-accent"
+              className="bg-surface-2 border border-border rounded-lg px-3 py-2 text-sm text-text-primary focus:outline-none focus:border-accent min-h-[42px] w-full sm:w-auto"
             >
               <option value="createdAt_desc">Newest Registered</option>
               <option value="createdAt_asc">Oldest Registered</option>
