@@ -31,7 +31,7 @@ export default function HeroCarousel() {
         style={{ width: '200%', transform: `translateX(-${index * 50}%)` }}
       >
         {/* Slide 0: Main hero */}
-        <div className="min-h-screen w-1/2 flex-shrink-0 relative flex items-center justify-center">
+        <div className="min-h-screen w-1/2 flex-shrink-0 relative flex items-center justify-center pt-16 pb-24 sm:py-20">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: 'url(/hero-bg.png)' }}
@@ -44,30 +44,30 @@ export default function HeroCarousel() {
             }}
           />
           <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
-            <Badge variant="warm" className="text-sm px-4 py-1.5 mb-6">
+            <Badge variant="warm" className="text-xs sm:text-sm px-3 sm:px-4 py-1 sm:py-1.5 mb-4 sm:mb-6">
               {t('hero.freeWindowBadge')}
             </Badge>
             <CertReadyLogoFull
               width={560}
               height={120}
-              className="mx-auto mb-6 max-w-[560px] w-full h-auto"
+              className="mx-auto mb-4 sm:mb-6 max-w-[280px] sm:max-w-[420px] md:max-w-[560px] w-full h-auto"
             />
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-display font-bold text-text-primary mb-6 leading-tight">
-              {t('hero.title')} <span className="text-accent mt-2">— {t('hero.titleHighlight')}</span>
+            <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-display font-bold text-text-primary mb-4 sm:mb-6 leading-tight">
+              {t('hero.title')} <span className="text-accent mt-1 sm:mt-2 block sm:inline">— {t('hero.titleHighlight')}</span>
             </h1>
-            <p className="text-xl md:text-2xl text-text-primary mb-10 max-w-3xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-xl md:text-2xl text-text-primary mb-6 sm:mb-10 max-w-3xl mx-auto leading-relaxed">
               {t('hero.subtitle')}
             </p>
-            <p className="text-base md:text-lg text-accent-warm font-semibold mb-8 max-w-3xl mx-auto">
+            <p className="text-sm sm:text-base md:text-lg text-accent-warm font-semibold mb-6 sm:mb-8 max-w-3xl mx-auto">
               {t('hero.freeWindowSubtitle')}
             </p>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link to={paths.practiceTests}>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-10 sm:mb-4">
+              <Link to={paths.practiceTests} className="w-full sm:w-auto">
                 <Button size="lg" className="w-full sm:w-auto">
                   {t('hero.startPracticeQuestions')}
                 </Button>
               </Link>
-              <Link to={paths.redSealReadinessTest}>
+              <Link to={paths.redSealReadinessTest} className="w-full sm:w-auto">
                 <Button size="lg" variant="outline" className="w-full sm:w-auto">
                   {t('hero.takeReadinessTest')}
                 </Button>
@@ -77,7 +77,7 @@ export default function HeroCarousel() {
         </div>
 
         {/* Slide 1: CertReady Pass Reward */}
-        <div className="min-h-screen w-1/2 flex-shrink-0 relative flex items-center justify-center">
+        <div className="min-h-screen w-1/2 flex-shrink-0 relative flex items-center justify-center pt-16 pb-24 sm:py-20">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
             style={{ backgroundImage: 'url(/hero-bg.png)' }}
@@ -90,26 +90,26 @@ export default function HeroCarousel() {
             }}
           />
           <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center w-full">
-            <Badge variant="warm" className="text-sm px-4 py-1.5 mb-6">
+            <Badge variant="warm" className="text-xs sm:text-sm px-3 sm:px-4 py-1 sm:py-1.5 mb-4 sm:mb-6">
               Limited-Time CertReady Pass Reward
             </Badge>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-display font-bold text-text-primary mb-6 leading-tight">
+            <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-bold text-text-primary mb-4 sm:mb-6 leading-tight">
               Pass Your Exam.<br />Get Your Course Fee Back.
             </h2>
-            <p className="text-lg md:text-xl text-text-primary mb-8 max-w-2xl mx-auto leading-relaxed">
+            <p className="text-sm sm:text-lg md:text-xl text-text-primary mb-6 sm:mb-8 max-w-2xl mx-auto leading-relaxed">
               For a limited time, purchase an eligible CertReady course, prepare for your certification exam, pass it, and we&apos;ll refund your original course fee.
             </p>
-            <div className="inline-flex items-center gap-2 p-2.5 px-4 rounded-full bg-accent-warm/10 border border-accent-warm/20 text-accent-warm text-sm font-medium mb-8">
+            <div className="inline-flex items-center gap-2 p-2.5 px-4 rounded-full bg-accent-warm/10 border border-accent-warm/20 text-accent-warm text-xs sm:text-sm font-medium mb-6 sm:mb-8">
               <span>🛡️</span>
               <span>No positive review required. Your refund does not depend on what you say about CertReady.</span>
             </div>
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-              <Link to={paths.passReward}>
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 mb-10 sm:mb-4">
+              <Link to={paths.passReward} className="w-full sm:w-auto">
                 <Button size="lg" className="bg-accent-warm hover:bg-accent-warm/90 text-bg font-semibold w-full sm:w-auto">
                   Learn How It Works →
                 </Button>
               </Link>
-              <Link to={paths.trades}>
+              <Link to={paths.trades} className="w-full sm:w-auto">
                 <Button size="lg" variant="outline" className="w-full sm:w-auto">
                   Browse Eligible Courses
                 </Button>
@@ -120,26 +120,26 @@ export default function HeroCarousel() {
       </div>
 
       {/* Carousel controls */}
-      <div className="absolute bottom-8 left-0 right-0 z-20 flex items-center justify-center gap-4">
+      <div className="absolute bottom-3 sm:bottom-6 left-0 right-0 z-20 flex items-center justify-center gap-3 sm:gap-4">
         <button
           type="button"
           onClick={prev}
           aria-label={t('hero.carouselPrev')}
-          className="p-2 rounded-full bg-surface/80 border border-border text-text-primary hover:bg-surface-2 transition-colors"
+          className="p-2 sm:p-2.5 rounded-full bg-surface/90 border border-border text-text-primary hover:bg-surface-2 transition-colors min-w-[40px] min-h-[40px] flex items-center justify-center shadow-lg"
         >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
           </svg>
         </button>
-        <div className="flex gap-2">
+        <div className="flex gap-2 items-center">
           {[0, 1].map((i) => (
             <button
               key={i}
               type="button"
               onClick={() => goTo(i)}
               aria-label={`Slide ${i + 1}`}
-              className={`h-2 rounded-full transition-all ${
-                i === index ? 'w-8 bg-accent-warm' : 'w-2 bg-surface-2 hover:bg-border'
+              className={`h-2.5 rounded-full transition-all ${
+                i === index ? 'w-8 bg-accent-warm' : 'w-2.5 bg-surface-2 hover:bg-border'
               }`}
             />
           ))}
@@ -148,9 +148,9 @@ export default function HeroCarousel() {
           type="button"
           onClick={next}
           aria-label={t('hero.carouselNext')}
-          className="p-2 rounded-full bg-surface/80 border border-border text-text-primary hover:bg-surface-2 transition-colors"
+          className="p-2 sm:p-2.5 rounded-full bg-surface/90 border border-border text-text-primary hover:bg-surface-2 transition-colors min-w-[40px] min-h-[40px] flex items-center justify-center shadow-lg"
         >
-          <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <svg className="w-5 h-5 sm:w-6 sm:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
           </svg>
         </button>
