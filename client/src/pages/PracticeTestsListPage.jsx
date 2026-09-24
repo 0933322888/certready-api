@@ -44,7 +44,7 @@ export default function PracticeTestsListPage() {
                 {guide.tradeName} ({guide.tradeCode})
               </h2>
               <p className="text-text-muted text-sm flex-1 mb-4">
-                {t('practiceTestsPage.cardDesc', { tradeName: guide.tradeName, count: guide.examQuestions })}
+                {t('practiceTestsPage.cardDesc', { tradeName: guide.tradeName, count: 20 })}
               </p>
               <div className="flex flex-wrap gap-3">
                 <Link to={paths.practiceTest(guide.slug)}>
