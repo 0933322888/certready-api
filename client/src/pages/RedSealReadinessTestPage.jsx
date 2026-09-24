@@ -202,7 +202,7 @@ export default function RedSealReadinessTestPage() {
               {tradeGuides.map((guide) => {
                 const guideTrade = getTradeBySlug(guide.slug);
                 const readinessMinutes = guideTrade ? Math.ceil(0.2 * examDurationMinutes(guideTrade)) : 36;
-                const questionCount = Math.ceil(0.2 * (guide.examQuestions || 100));
+                const questionCount = 20;
                 return (
                 <Card key={guide.slug} hover className="flex flex-col p-6">
                   <h2 className="text-xl font-display font-bold text-text-primary mb-2">

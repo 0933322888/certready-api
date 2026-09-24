@@ -6,6 +6,7 @@ import { getPracticeTestsListSEO, getBreadcrumbStructuredData } from '../utils/s
 import { tradeGuides } from '../data/tradeGuides';
 import Card from '../components/ui/Card';
 import Button from '../components/ui/Button';
+import PassRewardBanner from '../components/passReward/PassRewardBanner';
 import { paths } from '../utils/routes';
 
 export default function PracticeTestsListPage() {
@@ -27,9 +28,14 @@ export default function PracticeTestsListPage() {
         <h1 className="text-4xl md:text-5xl font-display font-bold text-text-primary mb-4">
           {t('practiceTestsPage.title')}
         </h1>
-        <p className="text-lg text-text-muted mb-8">
+        <p className="text-lg text-text-muted mb-6">
           {t('practiceTestsPage.subtitle')}
         </p>
+
+        {/* Pass Reward Campaign Callout */}
+        <section className="mb-10" aria-label="CertReady Pass Reward Promotion">
+          <PassRewardBanner highlight />
+        </section>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {tradeGuides.map((guide) => (

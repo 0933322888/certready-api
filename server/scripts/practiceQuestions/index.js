@@ -24,3 +24,5 @@ export const getQuestions = (i18n) => [
   ...welderQuestions,
   ...autoservtechQuestions
 ];
+
+export const QUESTIONS = getQuestions();
